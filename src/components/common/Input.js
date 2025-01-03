@@ -7,7 +7,7 @@ export default function Input(props) {
       {props.icon && <img src={props.icon} alt="icon"/>}
       <input {...props}></input>
     </Root>
-  );
+  );    
 }
 const Root = styled.div`
   display: flex;
