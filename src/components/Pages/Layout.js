@@ -10,7 +10,7 @@ import { useLocation } from "react-router-dom"
 const Layout = ({children}) => {
   const location = useLocation();
   const token = localStorage.getItem("token");
-  const userDetails = useSelector((state) => state?.users.user);
+  const userDetails = useSelector((state) => state?.user);
 
 
   const isLandingPage = location.pathname === "/hire-indian-talent";

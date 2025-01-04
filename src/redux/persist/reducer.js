@@ -1,7 +1,7 @@
 import { persistTypes } from "../user/types";
 const initialState = {
   string: "",
-  user: {},
+  user: "",
   loading:false,
   theme: {
     bgColor: "#F5F5F5",
@@ -14,7 +14,7 @@ const initialState = {
 const persistReducer = (state = initialState, action) => {
   switch (action.type) {
     case persistTypes.STRING:
-      return { ...state, string: action.data };
+      return { ...state, string: action.data};
     case persistTypes.USER_DATA:
       return { ...state, user: action.data };
     case persistTypes.LOADER:

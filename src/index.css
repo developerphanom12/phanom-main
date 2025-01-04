@@ -3,15 +3,14 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 h1 {
   display: block;
@@ -34,7 +33,7 @@ h3 {
   margin-right: 0;
   font-weight: 600px;
 }
-p{
+p {
   font-size: 14px;
   font-weight: 400;
 }
@@ -43,28 +42,27 @@ button {
   transition: opacity 0.3s ease;
 }
 
-button:hover{
+/* button:hover {
   opacity: 0.8;
-}
+} */
 
 button:disabled {
   background-color: gray;
-  cursor: not-allowed !important; 
+  cursor: not-allowed !important;
   opacity: 0.6;
 }
 
 input {
   font-size: 16px;
   border: none;
-  color:white;
+  color: white;
 }
-
 
 /* Autofill styles override for Chrome, Safari, and Edge */
 input:-webkit-autofill {
-  background-color: #ffffff !important; 
-  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset; 
-  -webkit-text-fill-color: #7c889c !important; 
+  background-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  -webkit-text-fill-color: #7c889c !important;
   font-size: 16px;
 }
 
@@ -73,4 +71,3 @@ input:-moz-autofill {
   background-color: #ffffff !important;
   color: #7c889c !important;
 }
-

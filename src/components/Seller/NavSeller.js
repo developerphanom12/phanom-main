@@ -20,7 +20,7 @@ import { MenuItem } from "@mui/material";
 
 
 const NavSeller = () => {
-    const userDetails = useSelector((state) => state?.users.user);
+    const userDetails = useSelector((state) => state?.user );
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
 
