@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PurpleBackground = styled.button`
-  padding:15px 30px;
+  padding:12px 30px;
   border-radius:30px;
   color:#ffffff;
   background-color:#6C5FD4;
@@ -13,6 +13,21 @@ export const PurpleBackground = styled.button`
     background-color:#6C5FD4;
   }
 `;
+
+
+export const GreyBorderButton = styled.button`
+  padding:12px 30px;
+  border-radius:30px;
+  color:#353535;
+  border:1px solid #353535;
+  font-size:18px;
+  font-weight: 400;
+  background-color:transparent;
+  cursor:pointer;
+
+`;
+
+
 
 export const GradientButton = styled.button`
     padding: 12px 0;

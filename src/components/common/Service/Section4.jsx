@@ -10,8 +10,8 @@ export const Section4 = () => {
   return (
     <Root>
       <span>
-        <Heading>We're</Heading>
-        <GradientHeading>Phanom Professionals,</GradientHeading>
+        <Heading>We're </Heading>
+        <GradientHeading> Phanom Professionals,</GradientHeading>
         <br/>
         <Heading>Your Growth Partner</Heading>
       </span>
@@ -25,6 +25,8 @@ export const Section4 = () => {
         strive to deliver the best-in-class, functional, and scale-able web
         design Toronto solutions to meet business goals.
       </Blackdescription>
+
+      
     </Root>
   );
 };

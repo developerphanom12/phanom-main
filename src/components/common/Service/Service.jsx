@@ -8,13 +8,17 @@ import { Section6 } from './Section6';
 import { Section7 } from './Section7';
 import { Section8 } from './Section8';
 import { SubNavbar } from './SubNavbar';
+import { Section9 } from './Section9';
+import { Testimonial } from './Testimonial';
+import { Section10 } from './Section10';
+import { Section12 } from './Section12';
 
 
 export const Service = () => {
   return (
     <div>
         <SubNavbar/>
-        {/* <Section1/> */}
+        <Section1/>
         <Section2/>
         <Section3/>
         <Section4/>
@@ -22,6 +26,10 @@ export const Service = () => {
         <Section6/>
         <Section7/>
         <Section8/>
+        <Section9/>
+        <Section10/>
+        <Testimonial/>
+        <Section12/>
     </div>
 
   )

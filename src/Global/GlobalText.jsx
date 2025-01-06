@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const MainGradient = "linear-gradient(45deg, #4899E1, #984EE8, #D019E4)";
 
+export const SecondGradient = "linear-gradient(45deg, #9354E0, #CA1AE7, #CA1AE7)";
+
+
 export const Heading = styled.span`
   font-size: 36px;
   font-family: "Poppins", sans-serif;
@@ -37,6 +40,31 @@ export const GradientHeading = styled.span`
   -webkit-text-fill-color: transparent;
 `;
 
+
+export const GradientSubHeading = styled.span`
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  line-height: 36px;
+  letter-spacing: 0.5%;
+  font-weight: 500;
+  background: ${MainGradient};
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+export const GradientSecondHeading = styled.span`
+  font-size:36px;
+  font-family:"Poppins", sans-serif;
+  line-height:44px;
+  font-weight:600;
+  background: ${SecondGradient};
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+
 export const SubNavbarLinks = styled.h5`
  font-size: 18px;
   font-family: "Poppins", sans-serif;
@@ -45,10 +73,34 @@ export const SubNavbarLinks = styled.h5`
   font-weight: 500;
 `;
 
+export const FaqHeading = styled.h5`
+ font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+  color: #000000;
+  letter-spacing: 0.5%;
+  font-weight: 500;
+`;
+
+export const TestHeading = styled.h5`
+ font-size: 23px;
+  font-family: "inter";
+  line-height: 30px;
+  color: #000000;
+  font-weight: 800;
+`;
+
 export const Blackdescription = styled.p`
   font-size: 18px;
   font-family: "Poppins", sans-serif;
   line-height: 28px;
+  color: #000000;
+  font-weight: 400;
+`;
+export const Faqdescription = styled.p`
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  line-height: 23px;
   color: #000000;
   font-weight: 400;
 `;
@@ -59,6 +111,30 @@ export const Greydescription = styled.p`
   line-height: 28px;
   color: #525252;
   font-weight: 400;
+`;
+
+export const Subdescription = styled.p`
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  line-height: 18px;
+  color: #787878;
+  font-weight: 500;
+`;
+export const Subblackdescription = styled.p`
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  line-height: 17px;
+  color: #000000;
+  font-weight: 500;
+`;
+
+
+export const Subpurpledescription = styled.p`
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  line-height: 18px;
+  color: #6C5FD4;
+  font-weight: 500;
 `;
 
 export const GreySecondDescription = styled.p`
@@ -109,6 +185,16 @@ export const PurpleHeading = styled.h4`
   font-weight: 700;
 `;
 
+
+export const PurpleSubHeading = styled.h4`
+  font-size:28px;
+  font-family:"Poppins", sans-serif;
+  line-height: 36px;
+  color:#6c5fd4;
+  letter-spacing:0.5%;
+  font-weight: 500;
+`;
+
 export const WhiteNumberHeading = styled.h4`
   font-size: 45px;
   font-family: "Poppins", sans-serif;
@@ -125,3 +211,16 @@ export const TextBorder = styled.span`
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #6c5fd4;
 `;
+
+
+export const TextBorderShadow = styled.span`
+  font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        color:white;
+        line-height:1.2;
+        -webkit-text-stroke: 1px #6C5FD4;
+        -webkit-text-fill-color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+`;
+

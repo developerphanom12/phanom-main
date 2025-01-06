@@ -14,11 +14,9 @@ export const Section8 = () => {
     <Root>
       <div className="main_div">
         <div className="sub_main_div_one">
-       
-
           <div className="text-with-border-shadow">
-          Why 
-            <br />
+            Why
+            <br/>
             Choose
             <br />
             US?
@@ -30,7 +28,13 @@ export const Section8 = () => {
           </GreySecondDescription>
         </div>
 
-        <div className="sub_main_div" style={{ backgroundColor: "#6C5FD4", border: "1px solid transparent"}}>
+        <div
+          className="sub_main_div"
+          style={{
+            backgroundColor: "#6C5FD4",
+            border: "1px solid transparent",
+          }}
+        >
           <WhiteNumberHeading>01</WhiteNumberHeading>
           <WhitekHeading>Info Gathering</WhitekHeading>
           <WhiteDescription>
@@ -111,7 +115,6 @@ const Root = styled.section`
       display: flex;
       flex-direction: column;
       gap: 10px;
-
     }
   }
 `;
