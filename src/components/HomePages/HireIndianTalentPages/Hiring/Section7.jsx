@@ -6,11 +6,11 @@ import {
   Faqdescription,
   FaqHeading,
   Heading,
-} from "../../../Global/GlobalText";
-import { PurpleBackground } from "../../../Global/GlobalButton";
-import vectorani from "../../../assets/Images/vectorani.png";
+} from "../../../../Global/GlobalText";
+import { PurpleBackground } from "../../../../Global/GlobalButton";
+import vectorani from "../../../../assets/Images/vectorani.png";
 
-export const Section12 = () => {
+export const Section7 = () => {
     const [questions, setQuestions] = useState([
         {
           id: 1,

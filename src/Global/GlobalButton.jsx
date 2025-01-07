@@ -7,7 +7,7 @@ export const PurpleBackground = styled.button`
   background-color:#6C5FD4;
   border:1px solid transparent;
   font-size:18px;
-  font-weight: 400;
+  font-weight:400;
   cursor:pointer;
   &:hover{
     background-color:#6C5FD4;

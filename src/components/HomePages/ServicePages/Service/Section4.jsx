@@ -4,7 +4,7 @@ import {
   Blackdescription,
   GradientHeading,
   Heading,
-} from "../../../Global/GlobalText";
+} from "../../../../Global/GlobalText";
 
 export const Section4 = () => {
   return (

@@ -5,17 +5,17 @@ import {
   GradientHeading,
   Greydescription,
   Heading,
-} from "../../../Global/GlobalText";
-import { PurpleBackground } from "../../../Global/GlobalButton";
-import wordnew from "../../../assets/Images/wordnew.png";
-import shopnew from "../../../assets/Images/shopnew.png";
+} from "../../../../Global/GlobalText";
+import { PurpleBackground } from "../../../../Global/GlobalButton";
+import wordnew from "../../../../assets/Images/wordnew.png";
+import shopnew from "../../../../assets/Images/shopnew.png";
 
-import phpnew from "../../../assets/Images/phpnew.png";
-import webnew from "../../../assets/Images/webnew.png";
-import angnew from "../../../assets/Images/angnew.png";
-import netnew from "../../../assets/Images/netnew.png";
-import webbnew from "../../../assets/Images/webbnew.png";
-import dynanew from "../../../assets/Images/dynanew.png";
+import phpnew from "../../../../assets/Images/phpnew.png";
+import webnew from "../../../../assets/Images/webnew.png";
+import angnew from "../../../../assets/Images/angnew.png";
+import netnew from "../../../../assets/Images/netnew.png";
+import webbnew from "../../../../assets/Images/webbnew.png";
+import dynanew from "../../../../assets/Images/dynanew.png";
 
 export const Section6 = () => {
   return (
@@ -26,7 +26,7 @@ export const Section6 = () => {
             <Heading>Your</Heading>
             <span></span>
             <GradientHeading> WIZARD OF BEHIND</GradientHeading>
-            <br/>
+            <br />
             <Heading>THE SENSES To Make Efforts</Heading>
             <br />
             <Heading>Presentable</Heading>

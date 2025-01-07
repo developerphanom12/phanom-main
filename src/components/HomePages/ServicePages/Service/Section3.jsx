@@ -1,15 +1,15 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
-import log1 from "../../../assets/Images/log1.png";
+import log1 from "../../../../assets/Images/log1.png";
 
-import log2 from "../../../assets/Images/log2.png";
+import log2 from "../../../../assets/Images/log2.png";
 
-import log3 from "../../../assets/Images/log3.png";
+import log3 from "../../../../assets/Images/log3.png";
 
-import log4 from "../../../assets/Images/log4.png";
+import log4 from "../../../../assets/Images/log4.png";
 
-import log5 from "../../../assets/Images/log5.png";
+import log5 from "../../../../assets/Images/log5.png";
 
 export const Section3 = () => {
   let sliderRef = useRef(null);

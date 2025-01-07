@@ -4,8 +4,8 @@ import {
   GradientHeading,
   Greydescription,
   Heading,
-} from "../../../Global/GlobalText";
-import { GradientButton, GreyBorder } from "../../../Global/GlobalButton";
+} from "../../../../Global/GlobalText";
+import { GradientButton, GreyBorder } from "../../../../Global/GlobalButton";
 
 export const Section7 = () => {
   return (

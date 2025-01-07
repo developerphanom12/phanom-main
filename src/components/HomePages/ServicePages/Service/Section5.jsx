@@ -2,23 +2,23 @@ import React from "react";
 import styled from "styled-components";
 import {
   Greydescription,
-  TextBorder,
+
   WhiteContent,
-} from "../../../Global/GlobalText";
-import process from "../../../assets/Images/process.png";
+} from "../../../../Global/GlobalText";
+import process from "../../../../assets/Images/process.png";
 
-import vector from "../../../assets/Images/vector.png";
-import react from "../../../assets/Images/reactt.png";
+import vector from "../../../../assets/Images/vector.png";
+import react from "../../../../assets/Images/reactt.png";
 
-import github from "../../../assets/Images/githubb.png";
-import Bootstrap from "../../../assets/Images/bootstrapp.png";
+import github from "../../../../assets/Images/githubb.png";
+import Bootstrap from "../../../../assets/Images/bootstrapp.png";
 
-import figma from "../../../assets/Images/figmaa.png";
-import vscodee from "../../../assets/Images/vscodee.png";
+import figma from "../../../../assets/Images/figmaa.png";
+import vscodee from "../../../../assets/Images/vscodee.png";
 
-import postman from "../../../assets/Images/postmann.png";
+import postman from "../../../../assets/Images/postmann.png";
 
-import chrome from "../../../assets/Images/chrome.png";
+import chrome from "../../../../assets/Images/chrome.png";
 
 export const Section5 = () => {
   return (
@@ -42,7 +42,7 @@ export const Section5 = () => {
 
           <div className="tecnology_types">
             <div className="sub_technology_type">
-              <img src={vector} />
+              <img src={vector}  alt="devops"/>
               <WhiteContent>DevOps </WhiteContent>
             </div>
 
@@ -83,7 +83,7 @@ export const Section5 = () => {
           </div>
         </div>
         <div className="sub_div_two">
-          <img src={process}/>
+          <img src={process} alt="process"/>
           
         </div>
       </div>

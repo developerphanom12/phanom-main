@@ -6,16 +6,15 @@ import {
   TestHeading,
   TextBorderShadow,
   WhiteDescription,
-} from "../../../Global/GlobalText";
-import testinew from "../../../assets/Images/testinew.png";
+} from "../../../../Global/GlobalText";
+import testinew from "../../../../assets/Images/testinew.png";
 import Slider from "react-slick";
-
-import testnew from "../../../assets/Images/testnew.png";
-import testnew2 from "../../../assets/Images/testnew2.png";
+import testnew from "../../../../assets/Images/testnew.png";
+import testnew2 from "../../../../assets/Images/testnew2.png";
 
 export const Testimonial = () => {
   var settings = {
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 1,

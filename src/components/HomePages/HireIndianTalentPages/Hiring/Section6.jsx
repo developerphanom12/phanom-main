@@ -6,23 +6,23 @@ import {
   Greydescription,
   Heading,
   Subdescription,
-} from "../../../Global/GlobalText";
+} from "../../../../Global/GlobalText";
 import {
   GreyBorderButton,
   PurpleBackground,
-} from "../../../Global/GlobalButton";
+} from "../../../../Global/GlobalButton";
 import { FaArrowRightLong } from "react-icons/fa6";
 import {
   InputLabel,
   InputTextarea,
   InputType,
   SelectBorder,
-} from "../../../Global/GlobalFormElement";
+} from "../../../../Global/GlobalFormElement";
 import TimezoneSelect from "react-timezone-select";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-export const Section10 = () => {
+export const Section6 = () => {
   const [isScheduleVisible, setIsScheduleVisible] = useState(false);
 
   const [selectedTimezone, setSelectedTimezone] = useState({});

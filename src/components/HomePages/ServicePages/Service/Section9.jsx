@@ -5,12 +5,12 @@ import {
   GreySecondDescription,
   Heading,
   PurpleSubHeading,
-} from "../../../Global/GlobalText";
-import framneww from "../../../assets/Images/framm.png";
-import groupone from "../../../assets/Images/groupone.png";
-import grouptwo from "../../../assets/Images/grouptwo.png";
-import groupthree from "../../../assets/Images/groupthree.png";
-import groupfour from "../../../assets/Images/groupfour.png";
+} from "../../../../Global/GlobalText";
+import framneww from "../../../../assets/Images/framm.png";
+import groupone from "../../../../assets/Images/groupone.png";
+import grouptwo from "../../../../assets/Images/grouptwo.png";
+import groupthree from "../../../../assets/Images/groupthree.png";
+import groupfour from "../../../../assets/Images/groupfour.png";
 
 export const Section9 = () => {
   return (
@@ -85,12 +85,12 @@ const Root = styled.section`
     .bg_img {
       background-image: url(${framneww});
       background-size: 100% 100%;
-      width: 100%;
-      display: flex;
+      width:100%;
+      display:flex;
       .sub_bg_img {
         flex: 1;
         display: flex;
-        gap: 20px;
+        gap: 10px;
         justify-content: center;
         flex-direction: column;
         align-items: center;

@@ -169,6 +169,16 @@ export const BlackHeading = styled.h4`
   font-weight: 500;
 `;
 
+export const GreyHeading = styled.h4`
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  line-height: 36px;
+  color: #464646;
+  font-weight: 500;
+`;
+
+
+
 export const WhitekHeading = styled.h4`
   font-size: 28px;
   font-family: "Poppins", sans-serif;

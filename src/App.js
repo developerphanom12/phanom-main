@@ -5,19 +5,20 @@ import { Toaster } from "react-hot-toast";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
 import Layout from "./components/Pages/Layout";
-import { Service } from "./components/common/Service/Service";
+import { Hiring } from "./components/HomePages/HireIndianTalentPages/Hiring/Hiring";
+import { Service } from "./components/HomePages/ServicePages/Service/Service";
 
 function App() {
   const userDetails = useSelector((state) => state.userDetails);
   console.log(userDetails, "detailss");
-
   return (
     <Root className="App">
-      <Toaster position="top-center"/>
+      <Toaster position="top-center" />
       <Layout>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/service" element={<Service/>} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/hiring" element={<Hiring />} />
         </Routes>
       </Layout>
     </Root>

@@ -7,7 +7,7 @@ import {
   WhiteDescription,
   WhitekHeading,
   WhiteNumberHeading,
-} from "../../../Global/GlobalText";
+} from "../../../../Global/GlobalText";
 
 export const Section8 = () => {
   return (

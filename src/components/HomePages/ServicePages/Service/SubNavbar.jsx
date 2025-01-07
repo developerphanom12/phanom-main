@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { SubNavbarLinks, WhiteHeading } from "../../../Global/GlobalText";
+import { SubNavbarLinks, WhiteHeading } from "../../../../Global/GlobalText";
 
 export const SubNavbar = () => {
   return (

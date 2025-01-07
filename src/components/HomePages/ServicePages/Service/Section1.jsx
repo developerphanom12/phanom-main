@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Subdescription, Subpurpledescription } from '../../../Global/GlobalText';
+import { Subdescription, Subpurpledescription } from '../../../../Global/GlobalText';
 import { IoIosArrowForward } from "react-icons/io";
 
 export const Section1 = () => {
