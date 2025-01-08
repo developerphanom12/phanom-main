@@ -215,4 +215,18 @@ const Root = styled.section`
       }
     }
   }
+
+  @media (max-width: 567px) {
+    padding: 30px 20px;
+
+    .main_div .sub_cont_section {
+      flex-direction: column;
+      padding: 0;
+      .sub_div_two{
+        img{
+          height:auto
+        }
+      }
+    }
+  }
 `;

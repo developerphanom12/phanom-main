@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import {
+  Blackdescription,
   GradientSecondHeading,
   GradientSubHeading,
   Greydescription,
@@ -43,45 +44,46 @@ export const Section6 = () => {
     <Root>
       <div className="main_div">
         <div className="sub_div_one">
-          <Greydescription>
+          <Blackdescription>
             Explore a rewarding career in the Phenom Professional Industry. Fill
             out the form to get started.
-          </Greydescription>
+          </Blackdescription>
 
-          <span>
+          <span className="head">
             <Heading>Put On Ice To Preserve Your</Heading>
             <br />
             <Heading>Viewers With</Heading> <span></span>
             <GradientSecondHeading> Your Potential!</GradientSecondHeading>
           </span>
 
-          <Greydescription>
+          <Blackdescription>
             Preserve your audience's attention and captivate them by showcasing
             your true potential. In today’s fast-paced world, making a lasting
             impression is crucial. We help you create unforgettable experiences
             that resonate with your viewers, keeping them engaged and coming
             back for more. With our innovative strategies, we ensure that your
             content stands out,{" "}
-            <span style={{ color: "#6C5FD4" }}>
+            <span  className="purpl_cont">
               maintaining its relevance and impact.
             </span>
-          </Greydescription>
+          </Blackdescription>
 
-          <Greydescription>
+          <Blackdescription>
             Whether it’s through dynamic visuals, compelling storytelling, or
             cutting-edge design, we work to enhance your message and maximize
             your reach,{" "}
-            <span style={{ color: "#6C5FD4" }}>
+            <span  className="purpl_cont">
               turning potential into lasting success.
             </span>
-          </Greydescription>
+          </Blackdescription>
 
-          <div>
+          <div className="btn_div">
             <PurpleBackground className="connect_btn">
               Connect with us <FaArrowRightLong />
             </PurpleBackground>
           </div>
         </div>
+
         <div className="sub_div_two">
           <span>
             <GradientSubHeading> Book Your Appointment</GradientSubHeading>
@@ -288,6 +290,47 @@ const Root = styled.section`
           }
         }
       }
+    }
+  }
+
+  @media (max-width: 567px) {
+    padding: 30px 20px;
+
+    .main_div {
+      flex-wrap: wrap;
+      gap:50px;
+      .sub_div_one {
+        text-align: center;
+        .purpl_cont{
+          color:#6C5FD4;
+          font-size:16px;
+        }
+        span{
+          font-size: 22px;
+        }
+      
+      }
+
+      .btn_div{
+        display: flex;
+        justify-content: center;
+      }
+
+
+      .sub_div_two form .label_content .schedule_div {
+    width: 70%;
+    .time_date_btn{
+      gap:10px;
+    }
+}
+
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+    .main_div {
+      gap:0;
     }
   }
 `;

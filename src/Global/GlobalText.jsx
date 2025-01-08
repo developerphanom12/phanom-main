@@ -80,6 +80,10 @@ export const FaqHeading = styled.h5`
   color: #000000;
   letter-spacing: 0.5%;
   font-weight: 500;
+  @media (max-width: 567px) {
+    font-size: 22px;
+  line-height: 30px;
+  }
 `;
 
 export const TestHeading = styled.h5`
@@ -96,9 +100,13 @@ export const Blackdescription = styled.p`
   line-height: 28px;
   color: #000000;
   font-weight: 400;
+  @media (max-width: 567px) {
+    font-size: 16px;
+  line-height: 24px;
+  }
 `;
 export const Faqdescription = styled.p`
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
   line-height: 23px;
   color: #000000;
@@ -141,8 +149,12 @@ export const GreySecondDescription = styled.p`
   font-size: 18px;
   font-family: "Poppins", sans-serif;
   line-height: 28px;
-  color: #787878;
+  color: #423D3D;
   font-weight: 400;
+  @media (max-width: 567px) {
+    font-size: 16px;
+  line-height: 24px;
+  }
 `;
 
 export const WhiteDescription = styled.p`
@@ -167,14 +179,22 @@ export const BlackHeading = styled.h4`
   line-height: 36px;
   color: #000000;
   font-weight: 500;
+  @media (max-width: 567px) {
+    font-size: 22px;
+  line-height: 30px;
+  }
 `;
 
 export const GreyHeading = styled.h4`
-  font-size: 28px;
-  font-family: "Poppins", sans-serif;
-  line-height: 36px;
+  font-size:28px;
+  font-family:"Poppins", sans-serif;
+  line-height:36px;
   color: #464646;
   font-weight: 500;
+  @media (max-width: 567px) {
+    font-size: 22px;
+  line-height: 28px;
+  }
 `;
 
 
@@ -201,8 +221,12 @@ export const PurpleSubHeading = styled.h4`
   font-family:"Poppins", sans-serif;
   line-height: 36px;
   color:#6c5fd4;
-  letter-spacing:0.5%;
+
   font-weight: 500;
+  @media (max-width: 567px) {
+    font-size: 22px;
+  line-height: 30px;
+  }
 `;
 
 export const WhiteNumberHeading = styled.h4`

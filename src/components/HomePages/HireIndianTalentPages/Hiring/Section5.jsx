@@ -8,6 +8,11 @@ import {
 } from "../../../../Global/GlobalText";
 
 import truenew from "../../../../assets/Images/truenew.png";
+import usernew from "../../../../assets/Images/usernew.jpg";
+
+import membernew from "../../../../assets/Images/membernew.jpg";
+import seachnew from "../../../../assets/Images/seachnew.jpg";
+import coordinationnew from "../../../../assets/Images/coordinationnew.jpg";
 
 export const Section5 = () => {
   return (
@@ -30,7 +35,7 @@ export const Section5 = () => {
 
         <div className="main_section">
           <div className="sub_main_section">
-            <img src={truenew} alt="expertise" />
+            <img src={usernew} alt="expertise" />
             <PurpleSubHeading className="sub_content">
               Explain what you need
             </PurpleSubHeading>
@@ -41,7 +46,7 @@ export const Section5 = () => {
           </div>
 
           <div className="sub_main_section">
-            <img src={truenew} alt="expertise" />
+            <img src={membernew} alt="expertise" />
             <PurpleSubHeading className="sub_content">
               Evaluation
             </PurpleSubHeading>
@@ -53,7 +58,7 @@ export const Section5 = () => {
           </div>
 
           <div className="sub_main_section">
-            <img src={truenew} alt="expertise" />
+            <img src={seachnew} alt="expertise" />
             <PurpleSubHeading className="sub_content">
               Conversation and shortlist
             </PurpleSubHeading>
@@ -64,7 +69,7 @@ export const Section5 = () => {
           </div>
 
           <div className="sub_main_section">
-            <img src={truenew} alt="expertise" />
+            <img src={coordinationnew} alt="expertise" />
             <PurpleSubHeading className="sub_content">
               Obtain and Manage
             </PurpleSubHeading>
@@ -87,18 +92,18 @@ const Root = styled.section`
     align-items: center;
     gap: 30px;
     .main_section {
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      justify-content:center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
       .sub_main_section {
-        flex:1;
-        display:flex;
-        gap:10px;
-        justify-content:center;
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
+        flex: 1;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         img {
           width: 120px;
           height: 120px;
@@ -111,5 +116,31 @@ const Root = styled.section`
         }
       }
     }
+  }
+
+  @media (max-width: 567px) {
+    padding:30px 20px;
+
+    .main_div {
+      br {
+        display: none;
+      }
+      .main_section .sub_main_section {
+        flex: unset;
+      }
+    }
+
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+
+     .main_div .main_section .sub_main_section {
+
+      flex:unset;
+      width: 48%;
+
+    }
+
   }
 `;

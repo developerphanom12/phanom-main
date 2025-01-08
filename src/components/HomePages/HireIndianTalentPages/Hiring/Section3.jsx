@@ -27,7 +27,7 @@ export const Section3 = () => {
         </span>
 
         <div className="content_image_section">
-          <div className="sub_image_section">
+          <div className="sub_image_section icon_content">
             <div className="icon_content">
               <img src={iconone} alt="iconone" />
               <div>
@@ -52,7 +52,7 @@ export const Section3 = () => {
             <img src={videonew} alt="videonew" />
           </div>
 
-          <div className="sub_image_section">
+          <div className="sub_image_section icon_content">
             <div className="icon_content">
               <img src={iconthree} alt="iconone" />
 
@@ -108,4 +108,44 @@ const Root = styled.section`
       }
     }
   }
+
+  @media (max-width: 567px) {
+    padding: 30px 20px;
+    .main_div {
+      .content_image_section {
+        flex-direction: column;
+        width: 100%;
+        .sub_image_section {
+          flex-wrap: unset;
+          align-items: unset;
+          gap: 50px;
+          .icon_content {
+            br {
+              display: none;
+            }
+          }
+        }
+        .icon_content {
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+
+    .main_div {
+      .content_image_section .sub_image_section {
+        gap: 50px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  
 `;

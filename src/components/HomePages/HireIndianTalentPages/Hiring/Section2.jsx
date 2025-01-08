@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {
   BlackHeading,
-  GreySecondDescription,
+  Blackdescription,
   Heading,
 } from "../../../../Global/GlobalText";
 import truenew from "../../../../assets/Images/truenew.png";
@@ -23,11 +23,11 @@ export const Section2 = () => {
             <BlackHeading className="sub_content">
               Wireframing and Prototyping
             </BlackHeading>
-            <GreySecondDescription className="sub_des_content">
+            <Blackdescription className="sub_des_content">
               Transform your ideas into visual blueprints with our detailed
               wireframes and interactive prototypes, ensuring clarity and
               functionality before development begins.
-            </GreySecondDescription>
+            </Blackdescription>
           </div>
 
           <div className="sub_main_section">
@@ -35,11 +35,11 @@ export const Section2 = () => {
             <BlackHeading className="sub_content">
               User Research and Analysis
             </BlackHeading>
-            <GreySecondDescription className="sub_des_content">
+            <Blackdescription className="sub_des_content">
               Understand your audience better with our in-depth user research,
               personas, and data analysis to create designs that truly resonate
               with their needs.{" "}
-            </GreySecondDescription>
+            </Blackdescription>
           </div>
 
           <div className="sub_main_section">
@@ -47,11 +47,11 @@ export const Section2 = () => {
             <BlackHeading className="sub_content">
               Responsive Web Design
             </BlackHeading>
-            <GreySecondDescription className="sub_des_content">
+            <Blackdescription className="sub_des_content">
               Designs that adapt seamlessly to all devices, ensuring a
               consistent and engaging user experience, whether on desktop,
               tablet, or mobile.{" "}
-            </GreySecondDescription>
+            </Blackdescription>
           </div>
 
           <div className="sub_main_section">
@@ -59,10 +59,10 @@ export const Section2 = () => {
             <BlackHeading className="sub_content">
               Mobile App UI/UX Design
             </BlackHeading>
-            <GreySecondDescription className="sub_des_content">
+            <Blackdescription className="sub_des_content">
               Deliver exceptional user experiences for your mobile apps with
               intuitive designs optimized for iOS and Android platforms.{" "}
-            </GreySecondDescription>
+            </Blackdescription>
           </div>
 
           <div className="sub_main_section">
@@ -70,11 +70,11 @@ export const Section2 = () => {
             <BlackHeading className="sub_content">
               Dashboard and Admin Panel Design
             </BlackHeading>
-            <GreySecondDescription className="sub_des_content">
+            <Blackdescription className="sub_des_content">
               Create data-driven dashboards and user-friendly admin panels that
               simplify complex tasks with clear visuals and intuitive
               navigation.{" "}
-            </GreySecondDescription>
+            </Blackdescription>
           </div>
 
           <div className="sub_main_section">
@@ -82,11 +82,11 @@ export const Section2 = () => {
             <BlackHeading className="sub_content">
               Usability Testing and Iteration
             </BlackHeading>
-            <GreySecondDescription className="sub_des_content">
+            <Blackdescription className="sub_des_content">
               Validate your designs with real user feedback through
               comprehensive usability testing and iterative improvements for
               maximum efficiency.{" "}
-            </GreySecondDescription>
+            </Blackdescription>
           </div>
         </div>
       </div>
@@ -129,5 +129,50 @@ const Root = styled.section`
         }
       }
     }
+  }
+
+  @media (max-width: 567px) {
+    padding: 30px 20px;
+
+    .main_div .main_section {
+      flex-direction: column;
+      align-items: center;
+
+      .sub_main_section {
+        width: 100%;
+        .sub_content {
+          padding: 0px;
+        }
+        .sub_des_content {
+          padding: 0px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+
+    .main_div{
+      br{
+        display: none;
+      }
+    
+    .main_section {
+      .sub_main_section {
+        width: 48%;
+
+        .sub_content {
+          padding: 0px;
+        }
+        .sub_des_content {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+
+
   }
 `;

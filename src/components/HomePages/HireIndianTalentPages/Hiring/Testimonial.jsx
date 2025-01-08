@@ -87,13 +87,8 @@ export const Testimonial = () => {
                     <img src={testnew2} alt="testnew2" />
                   </div>
                 </div>
-
-
-
               </div>
             </div>
-
-
 
             <div>
               <div className="slide_main">
@@ -128,9 +123,6 @@ export const Testimonial = () => {
                     <img src={testnew2} alt="testnew2" />
                   </div>
                 </div>
-
-
-                
               </div>
             </div>
           </Slider>
@@ -142,10 +134,11 @@ export const Testimonial = () => {
 
 const Root = styled.section`
   padding: 30px 0;
+
   .main_div {
     background-image: url(${testinew});
     background-size: 100%;
-    height: 500px;
+    
 
     text-align: center;
 
@@ -161,7 +154,6 @@ const Root = styled.section`
     }
 
     .slider-container {
-    
       margin: 0 24%;
 
       .slide_main {
@@ -236,5 +228,38 @@ const Root = styled.section`
         }
       }
     }
+  }
+
+  @media (max-width: 567px) {
+    padding: 30px 20px ;
+    .main_div
+    {
+      background-repeat: no-repeat;
+     .slider-container {
+      margin:0;
+      .slide_main 
+      .sub_slide_main_one {
+      flex-direction: column;
+      gap:0;
+
+     
+      .main_client_cont
+      {
+         .client_cont {
+        display: none;
+      }
+
+      .client_cont_white{
+        margin-left:0;
+      }
+    }
+
+    }
+    }
+  }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
   }
 `;

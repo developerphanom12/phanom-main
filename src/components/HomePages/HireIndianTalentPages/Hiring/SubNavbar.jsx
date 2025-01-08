@@ -10,6 +10,7 @@ import {
 } from "../../../../Global/GlobalText";
 import unionnew from "../../../../assets/Images/unionnew.png";
 import { IoIosArrowForward } from "react-icons/io";
+import { FormSection } from "./FormSection";
 
 export const SubNavbar = () => {
   return (
@@ -55,23 +56,7 @@ export const SubNavbar = () => {
         </a>
       </div>
 
-      <div className="form_section">
-        <span>
-          <Heading>Elevate Your Digital Experience:</Heading>  <br/>
-
-          <GradientHeading>
-            <span></span>Top Hire Top UI/UX <span></span>
-          </GradientHeading>  <br/>
-
-          <Heading>Designers with Phanom Professionals</Heading>
-
-
-       </span>
-
-
-       ScienceDirect is a website that provides access to a large bibliographic database of scientific and medical publications of the Dutch publisher Elsevier. It hosts over 18 million pieces of content from more than 4,000 academic journals.
-       
-             </div>
+      <FormSection />
     </Root>
   );
 };
@@ -79,12 +64,12 @@ export const SubNavbar = () => {
 const Root = styled.section`
   .main_div {
     position: relative;
-
     background: linear-gradient(45deg, #469ae0, #9a4de4, #d01ae5);
     display: flex;
     justify-content: space-between;
     padding: 15px 100px;
     align-items: center;
+
     .icon {
       display: flex;
       gap: 30px;
@@ -109,6 +94,8 @@ const Root = styled.section`
     z-index: 1111111;
     position: absolute;
     right: 0;
+    top: -40px;
+    height: 400px;
   }
 
   .breadcrumb_main_div {
@@ -118,11 +105,5 @@ const Root = styled.section`
     a {
       text-decoration: none;
     }
-  }
-
-  .form_section {
-    display: flex;
-    gap: 10px;
-    padding: 30px 100px;
   }
 `;
