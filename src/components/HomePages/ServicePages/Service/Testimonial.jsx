@@ -24,8 +24,8 @@ export const Testimonial = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -87,13 +87,8 @@ export const Testimonial = () => {
                     <img src={testnew2} alt="testnew2" />
                   </div>
                 </div>
-
-
-
               </div>
             </div>
-
-
 
             <div>
               <div className="slide_main">
@@ -128,9 +123,6 @@ export const Testimonial = () => {
                     <img src={testnew2} alt="testnew2" />
                   </div>
                 </div>
-
-
-                
               </div>
             </div>
           </Slider>
@@ -142,12 +134,15 @@ export const Testimonial = () => {
 
 const Root = styled.section`
   padding: 30px 0;
+
   .main_div {
     background-image: url(${testinew});
     background-size: 100%;
-    height: 500px;
 
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
     .text-with-border-shadow {
       font-family: "Poppins", sans-serif;
@@ -161,7 +156,6 @@ const Root = styled.section`
     }
 
     .slider-container {
-    
       margin: 0 24%;
 
       .slide_main {
@@ -183,7 +177,7 @@ const Root = styled.section`
               border-radius: 15px;
               text-align: left;
               padding: 10px 20px;
-              height: 70px;
+            
               margin-top: 50px;
               text-transform: uppercase;
             }
@@ -234,6 +228,57 @@ const Root = styled.section`
           ); /* Transparent blue background */
           pointer-events: none; /* Allow interaction with the image */
         }
+      }
+    }
+  }
+
+  @media (max-width: 567px) {
+    padding: 30px 0 20px 30px;
+    .main_div {
+      background-repeat: no-repeat;
+      .slider-container {
+        margin: 0;
+        .slide_main {
+          padding-bottom:10px;
+          .sub_slide_main_one {
+            flex-direction: column;
+            gap: 0;
+            .video_div {
+              img {
+                width: 250px;
+              }
+            }
+
+            .main_client_cont {
+              .client_cont {
+                display: none;
+              }
+
+              .client_cont_white {
+                margin-left: 0;
+                padding: 10px 20px;
+              }
+            }
+          }
+
+          .sub_slide_main_two {
+            height: 150px;
+            img {
+              height: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 0 20px 30px;
+    .main_div {
+      background-repeat: no-repeat;
+
+      .slider-container {
+        margin: 0%;
       }
     }
   }

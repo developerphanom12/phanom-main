@@ -36,4 +36,23 @@ const Root = styled.section`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: center;
+
+
+@media (max-width: 567px) {
+  padding: 30px 20px;
+  span{
+    br{
+      display: none;
+    };
+  }
+  
+}
+
+
+@media (min-width: 567px) and (max-width: 1024px) {
+  padding: 30px 20px;
+
+
+}
 `;

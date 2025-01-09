@@ -1,20 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  BlackHeading,
+  Head,
+  Description,
   GradientHeading,
-  Greydescription,
   Heading,
 } from "../../../../Global/GlobalText";
 
-import wordnew from "../../../../assets/Images/wordnew.png";
-import shopnew from "../../../../assets/Images/shopnew.png";
-import phpnew from "../../../../assets/Images/phpnew.png";
-import webnew from "../../../../assets/Images/webnew.png";
-import angnew from "../../../../assets/Images/angnew.png";
-import netnew from "../../../../assets/Images/netnew.png";
-import webbnew from "../../../../assets/Images/webbnew.png";
-import dynanew from "../../../../assets/Images/dynanew.png";
+import customizednew from "../../../../assets/Images/customizednew.png";
+import cuttingnew from "../../../../assets/Images/cuttingnew.png";
+import rapidnew from "../../../../assets/Images/rapidnew.png";
+import responsivenew from "../../../../assets/Images/responsivenew.png";
+import focusnew from "../../../../assets/Images/focusnew.png";
+import supportnew from "../../../../assets/Images/supportnew.png";
+import globalnew from "../../../../assets/Images/globalnew.png";
+import communicationnew from "../../../../assets/Images/communicationnew.png";
+import teamnew from "../../../../assets/Images/teamnew.png";
 
 import medianewone from "../../../../assets/Images/medianewone.png";
 
@@ -26,126 +27,166 @@ export const Section4 = () => {
       <div className="main_div">
         <span style={{ textAlign: "center" }}>
           <Heading>Ready to Elevate </Heading>
-          <br />
-
+          <br/>
           <Heading>Your</Heading>
           <GradientHeading> Digital Experience</GradientHeading>
-
           <Heading>?</Heading>
         </span>
         <div className="sub_cont_section">
           <div className="sub_cont_one">
             <div className="slide_div">
               <div className="sub_slide_div">
-                <div className="img_div">
-                  <img src={wordnew} alt="WordPress & Woo-Commerce" />
+                <div className="image_content">
+                  <div className="img_div">
+                    <img src={customizednew} alt="customized" />
+                  </div>
+                  <div className="content_div">
+                    <Head>Customized User-Centric Designs</Head>
+                  </div>
                 </div>
-                <div className="content_div">
-                  <BlackHeading>WordPress & Woo-Commerce</BlackHeading>
-                  <Greydescription>
-                    The preference of the client is more Significant for working
-                    on word press and it makes creating and managing an online
-                    store simple.
-                  </Greydescription>
-                </div>
+
+                <Description>
+                  Our team focuses on crafting tailored user experiences that
+                  resonate with your audience, ensuring every design meets your
+                  specific goals while enhancing usability and engagement across
+                  all platforms.
+                </Description>
               </div>
 
               <div className="sub_slide_div">
-                <div className="img_div">
-                  <img src={shopnew} alt="WordPress & Woo-Commerce" />
+                <div className="image_content">
+                  <div className="img_div">
+                    <img src={cuttingnew} alt="cutting" />
+                  </div>
+                  <div className="content_div">
+                    <Head>Cutting-Edge Tools and Techniques</Head>
+                  </div>
                 </div>
-                <div className="content_div">
-                  <BlackHeading>Shopify Website</BlackHeading>
-                  <Greydescription>
-                    The most important factor is being on the stage for longer
-                    period and a business website on shopify for sales are more
-                    generic through WD.
-                  </Greydescription>
-                </div>
+
+                <Description>
+                  Equipped with the latest design tools and innovative
+                  methodologies, we deliver sleek, modern solutions that stay
+                  ahead of industry trends and elevate your digital presence.{" "}
+                </Description>
               </div>
 
               <div className="sub_slide_div">
-                <div className="img_div">
-                  <img src={phpnew} alt="WordPress & Woo-Commerce" />
+                <div className="image_content">
+                  <div className="img_div">
+                    <img src={rapidnew} alt="rapid" />
+                  </div>
+                  <div className="content_div">
+                    <Head>Rapid Turnaround Times</Head>
+                  </div>
                 </div>
-                <div className="content_div">
-                  <BlackHeading>Custom PHP Websites</BlackHeading>
-                  <Greydescription>
-                    We elaborate the area for our users to get more and more
-                    flexible website for the client and as well as your
-                    customers to get used to it.
-                  </Greydescription>
-                </div>
+
+                <Description>
+                  Our efficient processes and dedicated team ensure high-quality
+                  UI/UX designs delivered within deadlines, helping you launch
+                  your projects without delay.
+                </Description>
               </div>
 
               <div className="sub_slide_div">
-                <div className="img_div">
-                  <img src={webnew} alt="WordPress & Woo-Commerce" />
+                <div className="image_content">
+                  <div className="img_div">
+                    <img src={responsivenew} alt="responsive" />
+                  </div>
+                  <div className="content_div">
+                    <Head>Responsive and Adaptive Designs</Head>
+                  </div>
                 </div>
-                <div className="content_div">
-                  <BlackHeading>Custom Web Development</BlackHeading>
-                  <Greydescription>
-                    Giving you an extra edge from your rivals,we provide you
-                    layouts, fonts, and colors are developed to augment your
-                    online brand.
-                  </Greydescription>
-                </div>
+
+                <Description>
+                  We specialize in designing interfaces that offer seamless
+                  experiences across all devices and screen sizes, from desktops
+                  to smartphones and beyond.
+                </Description>
               </div>
 
               <div className="sub_slide_div">
-                <div className="img_div">
-                  <img src={angnew} alt="WordPress & Woo-Commerce" />
+                <div className="image_content">
+                  <div className="img_div">
+                    <img src={focusnew} alt="focus" />
+                  </div>
+                  <div className="content_div">
+                    <Head>Focus on Business Goals</Head>
+                  </div>
                 </div>
-                <div className="content_div">
-                  <BlackHeading>Angular</BlackHeading>
-                  <Greydescription>
-                    Belief of our clients is satisfied by the reputation, we
-                    prepare the structural frameworks with Angular JS for
-                    dynamic web applications
-                  </Greydescription>
-                </div>
+
+                <Description>
+                  Our designs align with your business objectives, creating
+                  visually appealing and functional interfaces that drive
+                  growth, conversion, and user satisfaction.
+                </Description>
               </div>
 
               <div className="sub_slide_div">
-                <div className="img_div">
-                  <img src={netnew} alt="WordPress & Woo-Commerce" />
+                <div className="image_content">
+                  <div className="img_div">
+                    <img src={supportnew} alt="support" />
+                  </div>
+                  <div className="content_div">
+                    <Head>Continuous Support and Maintenance</Head>
+                  </div>
                 </div>
-                <div className="content_div">
-                  <BlackHeading>ASP.NET Websites</BlackHeading>
-                  <Greydescription>
-                    Enabling computer code to be executed by an Internet server
-                    the ASP engine reads, executes file, and returns the result
-                    to the browser.
-                  </Greydescription>
-                </div>
+
+                <Description>
+                  Our commitment doesn’t end with project delivery. We offer
+                  ongoing support to ensure your designs remain optimized,
+                  relevant, and effective over time.
+                </Description>
               </div>
 
               <div className="sub_slide_div">
-                <div className="img_div">
-                  <img src={webbnew} alt="WordPress & Woo-Commerce" />
+                <div className="image_content">
+                  <div className="img_div">
+                    <img src={globalnew} alt="global" />
+                  </div>
+                  <div className="content_div">
+                    <Head>Global Industry Experience</Head>
+                  </div>
                 </div>
-                <div className="content_div">
-                  <BlackHeading>Static Website Development</BlackHeading>
-                  <Greydescription>
-                    Web pages are returned by the server with no change
-                    therefore, static Websites are fast; hence we work on the
-                    client satisfaction with effect.{" "}
-                  </Greydescription>
-                </div>
+
+                <Description>
+                  Our team brings diverse expertise from global projects,
+                  offering solutions tailored to various industries and markets,
+                  ensuring impactful and relevant designs.{" "}
+                </Description>
               </div>
 
               <div className="sub_slide_div">
-                <div className="img_div">
-                  <img src={dynanew} alt="WordPress & Woo-Commerce" />
+                <div className="image_content">
+                  <div className="img_div">
+                    <img src={communicationnew} alt="communication" />
+                  </div>
+                  <div className="content_div">
+                    <Head>Transparent Processes and Communication</Head>
+                  </div>
                 </div>
-                <div className="content_div">
-                  <BlackHeading>Dynamic Website Development</BlackHeading>
-                  <Greydescription>
-                    We can do alteration in Dynamic Websites, it is possible to
-                    do so on a common change once, and it will reflect in all
-                    the web pages.{" "}
-                  </Greydescription>
+
+                <Description>
+                  We prioritize clear communication and transparency, keeping
+                  you informed at every project stage, ensuring a collaborative
+                  and smooth workflow.{" "}
+                </Description>
+              </div>
+
+              <div className="sub_slide_div">
+                <div className="image_content">
+                  <div className="img_div">
+                    <img src={teamnew} alt="team" />
+                  </div>
+                  <div className="content_div">
+                    <Head>Scalable Team for Diverse Projects</Head>
+                  </div>
                 </div>
+
+                <Description>
+                  Whether your project requires a single designer or a dedicated
+                  team, we offer scalable resources to meet your needs and adapt
+                  to project scope seamlessly.{" "}
+                </Description>
               </div>
             </div>
           </div>
@@ -162,6 +203,7 @@ export const Section4 = () => {
 
 const Root = styled.section`
   padding: 30px 100px;
+
   .main_div {
     display: flex;
     gap: 20px;
@@ -182,21 +224,29 @@ const Root = styled.section`
           height: 590px;
           width: 100%;
           overflow: auto;
+
           .sub_slide_div {
             padding: 40px 30px;
             display: flex;
-            gap: 20px;
-
+            gap: 10px;
+            flex-direction: column;
             box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.3);
             border-radius: 20px;
-            .img_div {
-              width: 15%;
-            }
-            .content_div {
-              width: 85%;
+            .image_content {
               display: flex;
-              gap: 10px;
-              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+
+              .img_div {
+                width: 15%;
+              }
+
+              .content_div {
+                width: 85%;
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+              }
             }
           }
         }
@@ -219,12 +269,44 @@ const Root = styled.section`
   @media (max-width: 567px) {
     padding: 30px 20px;
 
-    .main_div .sub_cont_section {
+    .main_div{
+
+      span{
+        br{
+          display: none;
+        }
+      }
+    
+    .sub_cont_section {
       flex-direction: column;
       padding: 0;
-      .sub_div_two{
-        img{
-          height:auto
+
+      .sub_cont_one .slide_div {
+        height: 500px;
+        .sub_slide_div .image_content .img_div {
+          width: 35%;
+        }
+      }
+
+      .sub_div_two {
+        img {
+          height: auto;
+        }
+      }
+    }
+
+  }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+
+    .main_div .sub_cont_section {
+      padding: 0 20px;
+      .sub_cont_one .slide_div {
+        height: 490px;
+        .sub_slide_div .image_content .img_div {
+          width: 35%;
         }
       }
     }

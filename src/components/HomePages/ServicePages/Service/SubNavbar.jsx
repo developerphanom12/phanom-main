@@ -58,4 +58,28 @@ const Root = styled.section`
     background: rgba(255, 255, 255, 0.5); /* Adjust 0.3 for desired opacity */
     pointer-events: none; /* Ensures overlay does not interfere with interactions */
   }
+
+  @media (max-width: 567px) {
+
+    .main_div {
+      background:linear-gradient(40deg, #4c96e3, #ca1de5, #bc2be5);
+      padding: 8px 20px;
+      .icon {
+        display: none;
+      }
+    }
+
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+
+    .main_div {
+      background: linear-gradient(40deg, #4c96e3, #ca1de5, #bc2be5);
+      padding: 10px 30px;
+      .icon {
+        gap: 15px;
+      }
+    }
+    
+  }
 `;

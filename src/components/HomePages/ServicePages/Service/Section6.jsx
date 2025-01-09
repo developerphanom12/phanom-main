@@ -24,11 +24,12 @@ export const Section6 = () => {
         <div className="sub_div">
           <span>
             <Heading>Your</Heading>
-            <span></span>
+
             <GradientHeading> WIZARD OF BEHIND</GradientHeading>
             <br />
             <Heading>THE SENSES To Make Efforts</Heading>
             <br />
+
             <Heading>Presentable</Heading>
           </span>
 
@@ -208,5 +209,39 @@ const Root = styled.section`
         }
       }
     }
+  }
+
+  @media (max-width: 567px) {
+    padding: 10px 20px;
+    .main_div {
+      flex-direction: column;
+    
+      .sub_div {
+        gap: 25px;
+        text-align: center;      
+      }
+
+      .sub_div_two .slide_div .sub_slide_div {
+        padding:20px 10px;
+        margin-top: 20px;
+
+      .img_div {
+    width: 30%;
+}
+      }
+
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 10px 20px;
+    .main_div {
+      flex-direction: column;
+      .sub_div {
+        gap: 25px;
+        text-align: center;      
+      }
+    
+  }
   }
 `;

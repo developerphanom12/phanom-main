@@ -5,7 +5,6 @@ import {
   GradientHeading,
   Heading,
   Subblackdescription,
- 
 } from "../../../../Global/GlobalText";
 import { PurpleBackground } from "../../../../Global/GlobalButton";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -17,10 +16,10 @@ import seonew from "../../../../assets/Images/seonew.png";
 import seothree from "../../../../assets/Images/seothree.png";
 import seotwo from "../../../../assets/Images/seotwo.png";
 
-
 export const Section2 = () => {
   return (
     <Root>
+
       <div className="main_div">
         <div className="sub_main_div">
           <span>
@@ -50,7 +49,8 @@ export const Section2 = () => {
             <div className="icon_content">
               <img src={mobile} alt="Seamless and engaging designs" />
               <Blackdescription>
-              Seamless and engaging designs.              </Blackdescription>
+                Seamless and engaging designs.{" "}
+              </Blackdescription>
             </div>
 
             <div className="sub_icon_content">
@@ -66,11 +66,8 @@ export const Section2 = () => {
           <div className="main_icon_content">
             <div className="icon_content">
               <img src={iconpark} alt="Redefining web development" />
-              <Blackdescription>Scalable, modern solutions.
-
-              </Blackdescription>
+              <Blackdescription>Scalable, modern solutions.</Blackdescription>
             </div>
-
 
             <div className="sub_icon_content">
               <img src={seotwo} alt="seonew" />
@@ -97,6 +94,7 @@ export const Section2 = () => {
           />
         </div>
       </div>
+      
     </Root>
   );
 };
@@ -113,7 +111,6 @@ const Root = styled.section`
       gap: 30px;
       flex: 1;
 
-   
       .main_icon_content {
         display: flex;
         gap: 10px;
@@ -124,13 +121,10 @@ const Root = styled.section`
           cursor: pointer;
         }
 
-        .icon_content:hover + .sub_icon_content{
-
+        .icon_content:hover + .sub_icon_content {
           display: block;
-          display: flex
-;
-    flex-direction: column;
-
+          display: flex;
+          flex-direction: column;
         }
 
         .sub_icon_content {
@@ -140,11 +134,10 @@ const Root = styled.section`
           background-color: #fff;
           box-shadow: 2px 7px 15px 2px rgba(0, 0, 0, 0.13),
             2px 1px 4px 2px rgba(0, 0, 0, 0.11);
-            display: none;
-            position: absolute;
-          
-    left: 27%;
-            
+          display: none;
+          position: absolute;
+
+          left: 27%;
         }
       }
 

@@ -99,4 +99,41 @@ const Root = styled.section`
       }
     }
   }
+
+  @media (max-width: 567px) {
+    padding: 30px 20px;
+    .main_div {
+      br {
+        display: none;
+      }
+
+      .bg_img {
+        background-image: unset;
+          display: unset;
+        .sub_bg_img {
+          padding: 20px 20px 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+    .main_div {
+      .bg_img {
+        background-image: unset;
+        display: flex;
+        flex-direction: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+        .sub_bg_img {
+          padding: 20px 20px 0;
+          flex: unset;
+          width: 48%;
+        }
+      }
+    }
+  }
+
+  
 `;

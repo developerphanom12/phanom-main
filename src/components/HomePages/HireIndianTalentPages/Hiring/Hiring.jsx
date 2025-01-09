@@ -7,7 +7,7 @@ import { Section4 } from "./Section4";
 import { Section5 } from "./Section5";
 import { Section6 } from "./Section6";
 import { Section7 } from "./Section7";
-import { Testimonial } from "./Testimonial";
+import { Testimonial } from "../../ServicePages/Service/Testimonial";
 
 export const Hiring = () => {
   return (
@@ -16,14 +16,11 @@ export const Hiring = () => {
       <Section1/>
       <Section2/>
       <Section3/>
-
-
-
-       {/* <Section4 /> */}
-     <Section5 />
-      <Section6 />
-       <Testimonial />
-     <Section7 />
+      <Section4 /> 
+       <Section5 />
+       <Section6 />
+       <Testimonial/>
+       <Section7 />
     </div>
   );
 };

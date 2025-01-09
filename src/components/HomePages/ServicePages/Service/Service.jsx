@@ -19,8 +19,8 @@ export const Service = () => {
     <div>
         <SubNavbar/>
         <Section1/>
-        <Section2/>
-        <Section3/>
+        {/* <Section2/> */}
+        {/* <Section3/> */}
         <Section4/>
         <Section5/>
         <Section6/>
@@ -29,7 +29,7 @@ export const Service = () => {
         <Section9/>
         <Section10/>
         <Testimonial/>
-        <Section12/>
+        <Section12/> 
     </div>
 
   )

@@ -16,7 +16,7 @@ export const Section8 = () => {
         <div className="sub_main_div_one">
           <div className="text-with-border-shadow">
             Why
-            <br/>
+            <br />
             Choose
             <br />
             US?
@@ -116,5 +116,25 @@ const Root = styled.section`
       flex-direction: column;
       gap: 10px;
     }
+  }
+
+  @media (max-width: 567px) {
+    padding: 10px 20px;
+    .main_div {
+      flex-direction: column;
+      
+      .sub_main_div_one {
+        width: 100%;
+   
+       
+      }
+      .sub_main_div {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
   }
 `;

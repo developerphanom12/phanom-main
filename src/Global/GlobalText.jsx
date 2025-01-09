@@ -11,6 +11,13 @@ export const Heading = styled.span`
   line-height: 44px;
   color: #000000;
   font-weight: 600;
+  @media (max-width: 567px) {
+    font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+
+
+  }
 `;
 
 export const WhiteHeading = styled.span`
@@ -19,6 +26,13 @@ export const WhiteHeading = styled.span`
   line-height: 45px;
   color: #ffffff;
   font-weight: 700;
+  @media (max-width: 567px) {
+    font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+
+
+  }
 `;
 
 export const WhiteSubHeading = styled.span`
@@ -38,19 +52,33 @@ export const GradientHeading = styled.span`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 567px) {
+    font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+
+
+  }
 `;
 
 
 export const GradientSubHeading = styled.span`
-  font-size: 28px;
-  font-family: "Poppins", sans-serif;
-  line-height: 36px;
-  letter-spacing: 0.5%;
+  font-size:28px;
+  font-family:"Poppins", sans-serif;
+  line-height:36px;
+  letter-spacing:0.5%;
   font-weight: 500;
-  background: ${MainGradient};
+  background:${MainGradient};
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 567px) {
+    font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+
+
+  }
 `;
 
 export const GradientSecondHeading = styled.span`
@@ -113,6 +141,25 @@ export const Faqdescription = styled.p`
   font-weight: 400;
 `;
 
+
+export const Description = styled.p`
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  line-height: 21px;
+  color: #252525;
+  font-weight: 500;
+`;
+
+export const Head = styled.p`
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  line-height: 28px;
+  color: #252525;
+  font-weight: 500;
+`;
+
+
+
 export const Greydescription = styled.p`
   font-size: 18px;
   font-family: "Poppins", sans-serif;
@@ -128,6 +175,8 @@ export const Subdescription = styled.p`
   color: #787878;
   font-weight: 500;
 `;
+
+
 export const Subblackdescription = styled.p`
   font-size: 12px;
   font-family: "Poppins", sans-serif;

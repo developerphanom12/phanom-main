@@ -290,4 +290,59 @@ const Root = styled.section`
       }
     }
   }
+
+  @media (max-width: 567px) {
+    padding: 10px 20px;
+
+    .main_div {
+      flex-wrap: wrap;
+      gap:20px;
+      .sub_div_one {
+        text-align: center;
+        gap: 20px;align-items: center;
+        .purpl_cont{
+          color:#6C5FD4;
+          font-size:16px;
+        }
+        span{
+          font-size: 22px;
+          br{
+            display: none;
+          }
+        }
+      
+      }
+
+      .btn_div{
+        display: flex;
+        justify-content: center;
+      }
+
+
+      .sub_div_two{
+
+        span{
+          font-size: 18px;
+        }
+      
+      form .label_content .schedule_div {
+    width: 70%;
+    .time_date_btn{
+      gap:10px;
+    }
+}
+
+      }
+
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+    .main_div {
+      gap:0;
+    }
+  }
+
+  
 `;

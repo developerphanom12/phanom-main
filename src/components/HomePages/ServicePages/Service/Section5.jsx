@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  Greydescription,
-
-  WhiteContent,
-} from "../../../../Global/GlobalText";
+import { Greydescription, WhiteContent } from "../../../../Global/GlobalText";
 import process from "../../../../assets/Images/process.png";
 
 import vector from "../../../../assets/Images/vector.png";
@@ -42,7 +38,7 @@ export const Section5 = () => {
 
           <div className="tecnology_types">
             <div className="sub_technology_type">
-              <img src={vector}  alt="devops"/>
+              <img src={vector} alt="devops" />
               <WhiteContent>DevOps </WhiteContent>
             </div>
 
@@ -83,8 +79,7 @@ export const Section5 = () => {
           </div>
         </div>
         <div className="sub_div_two">
-          <img src={process} alt="process"/>
-          
+          <img src={process} alt="process" />
         </div>
       </div>
     </Root>
@@ -109,7 +104,7 @@ const Root = styled.section`
         color: white;
         line-height: 1.2;
 
-        -webkit-text-stroke: 1px #6C5FD4;
+        -webkit-text-stroke: 1px #6c5fd4;
         -webkit-text-fill-color: white;
 
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -138,6 +133,62 @@ const Root = styled.section`
         width: 100%;
         height: 100%;
       }
+    }
+  }
+
+  @media (max-width: 567px) {
+    padding: 10px 20px;
+    .main_div {
+      flex-direction: column;
+      text-align: center;
+
+      .sub_div_one {
+        width: 100%;
+        gap: 20px;
+
+        .tecnology_types {
+          display: none;
+        }
+      }
+
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 10px 20px;
+    .main_div {
+      flex-direction:column;
+      text-align: center;
+
+
+      .sub_div_one {
+        width: 100%;
+        gap: 20px;
+
+        .text-with-border-shadow {
+          br {
+            display: none;
+          }
+        }
+
+        .tecnology_types {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+
+      .sub_div_two
+      {
+        display: flex;
+        justify-content: center;
+       img {
+    width: 60%; 
+   
+}
+
+      }
+
     }
   }
 `;

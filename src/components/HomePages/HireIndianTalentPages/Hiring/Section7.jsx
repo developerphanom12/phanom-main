@@ -106,16 +106,20 @@ export const Section7 = () => {
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <BlackHeading>Do you have more<br/> questions?</BlackHeading>
-           
+            <BlackHeading>
+              Do you have more
+              <br /> questions?
+            </BlackHeading>
           </div>
 
           <div style={{ textAlign: "center" }}>
             <Blackdescription>
-              End-to-end payments and financial.<br/>               management in a single solution.{" "}
-              <br/> Meet the right platform to help<br/>realize <br/>
+              End-to-end payments and financial.
+              <br /> management in a single solution. <br /> Meet the right
+              platform to help
+              <br />
+              realize <br />
             </Blackdescription>
-        
           </div>
 
           <div className="submit_btn">
@@ -224,6 +228,14 @@ const Root = styled.section`
       flex-direction: column;
       .sub_div_one {
         width: 100%;
+        span {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .question-header {
+          margin-bottom: 10px;
+        }
       }
       .sub_div_two {
         width: 100%;
@@ -234,7 +246,7 @@ const Root = styled.section`
   @media (min-width: 567px) and (max-width: 1024px) {
     padding: 30px 20px;
 
- .main_div {
+    .main_div {
       gap: 20px;
       display: flex;
       flex-direction: column;
@@ -243,7 +255,7 @@ const Root = styled.section`
       }
       .sub_div_two {
         width: 100%;
-        br{
+        br {
           display: none;
         }
       }

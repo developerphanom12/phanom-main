@@ -35,9 +35,10 @@ export const Section3 = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          autoplay: false,
         },
       },
       {
@@ -45,6 +46,8 @@ export const Section3 = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          autoplay: false,
+          dots: true,
         },
       },
     ],
@@ -53,20 +56,20 @@ export const Section3 = () => {
     <Root>
       <div className="slider-container">
         <Slider {...settings}>
-          <div>
+          <div className="img_logo">
             <img src={log1} alt="Redefining web development" />
           </div>
-          <div>
+          <div className="img_logo">
             <img src={log2} alt="Redefining web development" />
           </div>
 
-          <div>
+          <div className="img_logo">
             <img src={log4} alt="Redefining web development" />
           </div>
-          <div>
+          <div className="img_logo">
             <img src={log5} alt="Redefining web development" />
           </div>
-          <div>
+          <div className="img_logo">
             <img src={log3} alt="Redefining web development" />
           </div>
         </Slider>
@@ -77,4 +80,19 @@ export const Section3 = () => {
 
 const Root = styled.section`
   padding: 30px 100px;
+
+  @media (max-width: 567px) {
+    padding: 30px 20px;  
+  }
+
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+
+
+
+
+  }
+
+
 `;

@@ -34,5 +34,19 @@ const Root = styled.section`
     }
   }
   
+
+  @media (max-width: 567px) {
+    padding:0;
+  .main_div{
+    display: none;
+  }
+}
+
+
+@media (min-width: 567px) and (max-width: 1024px) {
+
+  padding: 20px;
+
+}
   
 `;

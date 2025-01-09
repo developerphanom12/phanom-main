@@ -11,6 +11,7 @@ export const Section2 = () => {
   return (
     <Root>
       <div className="main_div">
+
         <span style={{ textAlign: "center" }}>
           <Heading>Our UI/UX Design </Heading>
           <br />
@@ -89,6 +90,7 @@ export const Section2 = () => {
             </Blackdescription>
           </div>
         </div>
+        
       </div>
     </Root>
   );
