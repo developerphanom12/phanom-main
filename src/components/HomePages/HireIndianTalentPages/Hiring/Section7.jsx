@@ -252,6 +252,10 @@ const Root = styled.section`
       flex-direction: column;
       .sub_div_one {
         width: 100%;
+        span {
+        text-align: center;
+        margin-bottom: 20px;
+    }
       }
       .sub_div_two {
         width: 100%;

@@ -104,15 +104,17 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
-    padding: 30px 20px;
+    padding: 10px 20px;
     .main_div {
       br {
         display: none;
       }
 
+    
+
       .bg_img {
         background-image: unset;
-          display: unset;
+        display: unset;
         .sub_bg_img {
           padding: 20px 20px 0;
         }

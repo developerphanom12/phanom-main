@@ -9,7 +9,6 @@ import {
 import { PurpleBackground } from "../../../../Global/GlobalButton";
 import wordnew from "../../../../assets/Images/wordnew.png";
 import shopnew from "../../../../assets/Images/shopnew.png";
-
 import phpnew from "../../../../assets/Images/phpnew.png";
 import webnew from "../../../../assets/Images/webnew.png";
 import angnew from "../../../../assets/Images/angnew.png";
@@ -215,21 +214,23 @@ const Root = styled.section`
     padding: 10px 20px;
     .main_div {
       flex-direction: column;
-    
+
       .sub_div {
         gap: 25px;
-        text-align: center;      
+        text-align: center;
+        br{
+          display: none;
+        }
       }
 
       .sub_div_two .slide_div .sub_slide_div {
-        padding:20px 10px;
+        padding: 20px 10px;
         margin-top: 20px;
 
-      .img_div {
-    width: 30%;
-}
+        .img_div {
+          width: 30%;
+        }
       }
-
     }
   }
 
@@ -239,9 +240,8 @@ const Root = styled.section`
       flex-direction: column;
       .sub_div {
         gap: 25px;
-        text-align: center;      
+        text-align: center;
       }
-    
-  }
+    }
   }
 `;

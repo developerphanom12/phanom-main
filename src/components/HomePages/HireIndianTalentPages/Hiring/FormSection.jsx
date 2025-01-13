@@ -134,7 +134,11 @@ export const FormSection = () => {
 
               <div className="form_row_col">
                 <InputLabel>Share Project Details(Optional)</InputLabel>
-                <InputTextarea rows="1" className="text_area"  placeholder="Write Project Details"/>
+                <InputTextarea
+                  rows="1"
+                  className="text_area"
+                  placeholder="Write Project Details"
+                />
               </div>
             </div>
             <div className=" form_btn">
@@ -162,7 +166,7 @@ const Root = styled.section`
         flex-direction: column;
         gap: 30px;
         padding: 50px 30px;
-        margin: 50px 100px;
+        margin: 40px 100px;
         border-radius: 10px;
       }
 
@@ -246,5 +250,34 @@ const Root = styled.section`
       background: rgba(255, 255, 255, 0.5); /* Adjust 0.3 for desired opacity */
       pointer-events: none; /* Ensures overlay does not interfere with interactions */
     }
+  }
+
+  @media (max-width: 567px) {
+    padding: 30px 20px;
+    .form_section{
+      gap:20px;
+      br{
+        display: none;
+      }
+    form .sub_form {
+      padding: 20px 20px;
+      margin: 0;
+    }
+  }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+    .form_section{
+      gap:20px;
+      br{
+        display: none;
+      }
+      form .sub_form {
+      padding: 20px 20px;
+      margin: 0;
+    }
+    }
+
   }
 `;

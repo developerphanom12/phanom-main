@@ -11,12 +11,12 @@ import log4 from "../../../../assets/Images/log4.png";
 
 import log5 from "../../../../assets/Images/log5.png";
 
-export const Section3 = () => {
+export const SliderPage = () => {
   let sliderRef = useRef(null);
   var settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     speed: 1500,
@@ -26,10 +26,11 @@ export const Section3 = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
+          autoplay: false,
         },
       },
       {
@@ -54,6 +55,7 @@ export const Section3 = () => {
   };
   return (
     <Root>
+      
       <div className="slider-container">
         <Slider {...settings}>
           <div className="img_logo">
@@ -74,6 +76,7 @@ export const Section3 = () => {
           </div>
         </Slider>
       </div>
+
     </Root>
   );
 };
@@ -82,15 +85,41 @@ const Root = styled.section`
   padding: 30px 100px;
 
   @media (max-width: 567px) {
-    padding: 30px 20px;  
+    padding:  0 20px 30px; 
+    
+    .img_logo {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    .slick-slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+}
+
+.slick-dots {
+    bottom: -40px;
+
+}
+
+
   }
 
 
   @media (min-width: 567px) and (max-width: 1024px) {
-    padding: 30px 20px;
+    padding:30px 20px;
 
+    .img_logo {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    }
 
-
+    .slick-track {
+    display: flex;
+    gap: 50px;
+}
 
   }
 

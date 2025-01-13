@@ -19,7 +19,6 @@ import seotwo from "../../../../assets/Images/seotwo.png";
 export const Section2 = () => {
   return (
     <Root>
-
       <div className="main_div">
         <div className="sub_main_div">
           <span>
@@ -94,7 +93,6 @@ export const Section2 = () => {
           />
         </div>
       </div>
-      
     </Root>
   );
 };
@@ -156,6 +154,52 @@ const Root = styled.section`
       display: flex;
 
       img {
+      }
+    }
+  }
+
+  @media (max-width: 567px) {
+    padding: 30px 20px;
+
+    .main_div {
+      flex-direction: column;
+      .sub_main_div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex: 1;
+        br {
+          display: none;
+        }
+
+        .main_icon_content .sub_icon_content {
+          width: 60%;
+        }
+
+        .connect_btn {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .main_div .sub_main_div_two {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+    .main_div {
+      .sub_main_div .main_icon_content .sub_icon_content {
+        width: 30%;
+      }
+
+      .sub_main_div_two {
+        img {
+          width: 100%;
+        }
       }
     }
   }

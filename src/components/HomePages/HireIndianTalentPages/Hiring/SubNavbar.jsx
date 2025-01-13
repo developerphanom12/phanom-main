@@ -106,4 +106,46 @@ const Root = styled.section`
       text-decoration: none;
     }
   }
+
+  @media (max-width: 567px) {
+
+    .main_div {
+      background: linear-gradient(40deg, #4c96e3, #ca1de5, #bc2be5);
+      padding:8px 20px;
+  
+      .icon {
+        display: none;
+      }
+
+   
+    }
+
+    .union_img {
+        height: 260px;
+      }
+
+    .breadcrumb_main_div {
+        padding: 0;
+        display: none;
+      }
+
+
+  }
+
+  @media (min-width: 567px) and (max-width: 1024px) {
+
+    .main_div {
+    background: linear-gradient(40deg, #4c96e3, #ca1de5, #bc2be5);
+    padding: 10px 30px;
+
+    .icon {
+        gap: 15px;
+      }
+}
+
+ .breadcrumb_main_div {
+ 
+    padding: 20px;
+}
+  }
 `;

@@ -21,9 +21,9 @@ export const InputType = styled.input`
   }`;
 
 export const InputTextarea = styled.textarea`
-  border-radius: 12px;
-  border: 1px solid #CACACA;
-  padding: 15px;
+  border-radius:12px;
+  border:1px solid #CACACA;
+  padding:15px;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   color:#353535;
@@ -33,11 +33,14 @@ export const InputTextarea = styled.textarea`
     color:black;
   }`;
 
+
+
+
 export const SelectBorder = styled.select`
-  border: 1px solid #66666659;
-  border-radius: 12px;
-  padding: 15px;
-  font-family: "Poppins", sans-serif;
+  border:1px solid #66666659;
+  border-radius:12px;
+  padding:15px;
+  font-family:"Poppins", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;

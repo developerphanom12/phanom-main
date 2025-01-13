@@ -11,10 +11,12 @@ export const Heading = styled.span`
   line-height: 44px;
   color: #000000;
   font-weight: 600;
+  margin: 0 5px;
   @media (max-width: 567px) {
     font-size: 28px;
   line-height: 36px;
   font-weight: 600;
+  margin: 0 3px;
 
 
   }
@@ -56,6 +58,7 @@ export const GradientHeading = styled.span`
     font-size: 28px;
   line-height: 36px;
   font-weight: 600;
+  margin: 0 5px;
 
 
   }
@@ -90,6 +93,14 @@ export const GradientSecondHeading = styled.span`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 567px) {
+    font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+
+
+  }
 `;
 
 
@@ -99,6 +110,11 @@ export const SubNavbarLinks = styled.h5`
   line-height: 28px;
   color: #ffffff;
   font-weight: 500;
+  
+  @media (max-width: 567px) {
+    font-size: 10px;
+    line-height: 13px;
+  }
 `;
 
 export const FaqHeading = styled.h5`
@@ -114,12 +130,30 @@ export const FaqHeading = styled.h5`
   }
 `;
 
+export const WhiteMainHeading = styled.h5`
+ font-size: 45px;
+  font-family: "IBM Plex Sans";
+  color: #FFFFFF;
+  font-weight: 700;
+  @media (max-width: 567px) {
+    font-size: 28px;
+  }
+`;
+
 export const TestHeading = styled.h5`
  font-size: 23px;
   font-family: "inter";
   line-height: 30px;
   color: #000000;
   font-weight: 800;
+`;
+
+export const BlackMainDescription = styled.p`
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 500;
 `;
 
 export const Blackdescription = styled.p`
@@ -220,7 +254,25 @@ export const WhiteContent = styled.h4`
   line-height: 36px;
   color: #ffffff;
   font-weight: 400;
+  @media (max-width: 567px) {
+    font-size: 16px;
+  line-height: 24px;
+  }
 `;
+
+
+export const MainWhiteContent = styled.h4`
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  line-height: 31px;
+  color: #ffffff;
+  font-weight: 500;
+  @media (max-width: 567px) {
+  
+  }
+`;
+
+
 
 export const BlackHeading = styled.h4`
   font-size: 28px;

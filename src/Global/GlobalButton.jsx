@@ -9,6 +9,22 @@ export const PurpleBackground = styled.button`
   font-size:18px;
   font-weight:400;
   cursor:pointer;
+  line-height: 28px;
+  &:hover{
+    background-color:#6C5FD4;
+  }
+`;
+
+export const PurpleSecondBackground = styled.button`
+  padding:8px 30px;
+  border-radius:30px;
+  color:#ffffff;
+  background-color:#6C5FD4;
+  border:1px solid transparent;
+  font-size:18px;
+  font-weight:500;
+  cursor:pointer;
+  line-height:28px;
   &:hover{
     background-color:#6C5FD4;
   }

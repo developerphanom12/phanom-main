@@ -84,6 +84,11 @@ const Root = styled.section`
     .main_div 
     {
       text-align: center;
+      .heading{
+        br{
+          display: none;
+        }
+      }
     .tech {
       gap: 7px;
       justify-content: space-between;
