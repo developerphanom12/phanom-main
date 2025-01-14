@@ -16,6 +16,7 @@ import { Section12 } from './Section12';
 
 export const Service = () => {
   return (
+    
     <div>
         <SubNavbar/>
         <Section1/>

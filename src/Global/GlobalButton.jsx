@@ -31,6 +31,37 @@ export const PurpleSecondBackground = styled.button`
 `;
 
 
+export const PurpleThirdBackground = styled.button`
+    padding: 12px 40px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #6C5FD4;
+    border: 1px solid transparent;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 26px;
+  &:hover{
+    background-color:#6C5FD4;
+  }
+`;
+
+export const PurpleConfigurebtn = styled.button`
+    padding: 7px 12px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #6C5FD4;
+    border: 1px solid transparent;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 28px;
+  &:hover{
+    background-color:#6C5FD4;
+  }
+`;
+
+
 export const GreyBorderButton = styled.button`
   padding:12px 30px;
   border-radius:30px;

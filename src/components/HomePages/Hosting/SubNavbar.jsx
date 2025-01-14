@@ -1,30 +1,31 @@
 import React from "react";
 import styled from "styled-components";
-import { SubNavbarLinks, WhiteHeading } from "../../../../Global/GlobalText";
+import { SubNavbarLinks, WhiteHeading } from "../../../Global/GlobalText";
+
 
 export const SubNavbar = () => {
   return (
     <Root>
       <div className="main_div">
-        <WhiteHeading>Development</WhiteHeading>
+        <WhiteHeading>Hosting</WhiteHeading>
 
         <div className="icon">
 
-          
+
           <a href="#form">
-            <SubNavbarLinks>Service</SubNavbarLinks>
+            <SubNavbarLinks>All Hosting Options</SubNavbarLinks>
           </a>
 
           <a href="#form">
-            <SubNavbarLinks>Key Feature</SubNavbarLinks>
+            <SubNavbarLinks>Web Hosting</SubNavbarLinks>
           </a>
 
           <a href="#form">
-            <SubNavbarLinks>Related Service</SubNavbarLinks>
+            <SubNavbarLinks>WordPress Hosting</SubNavbarLinks>
           </a>
 
           <a href="#form">
-            <SubNavbarLinks>Contact us</SubNavbarLinks>
+            <SubNavbarLinks>Virtual Private Server</SubNavbarLinks>
           </a>
 
 

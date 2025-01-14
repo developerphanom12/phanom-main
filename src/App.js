@@ -8,6 +8,7 @@ import Layout from "./components/Pages/Layout";
 import { Hiring } from "./components/HomePages/HireIndianTalentPages/Hiring/Hiring";
 import { Service } from "./components/HomePages/ServicePages/Service/Service";
 import { Home } from "./components/HomePages/Home/Home";
+import { Hosting } from "./components/HomePages/Hosting/Hosting";
 
 function App() {
   const userDetails = useSelector((state) => state.userDetails);
@@ -21,6 +22,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/service" element={<Service />} />
           <Route path="/hiring" element={<Hiring />} />
+          <Route path="/hosting" element={<Hosting/>} />
         </Routes>
       </Layout>
     </Root>

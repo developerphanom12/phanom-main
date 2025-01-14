@@ -102,10 +102,10 @@ export const Section2 = () => {
             
             <div className="tools_div">
               <Greydescription>Tools:</Greydescription>
-              <img src={reactjss} alt="React-Js" />
-              <img src={greenserver} alt="DataBase" />
-              <img src={blueserver} alt="DataBase" />
-              <img src={java} alt="Javascript" />
+              <img src={reactjss} alt="React-Js"/>
+              <img src={greenserver} alt="DataBase"/>
+              <img src={blueserver} alt="DataBase"/>
+              <img src={java} alt="Javascript"/>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ export const Section2 = () => {
 };
 
 const Root = styled.section`
-  padding: 70px 100px;
+  padding:70px 100px;
   .main_div {
     display: flex;
     gap: 20px;
