@@ -17,7 +17,7 @@ const Layout = ({children}) => {
       {/* {isLandingPage &&(
          <div className="top_bar">
           {token ?
-            (
+            ( 
              userDetails.role === "buyer" ? 
             (
               <NavBuyer/>
