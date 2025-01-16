@@ -104,11 +104,60 @@ margin:30px 0;
 
 
 @media (max-width: 567px) {
+
+.main_div {
+  padding:0;
+  flex-direction: column;
+  background: unset;
+.sub_main_div_one {
+  padding:20px 20px 0;
+  background: linear-gradient(45deg, #e9b2f6, #d8c4f6, #c5d5f5);
+.image_div {
+  img{
+    width: 100%;
+  }
+}
+
+}
+
+.sub_main_div_two{
+  padding:0px 20px 0;
+  gap: 20px;
+  .logo_content{
+    margin-bottom: 0;
+  }
+
+}
+
+}
+
 }
 
 
 @media (min-width: 567px) and (max-width: 1024px) {
 
+
+ .main_div {
+ 
+    padding: 40px 30px;
+
+    .sub_main_div_one {
+ 
+.image_div {
+  margin:0;
+  img{
+    width: 100%;
+  }
+}
+
+    }
+
+    .sub_main_div_two{
+      h1{
+        line-height: 50px;
+      }
+    }
+}
 
 
 }

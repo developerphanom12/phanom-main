@@ -223,7 +223,7 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
-    padding: 30px 20px;
+    padding:  0 20px 30px;
     .main_div {
       flex-direction: column;
       .sub_div_one {

@@ -18,8 +18,8 @@ export const GradientBgHeading = styled.span`
   border-radius: 6px;
 
   @media (max-width: 567px) {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 600;
     margin: 0 3px;
   }
@@ -48,10 +48,18 @@ export const SubTagHeading = styled.span`
   font-weight: 400;
   @media (max-width: 567px) {
   }
-
-
 `;
 
+
+export const SubTagWhiteHeading = styled.span`
+font-size:18px;
+font-family:"Poppins", sans-serif;
+line-height:28px;
+color: #D9D5FA;
+font-weight: 400;
+@media (max-width: 567px) {
+}
+`;
 
 export const SaveHeading = styled.span`
   font-size:10px;
@@ -66,7 +74,26 @@ export const SaveHeading = styled.span`
   }
 
 
+
 `;
+
+export const PlanHeading = styled.span`
+font-size:9px;
+font-family:"Poppins", sans-serif;
+line-height:11px;
+color: #000000;
+font-weight: 600;
+`;
+
+
+export const MenuHeading = styled.span`
+font-family:"Poppins", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+color: #000000;
+`;
+
 export const BigHeading = styled.h1`
   font-size: 48px;
   font-family: "Poppins", sans-serif;
@@ -93,6 +120,20 @@ export const MainHeading = styled.span`
     font-weight: 600;
   }
 `;
+
+export const MainWhiteHeading = styled.span`
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  line-height: 44px;
+  color: #ffffff;
+  font-weight: 600;
+  @media (max-width: 567px) {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+`;
+
 
 export const GreyMainHeading = styled.span`
   font-size: 36px;
@@ -231,7 +272,27 @@ export const BlackMainDescription = styled.p`
   line-height: 36px;
   color: #000000;
   font-weight: 500;
+  @media (max-width: 567px) {
+    font-size: 24px;
+  line-height: 20px;
+  font-weight: 500;
+  }
 `;
+
+
+export const WhiteMainDescription = styled.p`
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 500;
+  @media (max-width: 567px) {
+    font-size: 24px;
+  line-height: 20px;
+  font-weight: 500;
+  }
+`;
+
 
 export const PointerHeading = styled.p`
   font-family: "Poppins", sans-serif;
@@ -239,6 +300,15 @@ export const PointerHeading = styled.p`
 font-weight: 500;
 line-height: 39.32px;
 color: #000000;
+
+@media (max-width: 567px) {
+  font-size: 22px;
+font-weight: 500;
+line-height: 23px;
+
+}
+
+
 `;
 
 export const Blackdescription = styled.p`
@@ -257,6 +327,15 @@ export const Faqdescription = styled.p`
   font-family: "Poppins", sans-serif;
   line-height: 23px;
   color: #000000;
+  font-weight: 400;
+`;
+
+
+export const FaqWhitedescription = styled.p`
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  line-height: 23px;
+  color: #ffffff;
   font-weight: 400;
 `;
 
@@ -298,6 +377,35 @@ export const Subblackdescription = styled.p`
   line-height: 17px;
   color: #000000;
   font-weight: 500;
+  @media (max-width: 567px) {
+    font-size: 14px;
+    line-height: 21px;
+  font-weight: 400;
+
+
+
+    
+  }
+`;
+
+
+
+export const Subwhitedescription = styled.p`
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  line-height: 17px;
+  color: #ffffff;
+  font-weight: 500;
+
+  @media (max-width: 567px) {
+    font-size: 14px;
+    line-height: 21px;
+  font-weight: 400;
+
+
+
+    
+  }
 `;
 
 export const Subpurpledescription = styled.p`

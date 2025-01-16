@@ -17,13 +17,16 @@ function App() {
     <Root className="App">
       <Toaster position="top-center" />
       <Layout>
+      
         <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Hosting/>} />
+        <Route path="/home" element={<Home/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/service" element={<Service />} />
           <Route path="/hiring" element={<Hiring />} />
           <Route path="/hosting" element={<Hosting/>} />
         </Routes>
+
       </Layout>
     </Root>
   );

@@ -1,23 +1,20 @@
 import React from "react"
 import styled from "styled-components"
-import CommonNavbar from "../Layout/CommonNavbar"
-import { useSelector } from "react-redux"
-import NavBuyer from '../Buyer/NavBuyer'
-import NavSeller from '../Seller/NavSeller'
+
 import Footer from '../Layout/Footer'
-import { useLocation } from "react-router-dom"
+import { TopNavbar } from "../Layout/TopNavbar"
 
 const Layout = ({children}) => {
-  const location = useLocation();
-  const token = localStorage.getItem("token");
-  const userDetails = useSelector((state) => state?.user);
+  // const location = useLocation();
+  // const token = localStorage.getItem("token");
+  // const userDetails = useSelector((state) => state?.user);
 
 
-  const isLandingPage = location.pathname === "/hire-indian-talent";
+  // const isLandingPage = location.pathname === "/hire-indian-talent";
 
   return (
     <Root>
-      {isLandingPage &&(
+      {/* {isLandingPage &&(
          <div className="top_bar">
           {token ?
             (
@@ -36,9 +33,11 @@ const Layout = ({children}) => {
           )
           }
          </div>
-      )}
+      )} */}
+      <TopNavbar/>
        <div className="main_body">{children}</div>
-       {!isLandingPage && <Footer/>}
+       {/* {!isLandingPage && <Footer/>} */}
+       <Footer/>
     </Root>
   )
 }

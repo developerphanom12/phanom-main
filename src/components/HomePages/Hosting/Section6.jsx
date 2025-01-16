@@ -15,7 +15,7 @@ export const Section6 = () => {
           </MainHeading>
         </div>
 
-        <div>
+        <div className="btn"> 
           <PurpleThirdBackground>Learn More</PurpleThirdBackground>
         </div>
       </div>
@@ -38,8 +38,49 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
+    padding:20px;
+    .main_div{
+      flex-direction: column;
+      gap:20px;
+      .sub_main_div{
+        flex-direction: column;
+        gap:20px;
+        align-items: flex-start;
+        br{
+          display: none;
+        }
+      }
+
+      .btn{
+        width: 100%;
+        button{
+          width: 100%;
+        }
+      }
+    }
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
+    padding:20px;
+    .main_div{
+      flex-direction: column;
+      gap:20px;
+      .sub_main_div{
+        flex-direction: column;
+        gap:20px;
+        align-items: flex-start;
+        br{
+          display: none;
+        }
+      }
+
+      .btn{
+        width: 100%;
+      
+      }
+
+
+    }
   }
 `;
+

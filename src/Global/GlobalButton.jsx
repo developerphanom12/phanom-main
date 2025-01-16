@@ -44,6 +44,11 @@ export const PurpleThirdBackground = styled.button`
   &:hover{
     background-color:#6C5FD4;
   }
+  @media (max-width: 567px) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 `;
 
 export const PurpleConfigurebtn = styled.button`
@@ -51,6 +56,21 @@ export const PurpleConfigurebtn = styled.button`
     border-radius: 8px;
     color: #ffffff;
     background-color: #6C5FD4;
+    border: 1px solid transparent;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 28px;
+  &:hover{
+    background-color:#6C5FD4;
+  }
+`;
+
+export const WhiteConfigurebtn = styled.button`
+    padding: 7px 12px;
+    border-radius: 8px;
+    color: #000000;
+    background-color: #ffffff;
     border: 1px solid transparent;
     font-size: 18px;
     font-weight: 400;

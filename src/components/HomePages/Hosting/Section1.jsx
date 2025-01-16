@@ -20,10 +20,11 @@ export const Section1 = () => {
   return (
 
     <Root>
-            <div className='main_div'>
+
+          <div className='main_div'>
 
                 <div className='sub_main_div'>
-                  <img src={blankhorizontal} alt="logo"/>
+                  <img src={blankhorizontal} alt="logo" className='main_img'/>
                 </div>
 
                 <div className='sub_main_div'>
@@ -54,7 +55,7 @@ export const Section1 = () => {
 
                   <div className='plan_btn'>
 
-                    <PurpleThirdBackground className='icon_content'>See Plans and Pricing <FaArrowRightLong/> </PurpleThirdBackground>
+                    <PurpleThirdBackground className='icon_content'> See Plans and Pricing <FaArrowRightLong/> </PurpleThirdBackground>
 
                     <Blackdescription>See Fully Managed VPS</Blackdescription>
 
@@ -72,7 +73,7 @@ export const Section1 = () => {
 
 
                 </div>
-            </div>
+          </div>
 
     </Root>
 
@@ -106,6 +107,9 @@ const Root = styled.section`
         display:flex;
         gap:10px;
         align-items:center;
+        img{
+          width:35px;
+        }
         }
 
     }
@@ -137,10 +141,66 @@ const Root = styled.section`
 
 
 @media (max-width: 567px) {
+  padding:20px;
+
+.main_div {
+  flex-direction:column;
+  .sub_main_div {
+    .main_img{
+      width: 100%;
+    }
+      .plan_btn{
+        flex-direction:column;
+        align-items: flex-start;
+        button{
+
+        }
+      }
+
+      .cont_icon {
+  
+    margin: 10px 0;
+    gap:20px;
+
+    .sub_cont_icon{
+      img{
+        width:35px;
+      }
+    }
+}
+
+      .star_div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img{
+      width:50;
+
+    }
+    p{
+      width: 50%;
+    }
+}
+   
+
+
+}
+}
+
+
 }
 
 
 @media (min-width: 567px) and (max-width: 1024px) {
+  padding:20px;
+
+
+   .main_div {
+    flex-wrap: unset;
+    flex-direction: column;
+}
 
 
 

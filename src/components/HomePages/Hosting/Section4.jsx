@@ -140,8 +140,39 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
+    padding: 10px 20px 20px;
+
+    .main_div{
+    text-align: center;
+    gap:10px;
+
+     .sub_main_div{
+      .main_content {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    margin-bottom:30px;
+}
+
+.ist_image {
+    margin-top: 0px;
+}
+
+.vertical_heading{
+  margin:20px 0;
+}
+     
+
+}
+}
+
+
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 40px 30px 0;
+   .main_div .sub_main_div {
+    gap: 20px;
+}
   }
 `;

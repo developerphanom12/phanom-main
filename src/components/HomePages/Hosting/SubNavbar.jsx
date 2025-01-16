@@ -82,7 +82,7 @@ const Root = styled.section`
       background: linear-gradient(40deg, #4c96e3, #ca1de5, #bc2be5);
       padding: 10px 30px;
       .icon {
-        gap: 15px;
+        display: none;
       }
     }
     

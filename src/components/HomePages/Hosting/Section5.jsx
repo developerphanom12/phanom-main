@@ -95,8 +95,22 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
+    padding:   0 20px 20px ;
+    .main_div{
+      span{
+        text-align: center;
+      }
+
+   .sub_main_div {
+   flex-direction: column;
+   gap:20px;
+}
+    }
+    
+
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
+    padding:   0 20px 20px ;
   }
 `;

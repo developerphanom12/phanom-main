@@ -115,8 +115,51 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
+    padding: 20px;
+
+   .main_div {
+    flex-direction:column;
+    gap:10px;
+    .sub_main_div_one{
+      width: 100%;
+      padding-top: 20px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .sub_main_div_two{
+      width: 100%;
+      .sub_tech_div{
+        width: 100%;
+        padding: 10px;
+      }
+    }
+}
+
+
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 50px 20px 20px;
+
+    .main_div {
+    flex-direction:column;
+    gap:10px;
+    .sub_main_div_one{
+      width: 100%;
+      padding-top: 0%;
+      align-items: center;
+      text-align: center;
+    }
+
+    .sub_main_div_two{
+      width: 100%;
+      .sub_tech_div{
+        width: 50%;
+        padding: 10px;
+      }
+    }
+}
+
   }
 `;

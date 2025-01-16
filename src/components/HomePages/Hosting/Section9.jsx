@@ -60,8 +60,18 @@ const Root = styled.section`
 
 
   @media (max-width: 567px) {
+    padding:20px 20px;
+      .disclainmer_header {
+        text-align: center;
+
+    }
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
+    padding:30px 20px;
+      .disclainmer_header {
+        text-align: center;
+
+    }
   }
 `;
