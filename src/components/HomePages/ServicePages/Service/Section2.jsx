@@ -134,7 +134,6 @@ const Root = styled.section`
             2px 1px 4px 2px rgba(0, 0, 0, 0.11);
           display: none;
           position: absolute;
-
           left: 27%;
         }
       }

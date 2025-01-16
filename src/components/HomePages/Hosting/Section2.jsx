@@ -1,39 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import cpu from "../../../assets/Images/cpu.png";
-import {
-  BlackMainDescription,
-  Faqdescription,
-  FaqWhitedescription,
-  MainHeading,
-  MainWhiteHeading,
-  PlanHeading,
-  SaveHeading,
-  Subblackdescription,
-  SubTagHeading,
-  SubTagWhiteHeading,
-  Subwhitedescription,
-  WhiteMainDescription,
-} from "../../../Global/GlobalText";
-import fluentram from "../../../assets/Images/fluentram.png";
-
-import storag from "../../../assets/Images/storag.png";
-
-import backupp from "../../../assets/Images/backupp.png";
-
-import linux from "../../../assets/Images/linux.png";
-
-import cpanel from "../../../assets/Images/cpanel.png";
-
-import ipp from "../../../assets/Images/ipp.png";
-
-import basicnew from "../../../assets/Images/basicnew.png";
-import advancenew from "../../../assets/Images/advancenew.png";
-
-
-import globaldata from "../../../assets/Images/globaldata.png";
-
-import { PurpleConfigurebtn, WhiteConfigurebtn } from "../../../Global/GlobalButton";
+import { MonthlyPlan } from "./HostingPlan/MonthlyPlan";
+import { YearlyPlan } from "./HostingPlan/YearlyPlan";
 
 export const Section2 = () => {
   const [activeButton, setActiveButton] = useState(0);
@@ -50,24 +18,25 @@ export const Section2 = () => {
             className={activeButton === 0 ? "active" : ""}
             onClick={() => handleButtonClick(0)}
           >
-            <h4> Standard Performance </h4>
+            <h4>Pay monthly</h4>
 
-            <p> Easy on your budget. </p>
+            {/* <p> Easy on your budget. </p> */}
+
           </div>
 
           <div
             className={activeButton === 1 ? "active" : ""}
             onClick={() => handleButtonClick(1)}
           >
-            <h4>High Performance</h4>
-            <p>More memory CPU & storage</p>
+            <h4>Pay yearly</h4>
+          
           </div>
         </div>
 
         <div className="content_div">
           {activeButton === 0 && (
             <>
-              <div class="main_plan_div">
+              {/* <div class="main_plan_div">
                 <div class="basic_plan">
                   <div className="statsu_div">
                     <div className="statsu_sub_div">
@@ -197,37 +166,37 @@ export const Section2 = () => {
 
                   <div className="main_icon_cont">
                     <div className="icon_content">
-                      <img src={cpu} alt="logo" />
+                      <img src={cpuwhite} alt="logo" />
                       <FaqWhitedescription> 1 vCPU core</FaqWhitedescription>
                     </div>
 
                     <div className="icon_content">
-                      <img src={fluentram} alt="logo" />
+                      <img src={ramwhite} alt="logo"/>
                       <FaqWhitedescription> 2 GB RAM</FaqWhitedescription>
                     </div>
 
                     <div className="icon_content">
-                      <img src={storag} alt="logo" />
+                      <img src={ssdwhite} alt="logo"/>
                       <FaqWhitedescription> 40 GB NVMe SSD Storage</FaqWhitedescription>
                     </div>
 
                     <div className="icon_content">
-                      <img src={backupp} alt="logo" />
+                      <img src={backupwhite} alt="logo" />
                       <FaqWhitedescription> Snapshot backups</FaqWhitedescription>
                     </div>
 
                     <div className="icon_content">
-                      <img src={linux} alt="logo" />
+                      <img src={linuxwhite} alt="logo" />
                       <FaqWhitedescription> Linux only</FaqWhitedescription>
                     </div>
 
                     <div className="icon_content">
-                      <img src={cpanel} alt="logo" />
+                      <img src={cpanelwhite} alt="logo" />
                       <FaqWhitedescription>cPanel or Plesk available</FaqWhitedescription>
                     </div>
 
                     <div className="icon_content">
-                      <img src={ipp} alt="logo" />
+                      <img src={ipwhite} alt="logo" />
                       <FaqWhitedescription>
                         {" "}
                         1 additional IP available upon request
@@ -235,7 +204,7 @@ export const Section2 = () => {
                     </div>
 
                     <div className="icon_content">
-                      <img src={globaldata} alt="logo" />
+                      <img src={globalwhite} alt="logo" />
                       <FaqWhitedescription> Global data centers</FaqWhitedescription>
                     </div>
                   </div>
@@ -327,14 +296,16 @@ export const Section2 = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+
+              <MonthlyPlan/>
+
             </>
           )}
 
           {activeButton === 1 && (
             <>
-              <h1>dfdf</h1>
-              <h1>dfdf</h1>
+            <YearlyPlan/>
             </>
           )}
         </div>
@@ -380,115 +351,7 @@ const Root = styled.section`
 
     .content_div {
       width: 100%;
-      .main_plan_div {
-        display: flex;
-        gap: 30px;
-
-
-        .basic_plan {
-          flex: 1;
-          border-radius: 8px;
-          background-color: #6e76e333;
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-          .statsu_div {
-            display: flex;
-            justify-content: flex-end;
-            .statsu_sub_div {
-              display: flex;
-              align-items: center;
-              gap: 5px;
-              box-shadow: 0px 0px 6px 1px #00000040;
-              padding: 6px 15px;
-              border-radius: 8px;
-            }
-          }
-          .price_main_div {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            .price_main_sub_one {
-              display: flex;
-              align-items: center;
-              gap: 5px;
-              .sub_head {
-                margin-top: 10px;
-              }
-            }
-          }
-          .head_cont {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-          }
-
-          .main_icon_cont {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            .icon_content {
-              display: flex;
-              gap: 10px;
-              align-items: center;
-            }
-          }
-        }
-
-        .basic_plan_two {
-          flex: 1;
-          border-radius: 8px;
-          background-color: #6E76E3;
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-          .statsu_div {
-            display: flex;
-            justify-content: flex-end;
-            .statsu_sub_div {
-              display: flex;
-              align-items: center;
-              gap: 5px;
-              box-shadow: 0px 0px 6px 1px #00000040;
-              padding: 6px 15px;
-              border-radius: 8px;
-              background-color: #ffffff;
-            }
-          }
-          .price_main_div {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            .price_main_sub_one {
-              display: flex;
-              align-items: center;
-              gap: 5px;
-              .sub_head {
-                margin-top: 10px;
-              }
-            }
-          }
-          .head_cont {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-          }
-
-          .main_icon_cont {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            .icon_content {
-              display: flex;
-              gap: 10px;
-              align-items: center;
-            
-            }
-          }
-        }
-      }
+  
     }
   }
 
@@ -511,30 +374,7 @@ div p{
 }
 }
 
-.content_div{
-  .main_plan_div{
-    flex-direction: column;
-    gap:15px;
-    .basic_plan{
-        gap:15px;
 
-        .price_main_div .price_main_sub_one .sub_head {
-    margin-top: 0px;
-}
-
-
-    }
-
-    .basic_plan_two{
-      gap:15px;
-      .price_main_div .price_main_sub_one .sub_head {
-    margin-top: 0px;
-}
-
-    }
-
-  }
-}
 
 
      }
@@ -546,22 +386,9 @@ div p{
     padding:20px;
    .main_div {
     gap: 30px;
-
-    .content_div .main_plan_div {
-      flex-wrap: wrap;
-  .basic_plan {
-flex:unset;
-width:47%;
 }
 
-.basic_plan_two{
-  flex:unset;
-  width:47%;
-}
-
-    }
 
 
-}
   }
 `;

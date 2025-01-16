@@ -9,6 +9,8 @@ import { Hiring } from "./components/HomePages/HireIndianTalentPages/Hiring/Hiri
 import { Service } from "./components/HomePages/ServicePages/Service/Service";
 import { Home } from "./components/HomePages/Home/Home";
 import { Hosting } from "./components/HomePages/Hosting/Hosting";
+import { Seo } from "./components/HomePages/ServicePages/Seo/Seo";
+// import { Seo } from "./components/HomePages/ServicePages/Seo/Seo";
 
 function App() {
   const userDetails = useSelector((state) => state.userDetails);
@@ -21,10 +23,14 @@ function App() {
         <Routes>
         <Route path="/" element={<Hosting/>} />
         <Route path="/home" element={<Home/>} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/hiring" element={<Hiring />} />
-          <Route path="/hosting" element={<Hosting/>} />
+        <Route path="/hosting" element={<Hosting />}/>
+        <Route path="/login" element={<Login />}/>
+        <Route path="/service" element={<Service />}/>
+        <Route path="/seo" element={<Seo/>}/>
+        <Route path="/hiring" element={<Hiring />} />
+          
+
+
         </Routes>
 
       </Layout>

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Blackdescription, BlackHeading, BlackMainDescription, GradientHeading, Heading } from '../../../Global/GlobalText';
+import { Blackdescription, BlackHeading, GradientHeading, Heading } from '../../../Global/GlobalText';
 import horizontalframe from "../../../assets/Images/horizontalframe.png";
 
 

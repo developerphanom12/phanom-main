@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import phanomsLogo from "../../assets/Images/phanomsLogo.png";
-import { PurpleSecondBackground } from "../../Global/GlobalButton";
-import { MenuHeading } from "../../Global/GlobalText";
+import {
+  MenuHeading,
+  MenuMainHeading,
+  MenuSubHeading,
+} from "../../Global/GlobalText";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import headerbg from "../../assets/Images/headerbg.png";
+import { PurpleSecondBackground } from "../../Global/GlobalButton";
 
 export const TopNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,13 +31,174 @@ export const TopNavbar = () => {
               Service <MdKeyboardArrowDown />
             </MenuHeading>
           </div>
+
+          <div className="main_icon_content">
+            <div className="sub_icon_menu">
+              <div className="sub_icon_content">
+                <MenuMainHeading>Digital Marketing</MenuMainHeading>
+
+                <a href="#">
+                  <MenuSubHeading>
+                    SEO (Search Engine Optimisation)
+                  </MenuSubHeading>
+                </a>
+
+                <a href="#">
+                  <MenuSubHeading>Social Media Marketing</MenuSubHeading>
+                </a>
+
+                <a href="#">
+                  <MenuSubHeading>Pay Per Click (PPC)</MenuSubHeading>
+                </a>
+
+                <a href="#">
+                  <MenuSubHeading>Youtube Marketing</MenuSubHeading>
+                </a>
+              </div>
+
+              <div className="sub_icon_content">
+                <MenuMainHeading>Design & Development</MenuMainHeading>
+
+                <a href="#">
+                  <MenuSubHeading>Web Development</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Shopify</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Java</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Magento</MenuSubHeading>
+                </a>
+
+                <a href="#">
+                  <MenuSubHeading>WordPress</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Php</MenuSubHeading>
+                </a>
+              </div>
+
+              <div className="sub_icon_content">
+                <MenuMainHeading>Animations & Graphics</MenuMainHeading>
+
+                <a href="#">
+                  <MenuSubHeading>Video Marketing</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Branding</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Packeging & Labeling</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Graphic Design</MenuSubHeading>
+                </a>
+
+                <a href="#">
+                  <MenuSubHeading>Web Design</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Rotoscoping</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Aninmation</MenuSubHeading>
+                </a>
+              </div>
+
+              <div className="sub_icon_content">
+                <MenuMainHeading>E- commerce solution</MenuMainHeading>
+
+                <a href="#">
+                  <MenuSubHeading>E- Commerce Marketing</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Amazon Marketing</MenuSubHeading>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="menu-item">
-            {" "}
             <MenuHeading>
-              {" "}
               Hire Indian Talent <MdKeyboardArrowDown />
             </MenuHeading>
           </div>
+
+          <div className="main_icon_content">
+            <div className="sub_icon_menu">
+              <div className="sub_icon_content">
+                <MenuMainHeading>Hire Digital Marketing</MenuMainHeading>
+
+                <a href="#">
+                  <MenuSubHeading>Hire PPC Expert</MenuSubHeading>
+                </a>
+
+                <a href="#">
+                  <MenuSubHeading>Hire SEO Expert </MenuSubHeading>
+                </a>
+              </div>
+
+              <div className="sub_icon_content">
+                <MenuMainHeading>Hire Designer</MenuMainHeading>
+
+                <a href="#">
+                  <MenuSubHeading>Hire Graphic Designer</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Hire UI|UX Designer</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Hire Web Designer</MenuSubHeading>
+                </a>
+              </div>
+
+              <div className="sub_icon_content">
+                <MenuMainHeading>Hire Developer</MenuMainHeading>
+
+                <a href="#">
+                  <MenuSubHeading>Hire ReactJs Developer</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Hire NodeJs Developer</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Hire Laravel Developer</MenuSubHeading>
+                </a>
+
+                <a href="#">
+                  <MenuSubHeading>Hire Shopify Developer</MenuSubHeading>
+                </a>
+
+                <a href="#">
+                  <MenuSubHeading>Hire PHP Developer</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Hire WordPress Developer</MenuSubHeading>
+                </a>
+              </div>
+
+              <div className="sub_icon_content develper_div">
+                <a href="#">
+                  <MenuSubHeading>Hire React Native Developer</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Hire Android Developer</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Hire IOS Developer</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Hire Software Developer</MenuSubHeading>
+                </a>
+                <a href="#">
+                  <MenuSubHeading>Hire Mobile App Developer</MenuSubHeading>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="menu-item">
             <MenuHeading> Our Portfolio</MenuHeading>
           </div>
@@ -65,9 +230,6 @@ const Root = styled.div`
     background-size: 100%;
   }
 
-  .logo img {
-  }
-
   .menu {
     display: flex;
     align-items: center;
@@ -87,13 +249,45 @@ const Root = styled.div`
       }
     }
 
+    .menu-item:hover + .main_icon_content,
+    .main_icon_content:hover {
+      display: block;
+    }
+
+    .main_icon_content {
+      width: 60%;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 7px 15px 2px rgba(0, 0, 0, 0.13),
+        2px 1px 4px 2px rgba(0, 0, 0, 0.11);
+      display: none;
+      position: absolute;
+      top: 50px;
+      z-index: 111111;
+      background-color: #ffffff;
+      right: 20%;
+      .sub_icon_menu {
+        display: flex;
+
+        .sub_icon_content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          a {
+            text-decoration: none;
+          }
+        }
+        .develper_div {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
     button {
       margin-left: 20px;
     }
-  }
-
-  .menu-item:hover {
-    color: #6a28f5;
   }
 
   .hamburger {
@@ -111,6 +305,7 @@ const Root = styled.div`
   }
 
   @media (max-width: 567px) {
+
     .navbar {
       padding: 10px 20px;
       background-image: unset;
@@ -123,38 +318,48 @@ const Root = styled.div`
       }
 
       .menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 58px;
-      right: 0px;
-      background: white;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 10px 10px 20px;
-      border:1px solid #D4DBE0;
-      width: 100%;
-      z-index: 1111;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 58px;
+        right: 0px;
+        background: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 10px 20px;
+        border: 1px solid #d4dbe0;
+        width: 100%;
+        z-index: 1111;
+       .main_icon_content {
+          width: 90%;
+          right: 5%;
+          .sub_icon_menu{
+            gap:15px;
+            flex-wrap:wrap;
+            justify-content:center;
+            .sub_icon_content{
+              width: 47%;
+              flex:unset;
+            }
+          }
+        }
+      }
+
+      .menu.open {
+        display: flex;
+      }
+
+      .menu-item {
+        margin: 10px 0;
+      }
+
+      .hamburger {
+        display: flex;
+      }
     }
-
-    .menu.open {
-      display: flex;
-    }
-
-    .menu-item {
-      margin: 10px 0;
-    }
-
-    .hamburger {
-      display: flex;
-    }
-
-
-    }
-
-   
+    
   }
 
-  @media (min-width: 567px) and (max-width: 1024px){
+  @media (min-width: 567px) and (max-width: 1024px) {
     .navbar {
       padding: 15px 20px;
       background-image: unset;
@@ -166,19 +371,33 @@ const Root = styled.div`
         }
       }
       .menu {
-        
-        .menu-item{
-          span{
+        .menu-item {
+          span {
             font-size: 14px;
           }
         }
-       
-        button{
-              margin-left: 0px;
-              font-size:15px;
+
+        button {
+          margin-left: 0px;
+          font-size: 15px;
+        }
+
+        .main_icon_content {
+          width: 90%;
+          right: 5%;
+
+          .sub_icon_menu .sub_icon_content {
+            span {
+              font-size: 18px;
+            }
+            a {
+              span {
+                font-size: 14px;
+              }
+            }
+          }
         }
       }
     }
-
   }
 `;

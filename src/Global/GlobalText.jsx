@@ -92,7 +92,32 @@ font-size: 16px;
 font-weight: 500;
 line-height: 26px;
 color: #000000;
+&:hover{
+  color:#6C5FD4;
+}
+
 `;
+
+
+export const MenuMainHeading = styled.span`
+font-family:"Poppins", sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 26px;
+color:#6C5FD4;
+`;
+
+export const MenuSubHeading = styled.span`
+font-family:"Poppins", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+color: #000000;
+&:hover{
+  color:#6C5FD4;
+}
+`;
+
 
 export const BigHeading = styled.h1`
   font-size: 48px;

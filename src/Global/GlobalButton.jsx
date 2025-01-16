@@ -76,9 +76,6 @@ export const WhiteConfigurebtn = styled.button`
     font-weight: 400;
     cursor: pointer;
     line-height: 28px;
-  &:hover{
-    background-color:#6C5FD4;
-  }
 `;
 
 

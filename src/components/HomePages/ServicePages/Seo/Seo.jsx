@@ -13,8 +13,7 @@ import { Testimonial } from './Testimonial';
 import { Section10 } from './Section10';
 import { Section12 } from './Section12';
 
-
-export const Service = () => {
+export const Seo = () => {
   return (
     <div>
         <SubNavbar/>

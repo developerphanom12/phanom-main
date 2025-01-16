@@ -7,7 +7,7 @@ import {
   GradientHeading,
 } from "../../../../Global/GlobalText";
 
-import truenew from "../../../../assets/Images/truenew.png";
+
 import usernew from "../../../../assets/Images/usernew.jpg";
 
 import membernew from "../../../../assets/Images/membernew.jpg";

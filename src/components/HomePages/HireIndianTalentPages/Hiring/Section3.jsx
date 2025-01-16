@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {
   GreyHeading,
   GradientHeading,
-  GreySecondDescription,
+
   Heading,
 } from "../../../../Global/GlobalText";
 import iconone from "../../../../assets/Images/iconone.png";

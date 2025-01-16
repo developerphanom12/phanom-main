@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import {
-  Blackdescription,
   GradientSecondHeading,
   GradientSubHeading,
+  Greydescription,
   Heading,
   Subdescription,
 } from "../../../../Global/GlobalText";
@@ -22,7 +22,7 @@ import TimezoneSelect from "react-timezone-select";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-export const Section6 = () => {
+export const Section10 = () => {
   const [isScheduleVisible, setIsScheduleVisible] = useState(false);
 
   const [selectedTimezone, setSelectedTimezone] = useState({});
@@ -43,46 +43,45 @@ export const Section6 = () => {
     <Root>
       <div className="main_div">
         <div className="sub_div_one">
-          <Blackdescription>
+          <Greydescription>
             Explore a rewarding career in the Phenom Professional Industry. Fill
             out the form to get started.
-          </Blackdescription>
+          </Greydescription>
 
-          <span className="head">
+          <span>
             <Heading>Put On Ice To Preserve Your</Heading>
             <br />
             <Heading>Viewers With</Heading> <span></span>
             <GradientSecondHeading> Your Potential!</GradientSecondHeading>
           </span>
 
-          <Blackdescription>
+          <Greydescription>
             Preserve your audience's attention and captivate them by showcasing
             your true potential. In today’s fast-paced world, making a lasting
             impression is crucial. We help you create unforgettable experiences
             that resonate with your viewers, keeping them engaged and coming
             back for more. With our innovative strategies, we ensure that your
             content stands out,{" "}
-            <span  className="purpl_cont">
+            <span style={{ color: "#6C5FD4" }}>
               maintaining its relevance and impact.
             </span>
-          </Blackdescription>
+          </Greydescription>
 
-          <Blackdescription>
+          <Greydescription>
             Whether it’s through dynamic visuals, compelling storytelling, or
             cutting-edge design, we work to enhance your message and maximize
             your reach,{" "}
-            <span  className="purpl_cont">
+            <span style={{ color: "#6C5FD4" }}>
               turning potential into lasting success.
             </span>
-          </Blackdescription>
+          </Greydescription>
 
-          <div className="btn_div">
+          <div>
             <PurpleBackground className="connect_btn">
               Connect with us <FaArrowRightLong />
             </PurpleBackground>
           </div>
         </div>
-
         <div className="sub_div_two">
           <span>
             <GradientSubHeading> Book Your Appointment</GradientSubHeading>
@@ -293,19 +292,23 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
-    padding: 30px 20px;
+    padding: 10px 20px;
 
     .main_div {
       flex-wrap: wrap;
-      gap:50px;
+      gap:20px;
       .sub_div_one {
         text-align: center;
+        gap: 20px;align-items: center;
         .purpl_cont{
           color:#6C5FD4;
           font-size:16px;
         }
         span{
           font-size: 22px;
+          br{
+            display: none;
+          }
         }
       
       }
@@ -316,12 +319,20 @@ const Root = styled.section`
       }
 
 
-      .sub_div_two form .label_content .schedule_div {
+      .sub_div_two{
+
+        span{
+          font-size: 18px;
+        }
+      
+      form .label_content .schedule_div {
     width: 70%;
     .time_date_btn{
       gap:10px;
     }
 }
+
+      }
 
     }
   }
@@ -332,4 +343,6 @@ const Root = styled.section`
       gap:0;
     }
   }
+
+  
 `;
