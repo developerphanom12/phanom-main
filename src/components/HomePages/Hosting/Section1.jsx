@@ -30,24 +30,24 @@ export const Section1 = () => {
                 <div className='sub_main_div'>
 
                   <Blackdescription>Virtual Private Server</Blackdescription>
-                  <Heading>VPS Hosting that’s Flecible private, and affordable</Heading>
+                  <Heading>Flexible, private, and affordable VPS Hosting</Heading>
 
                   <div className='cont_icon'>
                     <div className='sub_cont_icon'>
                       <img src={grow} alt="logo"/>
-                      <Blackdescription>Grow big projects with hardware plan options.</Blackdescription>
+                      <Blackdescription>Expand major projects with hardware strategy design options.</Blackdescription>
                     </div>
 
 
                     <div className='sub_cont_icon'>
                       <img src={idol} alt="logo"/>
-                      <Blackdescription>Keep sites and apps 99.9% up. **</Blackdescription>
+                      <Blackdescription>Pick Your Dream OS.</Blackdescription>
                     </div>
 
 
                     <div className='sub_cont_icon'>
                       <img src={seo} alt="logo"/>
-                      <Blackdescription>Grow big projects with hardware plan options.</Blackdescription>
+                      <Blackdescription>Maintain Sites and Applications uptime of 99.9%.*</Blackdescription>
                     </div>
 
 
@@ -57,7 +57,7 @@ export const Section1 = () => {
 
                     <PurpleThirdBackground className='icon_content'> See Plans and Pricing <FaArrowRightLong/> </PurpleThirdBackground>
 
-                    <Blackdescription>See Fully Managed VPS</Blackdescription>
+                    <Blackdescription>Buy Fully Managed VPS</Blackdescription>
 
                   </div>
 
@@ -66,7 +66,7 @@ export const Section1 = () => {
                   <Blackdescription>4.6 out of 5 stars based on 110,937 reviews</Blackdescription>
 
 
-                  <Blackdescription>View All</Blackdescription>
+                  <Blackdescription><b>View All</b></Blackdescription>
 
                     
                   </div>
@@ -107,9 +107,9 @@ const Root = styled.section`
         display:flex;
         gap:10px;
         align-items:center;
-        img{
+        /* img{
           width:35px;
-        }
+        } */
         }
 
     }

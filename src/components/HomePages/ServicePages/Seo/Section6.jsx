@@ -180,7 +180,6 @@ const Root = styled.section`
           padding: 40px 30px;
           display: flex;
           gap: 20px;
-
           box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.3);
           border-radius: 20px;
           .img_div {

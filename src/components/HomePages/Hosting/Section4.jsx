@@ -4,6 +4,7 @@ import {
   Blackdescription,
   GradientHeading,
   Heading,
+  SmallHeading,
 } from "../../../Global/GlobalText";
 
 import blankvertical from "../../../assets/Images/blankvertical.png";
@@ -17,16 +18,18 @@ export const Section4 = () => {
             <Blackdescription>Self Managed VPS</Blackdescription>
 
             <span>
-              <Heading>Ideal for admins & </Heading>
-       
-              <GradientHeading>Developers</GradientHeading>
+              <Heading> Server Management with </Heading>
+              <br />
+
+              <Heading>VPS & </Heading>
+              <GradientHeading>Hosting Services.</GradientHeading>
             </span>
 
             <Blackdescription>
-              For system administrators, developers, or designers experienced in
-              managing a server and seeking full control. Get full root access
-              with SSH keys and command line, and scalable, flexible server
-              configurations.
+              Managing your servers has never been this seamless! At Phanom we
+              take pride in providing top-tier server management solutions
+              tailored to meet your unique needs. Whether you’re an individual,
+              startup, or established business, we’ve got you covered.
             </Blackdescription>
           </div>
 
@@ -34,33 +37,36 @@ export const Section4 = () => {
 
           <div className="vertical_heading">
             <span>
-              <GradientHeading>Monitoring</GradientHeading>
-              <Heading>and alerts. </Heading>
+              <GradientHeading>Tailored</GradientHeading>
+              <Heading>Solutions! </Heading>
             </span>
 
-            <Blackdescription>
-              Monitor server uptime, resources (CPU, RAM, Storage) and domains.
-              Stay informed with alerts.
-            </Blackdescription>
+            <ul>
+              <li>
+                Fully customization plans that adapt to your business size and
+                requirements.
+              </li>
+              <li>Scalable options to grow with your business.</li>
+            </ul>
+
+            <span>
+              <Heading>24/7 </Heading>
+              <GradientHeading>Support</GradientHeading>
+            </span>
+
+            <ul>
+              <li>
+                Round-the-clock monitoring and support to ensure optimal
+                performance.
+              </li>
+              <li>
+                Quick response times to minimize downtime and address issues
+                immediately.
+              </li>
+            </ul>
           </div>
-
-
 
           <img src={blankvertical} alt="Vertical " className="ist_image" />
-
-
-          <div className="vertical_heading">
-            <span>
-              <GradientHeading>Patch</GradientHeading>
-              <Heading>and update. </Heading>
-            </span>
-
-            <Blackdescription>
-            Manually patch and update your operating system and control panel. Take control so your server is always up to date.
-            </Blackdescription>
-          </div>
-
-
         </div>
 
         <div className="sub_main_div">
@@ -68,34 +74,54 @@ export const Section4 = () => {
 
           <div className="vertical_heading">
             <span>
-                <Heading>Expert </Heading>
-              <GradientHeading>support</GradientHeading>
-            
+              <Heading>Why </Heading>
+              <GradientHeading>Choose Us?.</GradientHeading>
             </span>
 
-            <Blackdescription>
-            From personalized service recommendations to comprehensive help documentation, get expert guidance and support from our VPS Hosting specialists.
-                                  </Blackdescription>
+            <SmallHeading>Expertise You Can Trust!</SmallHeading>
+
+            <ul>
+              <li>
+                Decades of combined experience in server management, hosting,
+                and VPS solutions.
+              </li>
+              <li>
+                Certified professionals equipped with the latest technologies.
+              </li>
+            </ul>
           </div>
-
-
-
 
           <img src={blankvertical} alt="Vertical" className="sec_image" />
 
-<div className="vertical_heading">
-  <span>
-    <GradientHeading>Backups and</GradientHeading>
-    <Heading>recovery </Heading>
-  </span>
+          <div className="vertical_heading">
+            <span>
+              <GradientHeading>Affordable</GradientHeading>
+              <Heading>Pricing! </Heading>
+            </span>
 
-  <Blackdescription>
-  Get 7 days of automated snapshot backups. Create on-demand snapshot. Fix using recovery console (SSH).              </Blackdescription>
-</div>
+            <ul>
+              <li>Competitive rates without compromising on quality</li>
+              <li>
+                Transparent pricing models—no hidden fees, just excellent
+                service.
+              </li>
+            </ul>
 
+            <span>
+              <GradientHeading>End-to-End</GradientHeading>
+              <Heading>Management!</Heading>
+            </span>
 
-
-
+            <ul>
+              <li>
+                From server setup and optimization to security and updates, we
+                handle it all.
+              </li>
+              <li>
+                Focus on your core business while we manage your infrastructure.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </Root>
@@ -107,7 +133,7 @@ const Root = styled.section`
   .main_div {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 100px;
     .sub_main_div {
       flex: 1;
       .main_content {
@@ -117,24 +143,27 @@ const Root = styled.section`
       }
 
       .ist_image {
-        margin-top: 100px;
+        margin-top: 40px;
         width: 100%;
         height: 600px;
       }
-
 
       .sec_image {
-   
         width: 100%;
         height: 600px;
       }
-
 
       .vertical_heading {
         display: flex;
         gap: 20px;
         flex-direction: column;
         margin: 50px 0;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding-left: 30px;
+        }
       }
     }
   }
@@ -142,37 +171,38 @@ const Root = styled.section`
   @media (max-width: 567px) {
     padding: 10px 20px 20px;
 
-    .main_div{
-    text-align: center;
-    gap:10px;
+    .main_div {
+      text-align: center;
+      gap: 10px;
 
-     .sub_main_div{
-      .main_content {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    margin-bottom:30px;
-}
+      .sub_main_div {
+        .main_content {
+          display: flex;
+          gap: 15px;
+          flex-direction: column;
+          margin-bottom: 30px;
+        }
 
-.ist_image {
-    margin-top: 0px;
-}
+        .ist_image {
+          margin-top: 0px;
+        }
 
-.vertical_heading{
-  margin:20px 0;
-}
-     
-
-}
-}
-
-
+        .vertical_heading {
+          margin: 20px 0;
+          ul {
+            padding-left:10px;
+           
+            text-align:center;
+          }
+        }
+      }
+    }
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
     padding: 40px 30px 0;
-   .main_div .sub_main_div {
-    gap: 20px;
-}
+    .main_div .sub_main_div {
+      gap: 20px;
+    }
   }
 `;

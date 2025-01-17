@@ -9,49 +9,60 @@ export const Section8 = () => {
     const [questions, setQuestions] = useState([
         {
           id: 1,
-          text: "The expense windows adapted sir. Wrong widen drawn.",
+          text: "1. What is managed server hosting? ",
           expanded: false,
           subcontent: [
-            { id: 1, text: "Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. " },
+            { id: 1, text: "Managed server hosting means we handle all the technical aspects of your server, including setup, maintenance, monitoring, and updates, so you can focus on your business." },
             
           ],
         },
         {
           id: 2,
-          text: "Six curiosity day assurance bed necessary?",
+          text: "2. Why should I choose VPS hosting over shared hosting? ",
           expanded: false,
           subcontent: [
-            { id: 1, text: " Blessing welcomed ladyship she met humoured sir breeding her. " },
+            { id: 1, text: "VPS hosting provides dedicated resources, better performance, enhanced security, and scalability compared to shared hosting, making it ideal for growing businesses." },
             
           ],
         },
         {
           id: 3,
-          text: "Produce say the ten moments parties?",
+          text: "3. How does your 24/7 support work? ",
           expanded: false,
           subcontent: [
-            { id: 1, text: "Subcontent for question 3 - part 1" },
+            { id: 1, text: "Our support team is available round-the-clock via chat, email, and phone to assist with any server-related issues or queries." },
            
           ],
         },
         {
           id: 4,
-          text: "Simple innate summer fat appear basket his desire joy?",
+          text: "4. Can I migrate my existing website to your servers?",
           expanded: false,
           subcontent: [
-            { id: 1, text: "Subcontent for question 4 - part 1" },
+            { id: 1, text: "Yes, our experts ensure a seamless migration process with zero downtime, preserving your data and configurations." },
            
           ],
         },
         {
           id: 5,
-          text: "Outward clothes promise at gravity do excited?",
+          text: "5. What security measures do you offer? ",
           expanded: false,
           subcontent: [
-            { id: 1, text: "Subcontent for question 5 - part 1" },
+            { id: 1, text: "We provide daily backups, firewalls, malware scans, and proactive threat detection to ensure your data remains secure." },
           
           ],
         },
+
+        {
+          id: 6,
+          text: "6. Are your hosting solutions scalable? ",
+          expanded: false,
+          subcontent: [
+            { id: 1, text: "Absolutely! Our plans are designed to scale as your business grows, allowing you to upgrade resources easily." },
+          
+          ],
+        },
+
       ]);
 
       const handleExpand = (id) => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { BigHeading, Blackdescription,  MainHeading } from '../../../Global/GlobalText';
-import smileboy from "../../../assets/Images/smileboy.png"
+import lala from "../../../assets/Images/lala.png"
 import phanomlogo from "../../../assets/Images/phanomlogo.png"
 import { PurpleThirdBackground } from '../../../Global/GlobalButton';
 
@@ -17,10 +17,10 @@ export const Section7 = () => {
 
                 <div className='sub_main_div_one'>
 
-                    <MainHeading>Suraiya J.</MainHeading>
+                    <MainHeading>Adarsh</MainHeading>
                     <Blackdescription>Phanom Guide</Blackdescription>
                     <div className='image_div'>
-                       <img src={smileboy} alt="Profile"/>
+                       <img src={lala} alt="Lala Profile"/>
                     </div>
 
                 </div>
@@ -38,12 +38,13 @@ export const Section7 = () => {
                     </div>
 
                     <BigHeading>We love to help. Seriously.</BigHeading>
+
                     <Blackdescription>
-                        Still not sure what you need? We’re happy to help, even if 
-                        you’re not a customer. Contact us and we'll chat — or get back to you as soon as we can.
+                          With a dedicated account manager and technical team always on standby, we ensure a seamless experience from day one. We’re not just service providers; we’re your technology partners.
                     </Blackdescription>
+                    
                     <div>
-                       <PurpleThirdBackground>Learn More</PurpleThirdBackground>
+                       <PurpleThirdBackground>Get Help</PurpleThirdBackground>
                     </div>
 
 
@@ -76,7 +77,7 @@ margin:30px 0;
      .image_div{
       display: flex;
       justify-content: center;
-      margin-top: -40px;
+      margin-top: -100px;
      }
   }
 

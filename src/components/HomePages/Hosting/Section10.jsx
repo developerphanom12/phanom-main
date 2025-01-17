@@ -7,58 +7,57 @@ import {
   PointerHeading,
 } from "../../../Global/GlobalText";
 
-export const Section5 = () => {
+export const Section10 = () => {
   return (
     <Root>
       <div className="main_div">
         <span>
-          <Heading>Benefits of</Heading>
-          <GradientHeading> Phanom VPS Hosting! </GradientHeading>
+          <Heading>What We</Heading>
+          <GradientHeading> Offer! </GradientHeading>
         </span>
 
         <div className="sub_main_div">
           <div className="sub_content_div">
-            <PointerHeading> Peace of Mind!</PointerHeading>
+            <PointerHeading>Managed VPS Hosting</PointerHeading>
             <Blackdescription>
-            Knowing your servers are in 
-            expert hands.
+            Fully managed virtual private servers for reliability and performance.
             </Blackdescription>
           </div>
 
           <div className="sub_content_div">
-            <PointerHeading> Improved Performance</PointerHeading>
+            <PointerHeading> Custom Server Solutions</PointerHeading>
             <Blackdescription>
-            Optimized configurations for faster load times.
+            Dedicated servers tailored to your business needs
             </Blackdescription>
           </div>
 
           <div className="sub_content_div">
-            <PointerHeading>Cost-Effective Solutions</PointerHeading>
+            <PointerHeading>Automatic Updates</PointerHeading>
             <Blackdescription>
-                 Save money with our bundled services.
+            Keep your systems updated with the latest software and patches
             </Blackdescription>
           </div>
         </div>
 
         <div className="sub_main_div">
           <div className="sub_content_div">
-            <PointerHeading> Time Savings</PointerHeading>
+            <PointerHeading> Proactive Monitoring</PointerHeading>
             <Blackdescription>
-                 Spend less time on technical issues and more on growing your business.
+             Early issue detection to avoid costly downtime.
             </Blackdescription>
           </div>
 
           <div className="sub_content_div">
-            <PointerHeading> Enhanced Security</PointerHeading>
+            <PointerHeading> Data Migration</PointerHeading>
             <Blackdescription>
-            Regular audits and advanced threat protection.
+            Seamlessly move your data to our servers without any hassle.
             </Blackdescription>
           </div>
 
           <div className="sub_content_div">
-            <PointerHeading>Reliable Scalability</PointerHeading>
+            <PointerHeading>Disaster Recovery Solutions</PointerHeading>
             <Blackdescription>
-                  Easily adjust resources as your business demands grow.
+                    Ensure business continuity with robust backup and recovery plans
             </Blackdescription>
           </div>
 
@@ -70,7 +69,6 @@ export const Section5 = () => {
 
 const Root = styled.section`
   padding: 20px 70px;
-  
   .main_div {
     display: flex;
     flex-direction: column;
@@ -108,6 +106,6 @@ const Root = styled.section`
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
-    padding:   50px 20px;
+    padding:   0 20px 20px ;
   }
 `;

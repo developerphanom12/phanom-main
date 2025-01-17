@@ -42,15 +42,15 @@ export const Section3 = () => {
             <PointerHeading >NVMe SSDs.</PointerHeading>
 
             <Blackdescription>
-            Get up to 3X speed and unlimited traffic. KVM virtualization for full control + upgrades to increase RAM, CPU, storage
+            Take advantage of 3X speed and unlimited traffic. Upgrade your plan to KVM virtualization level to have full control and enhanced RAM, CPU and storage.
             </Blackdescription>
           </div>
           <div className="sub_tech_div">
             <img src={protection} alt="Digital Marketing" />
-            <PointerHeading className="heading">DDoS protection + SSL.</PointerHeading>
+            <PointerHeading className="heading">SSL + 100% Security</PointerHeading>
 
             <Blackdescription>
-            Get 24/7 network monitoring, advanced DDoS + free SSL certificate (for 1st year) with a dedicated IP.
+            Get 24/7 Monitoring,  + free SSL certificate (for 1st year) with a dedicated IP.
             </Blackdescription>
           </div>
           <div className="sub_tech_div">
@@ -58,7 +58,7 @@ export const Section3 = () => {
             <PointerHeading  className="heading">Unlimited Hosting.</PointerHeading>
 
             <Blackdescription>
-            Create accounts with optional cPanel/WHM + Installatron.
+            Unlimited hosting with cPanel, WHM, Installatron, flexible, reliable solutions.
             </Blackdescription>
           </div>
           <div className="sub_tech_div">
@@ -66,7 +66,7 @@ export const Section3 = () => {
             <PointerHeading className="heading">Root access.</PointerHeading>
 
             <Blackdescription>
-            Retain full control and configure your server to your needs (up to the operating system level).
+                Full root access and set your server the way you prefer (up to the operating system level)
             </Blackdescription>
           </div>
 

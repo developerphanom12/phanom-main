@@ -95,8 +95,19 @@ color: #000000;
 &:hover{
   color:#6C5FD4;
 }
-
 `;
+
+
+
+export const SmallHeading = styled.span`
+font-family:"Poppins", sans-serif;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+color: #000000;
+`;
+
+
 
 
 export const MenuMainHeading = styled.span`

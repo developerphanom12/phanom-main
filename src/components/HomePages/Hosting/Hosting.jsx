@@ -9,6 +9,7 @@ import { Section7 } from './Section7'
 import { Section8 } from './Section8'
 import { Section9 } from './Section9'
 import { SubNavbar } from './SubNavbar'
+import { Section10 } from './Section10'
 
 export const Hosting = () => {
   return (
@@ -19,6 +20,7 @@ export const Hosting = () => {
       <Section3/>
       <Section4/> 
       <Section5/>
+      <Section10/> 
       <Section6/>
       <Section7/>
       <Section8/>
