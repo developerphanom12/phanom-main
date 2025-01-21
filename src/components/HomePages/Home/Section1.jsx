@@ -156,5 +156,32 @@ const Root = styled.section`
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
+   .main_div {
+    padding: 20px 0 20px 20px;
+
+  .banner_content .sub_main_div {
+    gap:20px;
+   br{
+    display: none;
+   }
+}
+
+.pointers {
+    gap:20px;
+    .sub_pointers{
+        text-align: center;
+        br{
+            display: block;
+        }
+    }
+   .vertical_line {
+    height: 40px;
+}
+}
+
+
+}
+
+
   }
 `;

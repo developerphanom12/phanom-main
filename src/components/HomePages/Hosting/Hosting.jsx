@@ -8,8 +8,9 @@ import { Section6 } from './Section6'
 import { Section7 } from './Section7'
 import { Section8 } from './Section8'
 import { Section9 } from './Section9'
-import { SubNavbar } from './SubNavbar'
 import { Section10 } from './Section10'
+
+import { SubNavbar } from './SubNavbar'
 
 export const Hosting = () => {
   return (

@@ -15,6 +15,56 @@ export const PurpleBackground = styled.button`
   }
 `;
 
+export const WhiteBgBackground = styled.button`
+  padding: 6px 60px;
+  border-radius:30px;
+  border:1px solid #ffffff;
+  color:#ffffff;
+  background-color:transparent;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  line-height: 28px;
+  &:hover{
+    background-color:#6C5FD4;
+  }
+`;
+
+export const WhitegreyBackground = styled.button`
+  padding: 6px 60px;
+  border-radius:30px;
+  border:1px solid #353535;
+  color:#353535;
+  background-color:transparent;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  line-height: 28px;
+  &:hover{
+    background-color:#6C5FD4;
+    color:#ffffff;
+  }
+`;
+
+
+export const PurpleBgBackground = styled.button`
+  padding: 6px 60px;
+  border-radius:30px;
+  color:#ffffff;
+  background-color:#6C5FD4;
+  border:1px solid transparent;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  line-height: 28px;
+  &:hover{
+    background-color:#6C5FD4;
+  }
+`;
+
+
+
+
 export const PurpleSecondBackground = styled.button`
   padding:8px 30px;
   border-radius:30px;
@@ -78,6 +128,18 @@ export const WhiteConfigurebtn = styled.button`
     line-height: 28px;
 `;
 
+
+export const Whitebgebtn = styled.button`
+    padding: 7px 30px;
+    border-radius: 30px;
+    color: #6C5FD4;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 28px;
+`;
 
 export const GreyBorderButton = styled.button`
   padding:12px 30px;

@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { GradientSecondHeading, Heading } from "../../../Global/GlobalText";
+import {
+  Blackdescription,
+  GradientSecondHeading,
+  Heading,
+  PurpleSubHeading,
+} from "../../../Global/GlobalText";
 import google from "../../../assets/Images/google.png";
 import dev from "../../../assets/Images/dev.png";
 import { FaPlus } from "react-icons/fa6";
@@ -8,7 +13,6 @@ import { FaPlus } from "react-icons/fa6";
 export const Section8 = () => {
   const [activeButton, setActiveButton] = useState(0);
 
-  // Handle button click event
   const handleButtonClick = (index) => {
     setActiveButton(index);
   };
@@ -68,9 +72,33 @@ export const Section8 = () => {
                   </div>
                 </div>
 
-                <div className="sub_content_div"> </div>
+                <div className="sub_content_div">
+                  <div className="heading_content">
+                    <PurpleSubHeading>Design & Development</PurpleSubHeading>
 
-                <div className="sub_content_div"> </div>
+                    <Blackdescription>
+                      Design & Development blends creativity and technology to
+                      create user-friendly, high-performance solutions.
+                    </Blackdescription>
+                  </div>
+                </div>
+
+                <div className="sub_content_div">
+                  <div className="heading_content">
+                    <PurpleSubHeading>Services Offered</PurpleSubHeading>
+
+                    <div className="sub_head_content">
+                      <Blackdescription>
+                        SEO (Search Engine Optimisation)
+                      </Blackdescription>
+                      <Blackdescription>
+                        Social Media Marketing
+                      </Blackdescription>
+                      <Blackdescription>Pay Per Click (PPC)</Blackdescription>
+                      <Blackdescription>Youtube Marketing</Blackdescription>
+                    </div>
+                  </div>
+                </div>
               </>
             )}
 
@@ -121,23 +149,36 @@ const Root = styled.section`
       }
 
       .content_div {
-        display:flex;
-        gap:20px;
-        background-color: #F1EFFB;
-        padding:70px 30px;
+        display: flex;
+        gap: 20px;
+        background-color: #f1effb;
+        padding: 70px 30px;
+        align-items: center;
         .sub_content_div {
-          flex:1;
+          flex: 1;
           .image_div {
-            display:flex;
-            gap:10px;
-            align-items:center;
+            display: flex;
+            gap: 10px;
+            align-items: center;
 
             svg {
-              width:40px;
-              height:40px;
-              color:#6c5fd4;
+              width: 40px;
+              height: 40px;
+              color: #6c5fd4;
             }
+          }
 
+          .heading_content {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            .sub_head_content {
+              border-left: 4px solid #d0d0d0;
+              padding-left: 10px;
+              display: flex;
+              gap: 5px;
+              flex-direction: column;
+            }
           }
         }
       }
@@ -145,8 +186,67 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
+    padding: 20px;
+
+    .main_div {
+      align-items: center;
+      text-align: center;
+
+      .sub_main_div {
+        gap: 10px;
+        .btn_div {
+          overflow: auto;
+        }
+
+        .content_div {
+          padding: 40px 20px;
+          flex-direction: column;
+
+         .sub_content_div 
+         .image_div {
+flex-direction:column;
+}
+
+ .heading_content .sub_head_content {
+    text-align: left;
+}
+
+        }
+      }
+    }
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 0 20px 20px;
+
+   .main_div{
+    gap:30px;
+   
+   .sub_main_div{
+    .btn_div{
+      overflow: auto;
+      button{
+        padding: 10px 20px;
+      }
+    }
+   .content_div {
+    flex-direction: column;
+    padding: 20px 30px;
+   
+    .sub_content_div{
+      width: 100%;
+.image_div {
+
+    justify-content: center;
+}
+    }
+}
+
+   }
   }
+
+   
+
+  }
+
 `;

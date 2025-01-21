@@ -68,9 +68,25 @@ const Root = styled.section`
 
 
 @media (max-width: 567px) {
+  display: none;
 }
 
 @media (min-width: 567px) and (max-width: 1024px) {
+.main_div {
+    padding: 20px 20px;
+    justify-content: center;
+    .sub_main_div{
+      flex:unset;
+      width: 47%;
+    }
+
+    .sub_main_div_two{
+      border-right: 1px solid #ffffff;
+      flex:unset;
+      width: 47%;
+    }
+}
+
 
 }
 

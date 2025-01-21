@@ -10,6 +10,10 @@ import { Service } from "./components/HomePages/ServicePages/Service/Service";
 import { Home } from "./components/HomePages/Home/Home";
 import { Hosting } from "./components/HomePages/Hosting/Hosting";
 import { Seo } from "./components/HomePages/ServicePages/Seo/Seo";
+import { Appointment } from "./components/Appointment/Appointment";
+import { Test } from "./components/Test";
+
+
 // import { Seo } from "./components/HomePages/ServicePages/Seo/Seo";
 
 function App() {
@@ -28,6 +32,11 @@ function App() {
         <Route path="/service" element={<Service />}/>
         <Route path="/seo" element={<Seo/>}/>
         <Route path="/hiring" element={<Hiring />} />
+        <Route path="/test" element={<Test/>} />
+
+
+        <Route path="/appointment" element={<Appointment />} />
+
           
 
 

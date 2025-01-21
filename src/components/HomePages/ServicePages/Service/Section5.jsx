@@ -58,6 +58,9 @@ export const Section5 = () => {
     <Root>
       <div className="main_div">
         <div className="sub_div_one">
+
+        <textwithborder></textwithborder>
+
           <div className="text-with-border-shadow">
             Our Web
             <br />

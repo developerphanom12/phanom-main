@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import { Blackdescription, BlackHeading, GradientHeading, Heading } from '../../../Global/GlobalText';
 import horizontalframe from "../../../assets/Images/horizontalframe.png";
+import vertically from "../../../assets/Images/vertically.png";
+
 
 
 export const Section6 = () => {
@@ -21,7 +23,10 @@ export const Section6 = () => {
 
 
               <div className='sub_main_div'>
-                      <img src={horizontalframe} alt="horizontalframe" />
+                      <img src={horizontalframe} alt="horizontalframe" className='horizont' />
+                      <img src={vertically} alt="vertically" className='verticall' />
+
+
                       <div className='pointer_main_div'>
                         <div className='pointer_sub_main_div'>
                             <BlackHeading>Innovate</BlackHeading>
@@ -78,6 +83,9 @@ const Root = styled.section`
     img {
          width: 70%;
         }   
+        .verticall{
+          display: none;
+        }
     .pointer_main_div{
         display:flex;
         gap:20px;
@@ -107,11 +115,59 @@ const Root = styled.section`
 
 
 @media (max-width: 567px) {
+
+  padding: 30px 20px;
+
+
+ .main_div {
+text-align: center;
+ .sub_main_div{
+  flex-direction: row;
+  margin-left: -10px;
+  
+  .horizont{
+    display: none;
+  }
+  .verticall{
+    display: block;
+        width: 15%;
+        height: 40rem;
+        margin-top:30px;
+        }
+
+  .pointer_main_div {
+ flex-direction: column;
+ margin-left: -7px;
+ .pointer_sub_main_div{
+  padding: 40px;
+ }
+}
+
+ }
+
+}
 }
 
 
 @media (min-width: 567px) and (max-width: 1024px) {
+  padding:0  20px 20px;
 
+ .main_div {
+    text-align: center;
+.sub_main_div{
+
+margin-top: 0;
+
+.pointer_main_div{
+  margin-top: -4px;
+
+.pointer_sub_main_div {
+  
+    padding: 9px;
+}
+}
+ }
+}
 
 
 }

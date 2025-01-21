@@ -170,8 +170,53 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
+    padding: 30px 20px;
+
+   .main_div {
+    flex-direction: column;
+    .sub_main_div_one {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        br{
+          display: none;
+        }
+}
+
+ .sub_main_div_two {
+  width: 100%;
+  .sub_tech_div{
+    width: 100%;
+  }
+}
+
+
+}
+
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
+    padding: 30px 20px;
+
+    .main_div {
+    flex-direction: column;
+    .sub_main_div_one {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        br{
+          display: none;
+        }
+}
+
+ .sub_main_div_two {
+  width: 100%;
+  justify-content: center;
+
+}
+
+
+}
+    
   }
 `;

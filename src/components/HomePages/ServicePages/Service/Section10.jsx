@@ -179,6 +179,7 @@ export const Section10 = () => {
             <div className="submit_btn">
               <PurpleBackground>Submit</PurpleBackground>
             </div>
+            
           </form>
         </div>
       </div>

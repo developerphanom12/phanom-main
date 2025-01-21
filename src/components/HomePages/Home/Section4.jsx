@@ -12,19 +12,8 @@ import innovative from "../../../assets/Images/innovative.png";
 import team from "../../../assets/Images/team.png";
 import edgetechnology from "../../../assets/Images/edgetechnology.png";
 import excellence from "../../../assets/Images/excellence.png";
-
 import strategy from "../../../assets/Images/strategy.png";
-
 import practice from "../../../assets/Images/practice.png";
-
-
-
-
-
-
-
-
-
 
 export const Section4 = () => {
   return (
@@ -229,7 +218,7 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
-    padding: 10px 20px;
+    padding: 10px 20px 50px;
     .main_div {
       flex-direction: column;
 
@@ -253,7 +242,7 @@ const Root = styled.section`
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
-    padding: 10px 20px;
+    padding: 30px 20px;
     .main_div {
       flex-direction: column;
       .sub_div {

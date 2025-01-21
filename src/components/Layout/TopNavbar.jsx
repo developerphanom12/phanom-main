@@ -9,9 +9,16 @@ import {
 import { MdKeyboardArrowDown } from "react-icons/md";
 import headerbg from "../../assets/Images/headerbg.png";
 import { PurpleSecondBackground } from "../../Global/GlobalButton";
+import { Appointment } from "../Appointment/Appointment";
 
 export const TopNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -200,10 +207,13 @@ export const TopNavbar = () => {
           </div>
 
           <div className="menu-item">
+
             <MenuHeading> Our Portfolio</MenuHeading>
           </div>
 
-          <PurpleSecondBackground>Book an Appointment</PurpleSecondBackground>
+          <PurpleSecondBackground onClick={handleShow}>Book an Appointment</PurpleSecondBackground>
+          <Appointment show={show} handleClose={handleClose} />
+          
         </div>
 
         <div className="hamburger" onClick={toggleMenu}>
@@ -328,7 +338,7 @@ const Root = styled.div`
         padding: 10px 10px 20px;
         border: 1px solid #d4dbe0;
         width: 100%;
-        z-index: 1111;
+        z-index: 111;
        .main_icon_content {
           width: 90%;
           right: 5%;

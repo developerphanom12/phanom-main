@@ -40,6 +40,46 @@ export const Heading = styled.span`
   }
 `;
 
+export const textwithborder = styled.h2`
+        font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        line-height: 1.2;
+        -webkit-text-stroke: 1px #6c5fd4;
+        -webkit-text-fill-color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+`;
+
+
+
+export const BlacvkHeading = styled.span`
+  font-size: 39px;
+  font-family: "Poppins", sans-serif;
+  line-height: 50px;
+  color: #000000;
+  font-weight: 500;
+ 
+  @media (max-width: 567px) {
+    font-size:20px;
+    line-height:26px;
+  }
+`;
+
+
+export const BlacvkDescription = styled.span`
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 500;
+ 
+  @media (max-width: 567px) {
+    font-size:12px;
+    line-height:20px;
+  }
+`;
+
 export const SubTagHeading = styled.span`
   font-size:18px;
   font-family:"Poppins", sans-serif;
@@ -310,7 +350,7 @@ export const BlackMainDescription = styled.p`
   font-weight: 500;
   @media (max-width: 567px) {
     font-size: 24px;
-  line-height: 20px;
+  line-height: 30px;
   font-weight: 500;
   }
 `;
@@ -553,6 +593,47 @@ export const WhiteNumberHeading = styled.h4`
   line-height: 58px;
   color: #ffffff;
   font-weight: 700;
+
+  @media (max-width: 567px) {
+    font-size: 32px;
+    line-height: 40px;
+
+
+  }
+`;
+
+
+export const WhiteLightHeading = styled.h4`
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  line-height: 44px;
+  color: #bcb8d6;
+  font-weight: 600;
+  @media (max-width: 567px) {
+    font-size: 28px;
+    line-height: 36px;
+
+
+  }
+`;
+
+
+export const FooterMenu = styled.h4`
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 500;
+`;
+
+
+
+export const FooterLightMenu = styled.h4`
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 28px;
+  color: #BDBDBD;
+  font-weight: 500;
 `;
 
 export const TextBorder = styled.span`
