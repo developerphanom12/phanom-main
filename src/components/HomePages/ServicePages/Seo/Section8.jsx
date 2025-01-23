@@ -4,6 +4,7 @@ import {
   BlackHeading,
   GreySecondDescription,
   PurpleHeading,
+  Textwithborder,
   WhiteDescription,
   WhitekHeading,
   WhiteNumberHeading,
@@ -14,17 +15,35 @@ export const Section8 = () => {
     <Root>
       <div className="main_div">
         <div className="sub_main_div_one">
-          <div className="text-with-border-shadow">
-            Why
+
+
+                <div className="text_border">
+            
+                       <Textwithborder>
+                            Why
+                       </Textwithborder>
+            
+            
+                       <Textwithborder>
+                          Choose
+                    </Textwithborder>
+                        
+                    <Textwithborder>
+                        US?
+                   </Textwithborder>
+            
+                </div>
+
+          {/* <div className="text-with-border-shadow">
+               Why
             <br />
-            Choose
+               Choose
             <br />
-            US?
-          </div>
+                US?
+          </div> */}
 
           <GreySecondDescription>
-            We help explore design through expert ideas and creative
-            programming, enhancing your brand's success.
+          We launch apps for streamlined software development, empowering growth with expert web solutions to expand your business and reach new clients effectively.
           </GreySecondDescription>
         </div>
 
@@ -36,46 +55,41 @@ export const Section8 = () => {
           }}
         >
           <WhiteNumberHeading>01</WhiteNumberHeading>
-          <WhitekHeading>Info Gathering</WhitekHeading>
+          <WhitekHeading>Research & Strategy</WhitekHeading>
           <WhiteDescription>
-            We have established strong relationships with the leading solar and
-            cable companies in the region
+          As an agency, we conduct keyword research and competitor research to develop a customized and robust SEO strategy that best serves your goals.
           </WhiteDescription>
         </div>
 
         <div className="sub_main_div">
           <PurpleHeading>02</PurpleHeading>
-          <BlackHeading>Design</BlackHeading>
+          <BlackHeading>On-Page Optimization</BlackHeading>
           <GreySecondDescription>
-            We help explore design through expert ideas and creative
-            programming, enhancing your brand's success.
+          We refine the way your website structure, meta data, content, and internal linking work to enhance user experience and accessibility to search engines.
           </GreySecondDescription>
         </div>
 
         <div className="sub_main_div">
           <PurpleHeading>03</PurpleHeading>
-          <BlackHeading>Development</BlackHeading>
+          <BlackHeading>Content Creation</BlackHeading>
           <GreySecondDescription>
-            We track smart trends, showcase our expertise, and keep your brand
-            updated with frequent web trends.
+          Our team creates content that is best in quality and SEO optimized as well, which enhances the chances of winning over a wider audience base in search results.
           </GreySecondDescription>
         </div>
 
         <div className="sub_main_div">
           <PurpleHeading>04</PurpleHeading>
-          <BlackHeading>Testing</BlackHeading>
+          <BlackHeading>Off-Page SEO</BlackHeading>
           <GreySecondDescription>
-            Ensuring fluent application and software performance is our
-            priority, refining everything before launching the page.
+          We create relevant backlinks, increase your domain authority, and use combination link building techniques in order to increase organic traffic and enhance rankings.
           </GreySecondDescription>
         </div>
 
         <div className="sub_main_div">
           <PurpleHeading>05</PurpleHeading>
-          <BlackHeading>Deployment & Support</BlackHeading>
+          <BlackHeading>Monitoring & Reporting</BlackHeading>
           <GreySecondDescription>
-            We monitor progress through graphs, ensuring smooth launches and
-            optimal web performance.
+          We use verified techniques in tracking your website performance and provide comprehensive reports and advice that enhances the overall SEO effectiveness of your site.
           </GreySecondDescription>
         </div>
       </div>
@@ -96,16 +110,13 @@ const Root = styled.section`
       display: flex;
       flex-direction: column;
       gap: 10px;
-      .text-with-border-shadow {
-        font-family: "Poppins", sans-serif;
-        font-size: 30px;
-        font-weight: 600;
-        color: white;
-        line-height: 1.2;
-        -webkit-text-stroke: 1px #6c5fd4;
-        -webkit-text-fill-color: white;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+    .text_border{
+      display:flex;
+      gap:5px;
+      flex-direction:column;
       }
+
     }
     .sub_main_div {
       width: 31%;
@@ -125,7 +136,13 @@ const Root = styled.section`
       
       .sub_main_div_one {
         width: 100%;
-   
+        gap: 20px;
+        padding:0;
+             .text_border {
+    flex-direction: row;
+    justify-content: center;
+   flex-wrap: wrap;
+}
        
       }
       .sub_main_div {

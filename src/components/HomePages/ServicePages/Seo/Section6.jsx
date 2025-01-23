@@ -7,14 +7,14 @@ import {
   Heading,
 } from "../../../../Global/GlobalText";
 import { PurpleBackground } from "../../../../Global/GlobalButton";
-import wordnew from "../../../../assets/Images/wordnew.png";
-import shopnew from "../../../../assets/Images/shopnew.png";
-import phpnew from "../../../../assets/Images/phpnew.png";
-import webnew from "../../../../assets/Images/webnew.png";
-import angnew from "../../../../assets/Images/angnew.png";
-import netnew from "../../../../assets/Images/netnew.png";
-import webbnew from "../../../../assets/Images/webbnew.png";
-import dynanew from "../../../../assets/Images/dynanew.png";
+import seorankingnew from "../../../../assets/Images/seorankingnew.png";
+import shopifynew from "../../../../assets/Images/shopifynew.png";
+import amazonnew from "../../../../assets/Images/amazonnew.png";
+import seofreiendlynew from "../../../../assets/Images/seofreiendlynew.png";
+import conversionnew from "../../../../assets/Images/conversionnew.png";
+import ottnew from "../../../../assets/Images/ottnew.png";
+import appnew from "../../../../assets/Images/appnew.png";
+import youtubenew from "../../../../assets/Images/youtubenew.png";
 
 export const Section6 = () => {
   return (
@@ -22,26 +22,28 @@ export const Section6 = () => {
       <div className="main_div">
         <div className="sub_div">
           <span>
-            <Heading>Say Hello to </Heading>
-
+            <Heading>Say Hello tour</Heading>
             <GradientHeading> Our Highly</GradientHeading>
-            <br />
-            <GradientHeading> Skilled SEOs:</GradientHeading>
-
-            <Heading>Armed With </Heading>
-            <br />
-
-            <Heading>Advanced SEO Tools</Heading>
+            <br/>
+            <GradientHeading>Skilled Seos:</GradientHeading>
+            <Heading> Armed with</Heading>
+            <br/>
+            <Heading>Advanced Seo Tools</Heading>
           </span>
 
           <Greydescription>
-          We are amongst the topmost seo agency that provide end-to-end search engine optimization in India. Requirements and needs of all business and brands help all of them grow optimally in an SEO focused marketplace.
+            We are amongst the topmost seo agency that provide end-to-end search
+            engine optimization in India. Requirements and needs of all business
+            and brands help all of them grow optimally in an SEO focused
+            marketplace.
           </Greydescription>
 
           <Greydescription>
-          With organic SEO, we also focus on building effective link building strategies to get high quality backlinks for business, brand or website, working with trusted partners to build effective SEO focused websites.          </Greydescription>
-
-
+            With organic SEO, we also focus on building effective link building
+            strategies to get high quality backlinks for business, brand or
+            website, working with trusted partners to build effective SEO
+            focused websites.
+          </Greydescription>
           <div>
             <PurpleBackground>Book an Appointment</PurpleBackground>
           </div>
@@ -51,98 +53,120 @@ export const Section6 = () => {
           <div className="slide_div">
             <div className="sub_slide_div">
               <div className="img_div">
-                <img src={wordnew} alt="WordPress & Woo-Commerce" />
+                <img src={seorankingnew} alt="SEO RANKING" />
               </div>
               <div className="content_div">
                 <BlackHeading>SEO RANKING</BlackHeading>
+
                 <Greydescription>
-                Let us know how your work goes and what need we can assist you with, in googles if you succeed, then we are complimented with the use of keyword research and white hat.
+                  Let us know how your work goes and what need we can assist you
+                  with, in googles if you succeed, then we are complimented with
+                  the use of keyword research and white hat.
                 </Greydescription>
+
               </div>
             </div>
 
             <div className="sub_slide_div">
               <div className="img_div">
-                <img src={shopnew} alt="WordPress & Woo-Commerce" />
+                <img src={shopifynew} alt="SHOPIFY SEO" />
               </div>
               <div className="content_div">
                 <BlackHeading>SHOPIFY SEO</BlackHeading>
                 <Greydescription>
-                The Cloud base interface software that gives people or companies a chance to promote their brand as it is easy to comprehend and use as it enables selling, shipping, and branding without any hassle.
+                  The Cloud base interface software that gives people or
+                  companies a chance to promote their brand as it is easy to
+                  comprehend and use as it enables selling, shipping, and
+                  branding without any hassle.
                 </Greydescription>
               </div>
             </div>
 
             <div className="sub_slide_div">
               <div className="img_div">
-                <img src={phpnew} alt="WordPress & Woo-Commerce" />
+                <img src={amazonnew} alt="AMAZON SEO" />
               </div>
               <div className="content_div">
                 <BlackHeading>AMAZON SEO</BlackHeading>
                 <Greydescription>
-                You can trust that the material we provide will always be centered on the information of your brand or product therefore, reach a real market objective and heighten the demand.
+                  You can trust that the material we provide will always be
+                  centered on the information of your brand or product
+                  therefore, reach a real market objective and heighten the
+                  demand.
                 </Greydescription>
               </div>
             </div>
 
             <div className="sub_slide_div">
               <div className="img_div">
-                <img src={webnew} alt="WordPress & Woo-Commerce" />
+                <img src={seofreiendlynew} alt="SEO FRIENDLY CONTENT WRITING" />
               </div>
               <div className="content_div">
                 <BlackHeading>SEO FRIENDLY CONTENT WRITING</BlackHeading>
                 <Greydescription>
-                As per your instruction hence material that would help reach their business objective by fostering growth and reaching set goals would be provided.
+                  As per your instruction hence material that would help reach
+                  their business objective by fostering growth and reaching set
+                  goals would be provided.
                 </Greydescription>
               </div>
             </div>
 
             <div className="sub_slide_div">
               <div className="img_div">
-                <img src={angnew} alt="WordPress & Woo-Commerce" />
+                <img src={conversionnew} alt="CONVERSION RATE OPTIMIZATION (CRO)" />
               </div>
               <div className="content_div">
                 <BlackHeading>CONVERSION RATE OPTIMIZATION (CRO)</BlackHeading>
                 <Greydescription>
-                As bidders say, the goal is to benefit the company, in which case the passive audience should become active users. Our experts optimize the methods thereby increasing the user rate gently.
+                  As bidders say, the goal is to benefit the company, in which
+                  case the passive audience should become active users. Our
+                  experts optimize the methods thereby increasing the user rate
+                  gently.
                 </Greydescription>
               </div>
             </div>
 
             <div className="sub_slide_div">
               <div className="img_div">
-                <img src={netnew} alt="WordPress & Woo-Commerce" />
+                <img src={ottnew} alt="OTT PLATFORM SEO" />
               </div>
               <div className="content_div">
                 <BlackHeading>OTT PLATFORM SEO</BlackHeading>
                 <Greydescription>
-                        When we promote your brand, we put in the funds for visibility to the top OTT brands on the internet. This means the brand gets exclusive representation with the investment in real time.
+                  When we promote your brand, we put in the funds for visibility
+                  to the top OTT brands on the internet. This means the brand
+                  gets exclusive representation with the investment in real
+                  time.
                 </Greydescription>
               </div>
             </div>
 
             <div className="sub_slide_div">
               <div className="img_div">
-                <img src={webbnew} alt="WordPress & Woo-Commerce" />
+                <img src={appnew} alt="APP STORE OPTIMIZATION SEO" />
               </div>
               <div className="content_div">
                 <BlackHeading>APP STORE OPTIMIZATION SEO</BlackHeading>
                 <Greydescription>
-                           Your brand is given the opportunity to go global through streaming on the internet in a rush. And the live stream channels make sure that the audience can easily find the brand to watch it.
+                  Your brand is given the opportunity to go global through
+                  streaming on the internet in a rush. And the live stream
+                  channels make sure that the audience can easily find the brand
+                  to watch it.
                 </Greydescription>
               </div>
             </div>
 
             <div className="sub_slide_div">
               <div className="img_div">
-                <img src={dynanew} alt="WordPress & Woo-Commerce" />
+                <img src={youtubenew} alt="YOUTUBE SEO" />
               </div>
               <div className="content_div">
-                <BlackHeading>Dynamic Website Development</BlackHeading>
+                <BlackHeading>YOUTUBE SEO</BlackHeading>
                 <Greydescription>
-                  We can do alteration in Dynamic Websites, it is possible to do
-                  so on a common change once, and it will reflect in all the web
-                  pages.{" "}
+                  An incredibly strong message is conveyed on an infotainment
+                  resource which is better known by the name YouTube. An
+                  entertaining and clever way to communicate the ideas, so we
+                  once more give you the same.
                 </Greydescription>
               </div>
             </div>
@@ -180,6 +204,7 @@ const Root = styled.section`
           padding: 40px 30px;
           display: flex;
           gap: 20px;
+
           box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.3);
           border-radius: 20px;
           .img_div {
@@ -204,7 +229,7 @@ const Root = styled.section`
       .sub_div {
         gap: 25px;
         text-align: center;
-        br{
+        br {
           display: none;
         }
       }

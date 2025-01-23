@@ -8,7 +8,13 @@ import {
 } from "../../../../Global/GlobalText";
 import { PurpleBackground } from "../../../../Global/GlobalButton";
 import { FaArrowRightLong } from "react-icons/fa6";
+import partner from "../../../../assets/Images/partnernew.png";
+import mobile from "../../../../assets/Images/mobilenew.png";
+import iconpark from "../../../../assets/Images/iconpark.png";
 import frame from "../../../../assets/Images/frame.png";
+import seonew from "../../../../assets/Images/seonew.png";
+import seothree from "../../../../assets/Images/seothree.png";
+import seotwo from "../../../../assets/Images/seotwo.png";
 
 export const Section2 = () => {
   return (
@@ -16,9 +22,12 @@ export const Section2 = () => {
       <div className="main_div">
         <div className="sub_main_div">
           <span>
-            <Heading>Savage For The Market And </Heading> <br />
-            <Heading>Beast Of</Heading>{" "}
-            <GradientHeading> SEO Marketing</GradientHeading>
+            <Heading>Professional Offshore</Heading>
+            <GradientHeading>Seo</GradientHeading>
+            <br />
+
+            <GradientHeading>Company</GradientHeading>
+            <Heading> in India – of The Market</Heading>
           </span>
 
           <Blackdescription>
@@ -114,7 +123,7 @@ const Root = styled.section`
   @media (min-width: 567px) and (max-width: 1024px) {
     padding: 30px 20px;
     .main_div {
-      .sub_main_div .sub_main_div_two {
+      .sub_main_div_two {
         img {
           width: 100%;
         }

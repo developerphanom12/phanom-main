@@ -26,6 +26,8 @@ import {
   WhitegreyBackground,
 } from "../../Global/GlobalButton";
 
+
+
 export const Appointment = ({ show, handleClose }) => {
   const [isScheduleVisible, setIsScheduleVisible] = useState(false);
 

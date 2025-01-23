@@ -13,6 +13,7 @@ import log5 from "../../../../assets/Images/log5.png";
 
 export const SliderPage = () => {
   let sliderRef = useRef(null);
+
   var settings = {
     dots: false,
     infinite: true,
@@ -53,6 +54,7 @@ export const SliderPage = () => {
       },
     ],
   };
+  
   return (
     <Root>
       

@@ -4,6 +4,7 @@ import {
   BlackHeading,
   GreySecondDescription,
   PurpleHeading,
+  Textwithborder,
   WhiteDescription,
   WhitekHeading,
   WhiteNumberHeading,
@@ -14,13 +15,32 @@ export const Section8 = () => {
     <Root>
       <div className="main_div">
         <div className="sub_main_div_one">
-          <div className="text-with-border-shadow">
-            Why
+
+
+                <div className="text_border">
+            
+                       <Textwithborder>
+                            Why
+                       </Textwithborder>
+            
+            
+                       <Textwithborder>
+                          Choose
+                    </Textwithborder>
+                        
+                    <Textwithborder>
+                        US?
+                   </Textwithborder>
+            
+                </div>
+
+          {/* <div className="text-with-border-shadow">
+               Why
             <br />
-            Choose
+               Choose
             <br />
-            US?
-          </div>
+                US?
+          </div> */}
 
           <GreySecondDescription>
             We help explore design through expert ideas and creative
@@ -96,16 +116,13 @@ const Root = styled.section`
       display: flex;
       flex-direction: column;
       gap: 10px;
-      .text-with-border-shadow {
-        font-family: "Poppins", sans-serif;
-        font-size: 30px;
-        font-weight: 600;
-        color: white;
-        line-height: 1.2;
-        -webkit-text-stroke: 1px #6c5fd4;
-        -webkit-text-fill-color: white;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+    .text_border{
+      display:flex;
+      gap:5px;
+      flex-direction:column;
       }
+
     }
     .sub_main_div {
       width: 31%;
@@ -125,7 +142,13 @@ const Root = styled.section`
       
       .sub_main_div_one {
         width: 100%;
-   
+        gap: 20px;
+        padding:0;
+             .text_border {
+    flex-direction: row;
+    justify-content: center;
+   flex-wrap: wrap;
+}
        
       }
       .sub_main_div {

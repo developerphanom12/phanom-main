@@ -1,19 +1,71 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
-import { Greydescription } from "../../../../Global/GlobalText";
+import {
+  Greydescription,
+  Textwithborder,
+  WhiteContent,
+} from "../../../../Global/GlobalText";
 import visibility from "../../../../assets/Images/visibility.png";
-
+import vector from "../../../../assets/Images/vector.png";
+import react from "../../../../assets/Images/reactt.png";
+import github from "../../../../assets/Images/githubb.png";
+import Bootstrap from "../../../../assets/Images/bootstrapp.png";
+import figma from "../../../../assets/Images/figmaa.png";
+import vscodee from "../../../../assets/Images/vscodee.png";
+import postman from "../../../../assets/Images/postmann.png";
+import chrome from "../../../../assets/Images/chrome.png";
+import Slider from "react-slick";
 
 export const Section5 = () => {
- 
+  let sliderRef = useRef(null);
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    speed: 1500,
+    autoplaySpeed: 1500,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          autoplay: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 1,
+          autoplay: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: true,
+          dots: false,
+        },
+      },
+    ],
+  };
   return (
     <Root>
       <div className="main_div">
         <div className="sub_div_one">
-          <div className="text-with-border-shadow">
-            Boost Your Business with Our SEO
-            <br />
-            Services
+          <div className="text_border">
+            <Textwithborder>Boost Your Business with Our Seo</Textwithborder>
+
+            <Textwithborder>Services</Textwithborder>
           </div>
 
           <Greydescription>
@@ -23,45 +75,130 @@ export const Section5 = () => {
             optimization to guarantee that you achieve measurable results.
           </Greydescription>
 
-          
-
-          
-
-          <div className="seo_content">
-          <Greydescription>
-            We provide a variety of services to maximize the relevancy and
-            search-ability of your website:
-          </Greydescription>
-          <div className="seo_sub_cont">
-
-
+          <div className="text_head">
             <Greydescription>
-              1. Keyword research - We ensure, that you never hear the phrase
-              “It’s complicated” ever again, by finding the pertinent keywords
-              for your audience.{" "}
+              We provide a variety of services to maximize the relevancy and
+              search-ability of your website:
             </Greydescription>
-
-            <Greydescription>2. 
-            On-Page - We ensure page titles, Meta tags, headings and content are optimized for targeted search queries.</Greydescription>
-          
-            <Greydescription>3. 
-            Technical SEO - We make sure that your website loads faster, is more secure, and more accessible to spiders.
-            
-            </Greydescription>
-
-
-            <Greydescription>4. Off-Page - We aim at increasing your website’s links through effective link building strategies.</Greydescription>
-
-
-            <Greydescription>5. Content Marketing - Content without purpose is meaningless. We ensure that created content is relevant through the use of keywords.</Greydescription>
-
-
-
-            <Greydescription>6. Local SEO - We geo-target search engines to find customers nearby.</Greydescription>
-
-            <Greydescription>7.  E-commerce SEO - We try to rank your online store at the top of the search engines to increase sales.</Greydescription>
+            <div className="sub_text_head">
+              <Greydescription>
+                1. Keyword research - We ensure, that you never hear the phrase
+                “It’s complicated” ever again, by finding the pertinent keywords
+                for your audience.
+              </Greydescription>
+              <Greydescription>
+                2. On-Page - We ensure page titles, Meta tags, headings and
+                content are optimized for targeted search queries.
+              </Greydescription>
+              <Greydescription>
+                3. Technical SEO - We make sure that your website loads faster,
+                is more secure, and more accessible to spiders.
+              </Greydescription>
+              <Greydescription>
+                4. Off-Page - We aim at increasing your website’s links through
+                effective link building strategies.
+              </Greydescription>
+              <Greydescription>
+                5. Content Marketing - Content without purpose is meaningless.
+                We ensure that created content is relevant through the use of
+                keywords
+              </Greydescription>
+              <Greydescription>
+                6. Local SEO - We geo-target search engines to find customers
+                nearby.
+              </Greydescription>
+              <Greydescription>
+                7. E-commerce SEO - We try to rank your online store at the top
+                of the search engines to increase sales.
+              </Greydescription>
             </div>
           </div>
+
+          {/* <div className="tecnology_types">
+            <div className="sub_technology_type">
+              <img src={vector} alt="devops" />
+              <WhiteContent>DevOps </WhiteContent>
+            </div>
+
+            <div className="sub_technology_type">
+              <img src={github} alt="github" />
+              <WhiteContent>Github</WhiteContent>
+            </div>
+
+            <div className="sub_technology_type">
+              <img src={react} alt="vector" />
+              <WhiteContent>React</WhiteContent>
+            </div>
+
+            <div className="sub_technology_type">
+              <img src={Bootstrap} alt="bootstrap" />
+              <WhiteContent>Bootstrap</WhiteContent>
+            </div>
+
+            <div className="sub_technology_type">
+              <img src={figma} alt="figma" />
+              <WhiteContent>Figma</WhiteContent>
+            </div>
+
+            <div className="sub_technology_type">
+              <img src={vscodee} alt="vscode" />
+              <WhiteContent>VS Code</WhiteContent>
+            </div>
+
+            <div className="sub_technology_type">
+              <img src={postman} alt="postman" />
+              <WhiteContent>Postman</WhiteContent>
+            </div>
+
+            <div className="sub_technology_type">
+              <img src={chrome} alt="chrome" />
+              <WhiteContent>Chrome</WhiteContent>
+            </div>
+          </div>
+
+          <div className="slider-container">
+            <Slider {...settings}>
+              <div className="img_logo">
+                <img src={vector} alt="devops" />
+                <WhiteContent>DevOps </WhiteContent>
+              </div>
+
+              <div className="img_logo">
+                <img src={github} alt="github" />
+                <WhiteContent>Github</WhiteContent>
+              </div>
+
+              <div className="img_logo">
+                <img src={react} alt="vector" />
+                <WhiteContent>React</WhiteContent>
+              </div>
+
+              <div className="img_logo">
+                <img src={Bootstrap} alt="bootstrap" />
+                <WhiteContent>Bootstrap</WhiteContent>
+              </div>
+
+              <div className="img_logo">
+                <img src={figma} alt="figma" />
+                <WhiteContent>Figma</WhiteContent>
+              </div>
+
+              <div className="img_logo">
+                <img src={vscodee} alt="vscode" />
+                <WhiteContent>VS Code</WhiteContent>
+              </div>
+
+              <div className="img_logo">
+                <img src={postman} alt="postman" />
+                <WhiteContent>Postman</WhiteContent>
+              </div>
+
+              <div className="img_logo">
+                <img src={chrome} alt="chrome" />
+                <WhiteContent>Chrome</WhiteContent>
+              </div>
+            </Slider>
+          </div> */}
         </div>
         <div className="sub_div_two">
           <img src={visibility} alt="process" />
@@ -82,26 +219,51 @@ const Root = styled.section`
       display: flex;
       flex-direction: column;
       gap: 30px;
-      .text-with-border-shadow {
-        font-family: "Poppins", sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        color: white;
-        line-height: 1.2;
-
-        -webkit-text-stroke: 1px #6c5fd4;
-        -webkit-text-fill-color: white;
-
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      .text_border {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
       }
 
-      .seo_content{
-        
-       
-        .seo_sub_cont{
-          padding-left:5px;
+      .text_head {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .sub_text_head {
+          padding-left: 10px;
           display: flex;
           flex-direction: column;
+          gap: 5px;
+        }
+      }
+
+      .tecnology_types {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        .sub_technology_type {
+          border-radius: 10px;
+          background-color: #6c5fd4;
+          padding: 20px;
+          width: 22%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 5px;
+        }
+      }
+
+      .slider-container {
+        display: none;
+        .img_logo {
+          background-color: #6c5fd4;
+          padding: 20px;
+          width: 40% !important;
+          display: flex !important;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
           gap: 10px;
         }
       }
@@ -119,6 +281,7 @@ const Root = styled.section`
 
   @media (max-width: 567px) {
     padding: 10px 20px;
+
     .main_div {
       flex-direction: column;
       text-align: center;
@@ -126,7 +289,11 @@ const Root = styled.section`
       .sub_div_one {
         width: 100%;
         gap: 20px;
-
+        .text_border {
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
         .slider-container {
           display: block;
           padding: 20px 0;
@@ -142,6 +309,10 @@ const Root = styled.section`
             width: 100% !important;
           }
         }
+
+        .tecnology_types {
+          display: none;
+        }
       }
     }
   }
@@ -155,6 +326,10 @@ const Root = styled.section`
       .sub_div_one {
         width: 100%;
         gap: 20px;
+        .text_border {
+          flex-direction: row;
+          justify-content: center;
+        }
 
         .slider-container {
           display: none;
@@ -164,6 +339,11 @@ const Root = styled.section`
           br {
             display: none;
           }
+        }
+
+        .tecnology_types {
+          display: flex;
+          justify-content: center;
         }
       }
 

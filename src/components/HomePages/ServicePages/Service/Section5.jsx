@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
-import { Greydescription, WhiteContent } from "../../../../Global/GlobalText";
+import { Greydescription, Textwithborder, WhiteContent } from "../../../../Global/GlobalText";
 import process from "../../../../assets/Images/process.png";
 import vector from "../../../../assets/Images/vector.png";
 import react from "../../../../assets/Images/reactt.png";
@@ -58,16 +58,23 @@ export const Section5 = () => {
     <Root>
       <div className="main_div">
         <div className="sub_div_one">
+          <div className="text_border">
 
-        <textwithborder></textwithborder>
+           <Textwithborder>
+               Our Web
+           </Textwithborder>
 
-          <div className="text-with-border-shadow">
-            Our Web
-            <br />
-            Development
-            <br />
-            Services
-          </div>
+
+           <Textwithborder>
+          Development
+        </Textwithborder>
+            
+        <Textwithborder>
+          Services
+       </Textwithborder>
+
+       </div>
+
 
           <Greydescription>
             We create custom, user-friendly websites to elevate your brand and
@@ -181,17 +188,10 @@ const Root = styled.section`
       display: flex;
       flex-direction: column;
       gap: 30px;
-      .text-with-border-shadow {
-        font-family: "Poppins", sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        color: white;
-        line-height: 1.2;
-
-        -webkit-text-stroke: 1px #6c5fd4;
-        -webkit-text-fill-color: white;
-
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      .text_border{
+      display:flex;
+      gap:5px;
+      flex-direction:column;
       }
 
       .tecnology_types {
@@ -238,6 +238,7 @@ const Root = styled.section`
 
   @media (max-width: 567px) {
     padding: 10px 20px;
+
     .main_div {
       flex-direction: column;
       text-align: center;
@@ -245,7 +246,11 @@ const Root = styled.section`
       .sub_div_one {
         width: 100%;
         gap: 20px;
-
+           .text_border {
+    flex-direction: row;
+    justify-content: center;
+   flex-wrap: wrap;
+}
         .slider-container {
           display: block;
           padding: 20px 0;
@@ -278,6 +283,10 @@ const Root = styled.section`
       .sub_div_one {
         width: 100%;
         gap: 20px;
+  .text_border {
+    flex-direction: row;
+    justify-content: center;
+}
 
         .slider-container {
           display: none;

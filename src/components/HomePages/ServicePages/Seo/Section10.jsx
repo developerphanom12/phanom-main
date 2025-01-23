@@ -49,36 +49,36 @@ export const Section10 = () => {
           </Greydescription>
 
           <span>
-            <Heading>Put On Ice To Preserve Your</Heading>
+            <Heading>Enhance Your Online Visibility with </Heading>
             <br />
-            <Heading>Viewers With</Heading> <span></span>
-            <GradientSecondHeading> Your Potential!</GradientSecondHeading>
+
+            <GradientSecondHeading>
+              {" "}
+              Best Seo Marketing Agency
+            </GradientSecondHeading>
           </span>
 
           <Greydescription>
-            Preserve your audience's attention and captivate them by showcasing
-            your true potential. In today’s fast-paced world, making a lasting
-            impression is crucial. We help you create unforgettable experiences
-            that resonate with your viewers, keeping them engaged and coming
-            back for more. With our innovative strategies, we ensure that your
-            content stands out,{" "}
-            <span style={{ color: "#6C5FD4" }}>
-              maintaining its relevance and impact.
-            </span>
+            Finding it difficult to be seen online? With our effective SEO
+            solutions, you will be able to enhance your rankings in search
+            engines, generate organic clicks and convert those clicks into
+            sales. Our company works with businesses of all sizes and provides
+            specific one- on-one solutions. From searching for the best keywords
+            for the website to creating the marketing content, we do it all in
+            order to keep the website competitive.
           </Greydescription>
 
-          <Greydescription>
-            Whether it’s through dynamic visuals, compelling storytelling, or
-            cutting-edge design, we work to enhance your message and maximize
-            your reach,{" "}
-            <span style={{ color: "#6C5FD4" }}>
-              turning potential into lasting success.
-            </span>
+      
+
+          <Greydescription  style={{ color: "#6C5FD4" }}>
+          Let’s make your website the one that people want to find in search engines!
           </Greydescription>
+
+
 
           <div>
             <PurpleBackground className="connect_btn">
-              Connect with us <FaArrowRightLong />
+            Get Started with SEO Today  <FaArrowRightLong />
             </PurpleBackground>
           </div>
         </div>
@@ -296,53 +296,47 @@ const Root = styled.section`
 
     .main_div {
       flex-wrap: wrap;
-      gap:20px;
+      gap: 20px;
       .sub_div_one {
         text-align: center;
-        gap: 20px;align-items: center;
-        .purpl_cont{
-          color:#6C5FD4;
-          font-size:16px;
+        gap: 20px;
+        align-items: center;
+        .purpl_cont {
+          color: #6c5fd4;
+          font-size: 16px;
         }
-        span{
+        span {
           font-size: 22px;
-          br{
+          br {
             display: none;
           }
         }
-      
       }
 
-      .btn_div{
+      .btn_div {
         display: flex;
         justify-content: center;
       }
 
-
-      .sub_div_two{
-
-        span{
+      .sub_div_two {
+        span {
           font-size: 18px;
         }
-      
-      form .label_content .schedule_div {
-    width: 70%;
-    .time_date_btn{
-      gap:10px;
-    }
-}
 
+        form .label_content .schedule_div {
+          width: 70%;
+          .time_date_btn {
+            gap: 10px;
+          }
+        }
       }
-
     }
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
     padding: 30px 20px;
     .main_div {
-      gap:0;
+      gap: 0;
     }
   }
-
-  
 `;

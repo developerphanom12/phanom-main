@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Subdescription } from '../../../../Global/GlobalText';
+import { Subdescription, Subpurpledescription } from '../../../../Global/GlobalText';
 import { IoIosArrowForward } from "react-icons/io";
 
 export const Section1 = () => {
@@ -11,11 +11,11 @@ export const Section1 = () => {
         <a href="/home"><Subdescription>Home</Subdescription></a>
         <IoIosArrowForward style={{color:"667085"}}/>
 
-        <a href="#"><Subdescription>Service</Subdescription></a>
+        <a href="/"><Subdescription>Service</Subdescription></a>
 
         <IoIosArrowForward   style={{color:"6C5FD4"}}/>
 
-        <a href="/seo"><Subdescription>SEO</Subdescription></a>
+        <a href="/"><Subpurpledescription>SEO(Search Engine Optimization)</Subpurpledescription></a>
 
         
       </div>

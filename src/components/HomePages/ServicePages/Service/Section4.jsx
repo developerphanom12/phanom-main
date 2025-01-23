@@ -40,7 +40,7 @@ const Root = styled.section`
 
 
 @media (max-width: 567px) {
-  padding: 30px 20px;
+  padding: 30px 20px 0;
   span{
     br{
       display: none;

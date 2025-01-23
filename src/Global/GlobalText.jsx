@@ -40,7 +40,7 @@ export const Heading = styled.span`
   }
 `;
 
-export const textwithborder = styled.h2`
+export const Textwithborder = styled.h2`
         font-family: "Poppins", sans-serif;
         font-size: 40px;
         font-weight: 600;
@@ -49,6 +49,13 @@ export const textwithborder = styled.h2`
         -webkit-text-stroke: 1px #6c5fd4;
         -webkit-text-fill-color: white;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin:0;
+
+          @media (max-width: 567px) {
+             font-size: 28px;
+        font-weight: 600;
+        line-height: 36px;
+          }
 `;
 
 
@@ -437,6 +444,7 @@ export const Greydescription = styled.p`
   line-height: 28px;
   color: #525252;
   font-weight: 400;
+  margin:0;
 `;
 
 export const Subdescription = styled.p`

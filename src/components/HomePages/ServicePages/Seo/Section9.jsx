@@ -8,7 +8,7 @@ import {
 } from "../../../../Global/GlobalText";
 import framneww from "../../../../assets/Images/framm.png";
 import groupone from "../../../../assets/Images/groupone.png";
-import grouptwo from "../../../../assets/Images/grouptwo.png";
+import liabnew from "../../../../assets/Images/liabnew.png";
 import groupthree from "../../../../assets/Images/groupthree.png";
 import groupfour from "../../../../assets/Images/groupfour.png";
 
@@ -17,56 +17,43 @@ export const Section9 = () => {
     <Root>
       <div className="main_div">
         <span style={{ textAlign: "center" }}>
-          <Heading>We Entrust To-Provide You</Heading>
+          <Heading>We Want to Notify You That We Will Provide You with the</Heading>
           <br />
-          <Heading>On Your</Heading> <span></span>
-          <GradientSecondHeading>Mark Performance</GradientSecondHeading>
+          <Heading>Following Evaluations of Your Actions at the</Heading> 
+          <GradientSecondHeading>“On Your Mark”</GradientSecondHeading>
           <br />
-          <Heading>With: </Heading>
+          <Heading>Stage : </Heading>
         </span>
         <div className="bg_img">
           <div className="sub_bg_img">
-            <img src={groupone} alt="expertise" />
-            <PurpleSubHeading>Expertise</PurpleSubHeading>
+            <img src={groupone} alt="Knowledge" />
+            <PurpleSubHeading>Knowledge</PurpleSubHeading>
             <GreySecondDescription>
-              We naturally reconcile the deployed number for the utmost websites
-              that knack the performance-based competence. We ensure our clients
-              present your business with what the market desire and the best
-              numbers for visiting your website.
+            We skillfully integrate the center of mass for these firms that specialize in performance based marketing. We guarantee our customers offer your work the best that the market has to offer and the highest number of visitors to your site.
             </GreySecondDescription>
           </div>
 
           <div className="sub_bg_img">
-            <img src={grouptwo} alt="expertise" />
-            <PurpleSubHeading>Culpability</PurpleSubHeading>
+            <img src={liabnew} alt="Liability" />
+            <PurpleSubHeading>Liability</PurpleSubHeading>
             <GreySecondDescription>
-              Even if you are starting from scratch we are right and right here
-              to formulate your website thoroughly for everything it is needed
-              to make it worth. With a higher rate of sale & services on your
-              website are made free from any obligatory aspect.
+            Even if you are a novice, do not get worried, we are here and interactive to design your web page properly for every purpose you wish to achieve with it. With this, there is no obligatory condition to have a conversion and services on your site at prohibitive rates.
             </GreySecondDescription>
           </div>
 
           <div className="sub_bg_img">
-            <img src={groupthree} alt="expertise" />
-            <PurpleSubHeading>Acquaintance</PurpleSubHeading>
+            <img src={groupthree} alt="Familiarization" />
+            <PurpleSubHeading>Familiarization</PurpleSubHeading>
             <GreySecondDescription>
-              Our proficiency is always with tetchy aspect and upgrading with
-              the trends on going in the market to make everything new and
-              catchy for the benefit of your website. Software designed for your
-              website definitely assists to become Savvy
+            Ours is always with conservative tendency and changing with the new technologies which are in the market so as to make something for the needs of your site that is new and appealing. Custom software created for your website certainly help to be Gallant.
             </GreySecondDescription>
           </div>
 
           <div className="sub_bg_img">
-            <img src={groupfour} alt="expertise" />
-            <PurpleSubHeading>Approach</PurpleSubHeading>
+            <img src={groupfour} alt="Strategy" />
+            <PurpleSubHeading>Strategy</PurpleSubHeading>
             <GreySecondDescription>
-              We prepare a line of attack with some easy and understandable
-              creation for your website for avoiding any snags. Rightfully
-              creating your website and making it for the best use of the
-              visitors and active users for best-boosted results, our team have
-              the potential to strive.
+            We develop a strategy with some templates that are simple and easy to understand when designing your site in order to avoid snafus. Our team have the potential to strive rightfully constructing your site and using it for the most ideal outcome to the visitors and active users.
             </GreySecondDescription>
           </div>
         </div>

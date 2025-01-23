@@ -14,46 +14,46 @@ export const Section12 = () => {
     const [questions, setQuestions] = useState([
         {
           id: 1,
-          text: "The expense windows adapted sir. Wrong widen drawn.",
+          text: "1. How do you think our services can assist your business in having an upper hand when it comes to online competition?",
           expanded: false,
           subcontent: [
-            { id: 1, text: "Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. " },
+            { id: 1, text: "As we develop a customized SEO strategy for your business, understand how we are able to rank your website quickly and effectively so as to gain a higher number of clientele. " },
             
           ],
         },
         {
           id: 2,
-          text: "Six curiosity day assurance bed necessary?",
+          text: "2. How would seo help with nurturing the growth of your company?",
           expanded: false,
           subcontent: [
-            { id: 1, text: " Blessing welcomed ladyship she met humoured sir breeding her. " },
+            { id: 1, text: " Observe how seo can result in an influx in the number of visitors, improving the user experience and as a result, increasing the sales and revenue " },
             
           ],
         },
         {
           id: 3,
-          text: "Produce say the ten moments parties?",
+          text: "3. Would the effect of SEO be instantly visible once it has been adopted?",
           expanded: false,
           subcontent: [
-            { id: 1, text: "Subcontent for question 3 - part 1" },
+            { id: 1, text: "Get acquainted with the time frame within which SEO succeeds and the services that continue being provided for extended periods." },
            
           ],
         },
         {
           id: 4,
-          text: "Simple innate summer fat appear basket his desire joy?",
+          text: "4. In what ways do our seo strategies stand out when set beside other seo strategies?",
           expanded: false,
           subcontent: [
-            { id: 1, text: "Subcontent for question 4 - part 1" },
+            { id: 1, text: "Learn the difference between our SEO Services the marketing strategies other companies implement." },
            
           ],
         },
         {
           id: 5,
-          text: "Outward clothes promise at gravity do excited?",
+          text: "5. Does seo only cater to the needs of large corporations?",
           expanded: false,
           subcontent: [
-            { id: 1, text: "Subcontent for question 5 - part 1" },
+            { id: 1, text: "Of course not! Learn how we help small businesses get better marketing opportunities than well established big businesses." },
           
           ],
         },

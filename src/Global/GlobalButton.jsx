@@ -177,6 +177,5 @@ export const GradientButton = styled.button`
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    width: 190px;
 
 `;

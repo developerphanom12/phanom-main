@@ -6,7 +6,7 @@ export const SubNavbar = () => {
   return (
     <Root>
       <div className="main_div">
-        <WhiteHeading>SEO</WhiteHeading>
+        <WhiteHeading>Development</WhiteHeading>
 
         <div className="icon">
 
