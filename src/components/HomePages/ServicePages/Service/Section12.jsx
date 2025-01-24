@@ -11,63 +11,58 @@ import { PurpleBackground } from "../../../../Global/GlobalButton";
 import vectorani from "../../../../assets/Images/vectorani.png";
 
 export const Section12 = () => {
-    const [questions, setQuestions] = useState([
+  const [questions, setQuestions] = useState([
+    {
+      id: 1,
+      text: "The expense windows adapted sir. Wrong widen drawn.",
+      expanded: false,
+      subcontent: [
         {
           id: 1,
-          text: "The expense windows adapted sir. Wrong widen drawn.",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. " },
-            
-          ],
+          text: "Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. ",
         },
+      ],
+    },
+    {
+      id: 2,
+      text: "Six curiosity day assurance bed necessary?",
+      expanded: false,
+      subcontent: [
         {
-          id: 2,
-          text: "Six curiosity day assurance bed necessary?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: " Blessing welcomed ladyship she met humoured sir breeding her. " },
-            
-          ],
+          id: 1,
+          text: " Blessing welcomed ladyship she met humoured sir breeding her. ",
         },
-        {
-          id: 3,
-          text: "Produce say the ten moments parties?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "Subcontent for question 3 - part 1" },
-           
-          ],
-        },
-        {
-          id: 4,
-          text: "Simple innate summer fat appear basket his desire joy?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "Subcontent for question 4 - part 1" },
-           
-          ],
-        },
-        {
-          id: 5,
-          text: "Outward clothes promise at gravity do excited?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "Subcontent for question 5 - part 1" },
-          
-          ],
-        },
-      ]);
+      ],
+    },
+    {
+      id: 3,
+      text: "Produce say the ten moments parties?",
+      expanded: false,
+      subcontent: [{ id: 1, text: "Subcontent for question 3 - part 1" }],
+    },
+    {
+      id: 4,
+      text: "Simple innate summer fat appear basket his desire joy?",
+      expanded: false,
+      subcontent: [{ id: 1, text: "Subcontent for question 4 - part 1" }],
+    },
+    {
+      id: 5,
+      text: "Outward clothes promise at gravity do excited?",
+      expanded: false,
+      subcontent: [{ id: 1, text: "Subcontent for question 5 - part 1" }],
+    },
+  ]);
 
-      const handleExpand = (id) => {
-        setQuestions(
-          questions.map((question) =>
-            question.id === id
-              ? { ...question, expanded: !question.expanded }
-              : question
-          )
-        );
-      };
+  const handleExpand = (id) => {
+    setQuestions(
+      questions.map((question) =>
+        question.id === id
+          ? { ...question, expanded: !question.expanded }
+          : question
+      )
+    );
+  };
 
   return (
     <Root>
@@ -77,7 +72,6 @@ export const Section12 = () => {
             <Heading>Fequently Asked Questions</Heading>
           </span>
 
-
           {questions.map((question) => (
             <div key={question.id} className="question-container">
               <div
@@ -86,7 +80,9 @@ export const Section12 = () => {
               >
                 <FaqHeading>{question.text}</FaqHeading>
                 <span
-                  className={`plus-minus ${question.expanded ? "minus" : "plus"}`}
+                  className={`plus-minus ${
+                    question.expanded ? "minus" : "plus"
+                  }`}
                 >
                   {question.expanded ? "-" : "+"}
                 </span>
@@ -94,9 +90,7 @@ export const Section12 = () => {
               {question.expanded && (
                 <div className="question-content">
                   {question.subcontent.map((sub) => (
-                    <Faqdescription key={sub.id}>
-                      {sub.text}
-                    </Faqdescription>
+                    <Faqdescription key={sub.id}>{sub.text}</Faqdescription>
                   ))}
                 </div>
               )}
@@ -181,6 +175,11 @@ const Root = styled.section`
       flex-direction: column;
       gap: 20px;
       align-items: center;
+
+      .submit_btn {
+        margin-top: 40px;
+      }
+
       .bg_img {
         background-image: url(${vectorani});
         background-size: 100% 100%;
@@ -256,8 +255,8 @@ const Root = styled.section`
       flex-direction: column;
       .sub_div_one {
         width: 100%;
-        span{
-          text-align:center;
+        span {
+          text-align: center;
           margin-bottom: 20px;
         }
       }
@@ -269,8 +268,4 @@ const Root = styled.section`
       }
     }
   }
-
-
 `;
-
-

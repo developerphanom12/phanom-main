@@ -1,80 +1,25 @@
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
-import {
-  Greydescription,
-  Textwithborder,
-  WhiteContent,
-} from "../../../../Global/GlobalText";
+import { Greydescription, Textwithborder } from "../../../../Global/GlobalText";
 import visibility from "../../../../assets/Images/visibility.png";
-import vector from "../../../../assets/Images/vector.png";
-import react from "../../../../assets/Images/reactt.png";
-import github from "../../../../assets/Images/githubb.png";
-import Bootstrap from "../../../../assets/Images/bootstrapp.png";
-import figma from "../../../../assets/Images/figmaa.png";
-import vscodee from "../../../../assets/Images/vscodee.png";
-import postman from "../../../../assets/Images/postmann.png";
-import chrome from "../../../../assets/Images/chrome.png";
-import Slider from "react-slick";
 
 export const Section5 = () => {
-  let sliderRef = useRef(null);
-  var settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: false,
-    speed: 1500,
-    autoplaySpeed: 1500,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          autoplay: false,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 1,
-          autoplay: false,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          autoplay: true,
-          dots: false,
-        },
-      },
-    ],
-  };
   return (
     <Root>
       <div className="main_div">
         <div className="sub_div_one">
           <div className="text_border">
+
             <Textwithborder>Boost Your Business with Our Seo</Textwithborder>
-
             <Textwithborder>Services</Textwithborder>
-          </div>
 
+          </div>
           <Greydescription>
             We understand your needs, so we work on your web page to optimize it
             for better traffic and more visibility on search engines. Our SEO
             Experts works from researching keywords to on-page and off-page
             optimization to guarantee that you achieve measurable results.
           </Greydescription>
-
           <div className="text_head">
             <Greydescription>
               We provide a variety of services to maximize the relevancy and
@@ -113,92 +58,6 @@ export const Section5 = () => {
               </Greydescription>
             </div>
           </div>
-
-          {/* <div className="tecnology_types">
-            <div className="sub_technology_type">
-              <img src={vector} alt="devops" />
-              <WhiteContent>DevOps </WhiteContent>
-            </div>
-
-            <div className="sub_technology_type">
-              <img src={github} alt="github" />
-              <WhiteContent>Github</WhiteContent>
-            </div>
-
-            <div className="sub_technology_type">
-              <img src={react} alt="vector" />
-              <WhiteContent>React</WhiteContent>
-            </div>
-
-            <div className="sub_technology_type">
-              <img src={Bootstrap} alt="bootstrap" />
-              <WhiteContent>Bootstrap</WhiteContent>
-            </div>
-
-            <div className="sub_technology_type">
-              <img src={figma} alt="figma" />
-              <WhiteContent>Figma</WhiteContent>
-            </div>
-
-            <div className="sub_technology_type">
-              <img src={vscodee} alt="vscode" />
-              <WhiteContent>VS Code</WhiteContent>
-            </div>
-
-            <div className="sub_technology_type">
-              <img src={postman} alt="postman" />
-              <WhiteContent>Postman</WhiteContent>
-            </div>
-
-            <div className="sub_technology_type">
-              <img src={chrome} alt="chrome" />
-              <WhiteContent>Chrome</WhiteContent>
-            </div>
-          </div>
-
-          <div className="slider-container">
-            <Slider {...settings}>
-              <div className="img_logo">
-                <img src={vector} alt="devops" />
-                <WhiteContent>DevOps </WhiteContent>
-              </div>
-
-              <div className="img_logo">
-                <img src={github} alt="github" />
-                <WhiteContent>Github</WhiteContent>
-              </div>
-
-              <div className="img_logo">
-                <img src={react} alt="vector" />
-                <WhiteContent>React</WhiteContent>
-              </div>
-
-              <div className="img_logo">
-                <img src={Bootstrap} alt="bootstrap" />
-                <WhiteContent>Bootstrap</WhiteContent>
-              </div>
-
-              <div className="img_logo">
-                <img src={figma} alt="figma" />
-                <WhiteContent>Figma</WhiteContent>
-              </div>
-
-              <div className="img_logo">
-                <img src={vscodee} alt="vscode" />
-                <WhiteContent>VS Code</WhiteContent>
-              </div>
-
-              <div className="img_logo">
-                <img src={postman} alt="postman" />
-                <WhiteContent>Postman</WhiteContent>
-              </div>
-
-              <div className="img_logo">
-                <img src={chrome} alt="chrome" />
-                <WhiteContent>Chrome</WhiteContent>
-              </div>
-            </Slider>
-          </div> */}
         </div>
         <div className="sub_div_two">
           <img src={visibility} alt="process" />
@@ -232,22 +91,6 @@ const Root = styled.section`
         .sub_text_head {
           padding-left: 10px;
           display: flex;
-          flex-direction: column;
-          gap: 5px;
-        }
-      }
-
-      .tecnology_types {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        .sub_technology_type {
-          border-radius: 10px;
-          background-color: #6c5fd4;
-          padding: 20px;
-          width: 22%;
-          display: flex;
-          align-items: center;
           flex-direction: column;
           gap: 5px;
         }
@@ -309,10 +152,6 @@ const Root = styled.section`
             width: 100% !important;
           }
         }
-
-        .tecnology_types {
-          display: none;
-        }
       }
     }
   }
@@ -339,11 +178,6 @@ const Root = styled.section`
           br {
             display: none;
           }
-        }
-
-        .tecnology_types {
-          display: flex;
-          justify-content: center;
         }
       }
 

@@ -388,9 +388,7 @@ color: #000000;
   font-size: 22px;
 font-weight: 500;
 line-height: 23px;
-
 }
-
 
 `;
 
@@ -400,11 +398,13 @@ export const Blackdescription = styled.p`
   line-height: 28px;
   color: #000000;
   font-weight: 400;
+  margin:0;
   @media (max-width: 567px) {
     font-size: 16px;
     line-height: 24px;
   }
 `;
+
 export const Faqdescription = styled.p`
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -412,7 +412,6 @@ export const Faqdescription = styled.p`
   color: #000000;
   font-weight: 400;
 `;
-
 
 export const FaqWhitedescription = styled.p`
   font-size: 16px;
@@ -548,6 +547,7 @@ export const BlackHeading = styled.h4`
   line-height: 36px;
   color: #000000;
   font-weight: 500;
+  margin:0;
   @media (max-width: 567px) {
     font-size: 22px;
     line-height: 30px;

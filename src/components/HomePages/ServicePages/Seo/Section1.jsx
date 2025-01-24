@@ -11,7 +11,7 @@ export const Section1 = () => {
         <a href="/home"><Subdescription>Home</Subdescription></a>
         <IoIosArrowForward style={{color:"667085"}}/>
 
-        <a href="/"><Subdescription>Service</Subdescription></a>
+        <a href="#"><Subdescription>Service</Subdescription></a>
 
         <IoIosArrowForward   style={{color:"6C5FD4"}}/>
 

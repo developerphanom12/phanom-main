@@ -156,7 +156,7 @@ export const GreyBorderButton = styled.button`
 
 
 export const GradientButton = styled.button`
-    padding: 12px 0;
+  padding: 12px 0;
   border-radius:30px;
   color: #ffffff;
   background: linear-gradient(90deg, #4899E1, #984EE8, #D019E4);

@@ -53,7 +53,7 @@ export const Section12 = () => {
           text: "5. Does seo only cater to the needs of large corporations?",
           expanded: false,
           subcontent: [
-            { id: 1, text: "Of course not! Learn how we help small businesses get better marketing opportunities than well established big businesses." },
+            { id: 1, text: "Subcontent for question 5 - part 1" },
           
           ],
         },
@@ -181,6 +181,11 @@ const Root = styled.section`
       flex-direction: column;
       gap: 20px;
       align-items: center;
+
+       .submit_btn{
+      margin-top:40px;
+      }
+      
       .bg_img {
         background-image: url(${vectorani});
         background-size: 100% 100%;

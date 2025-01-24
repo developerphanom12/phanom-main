@@ -9,7 +9,6 @@ import { Section7 } from './Section7';
 import { Section8 } from './Section8';
 import { SubNavbar } from './SubNavbar';
 import { Section9 } from './Section9';
-import { Testimonial } from './Testimonial';
 import { Section10 } from './Section10';
 import { Section12 } from './Section12';
 
