@@ -27,9 +27,9 @@ export const TopNavbar = () => {
   return (
     <Root>
       <div className="navbar">
-        <div className="logo">
+        <a href="/home"  className="logo">
           <img src={phanomsLogo} alt="Phanom Professionals Logo" />
-        </div>
+        </a>
 
         <div className={`menu ${menuOpen ? "open" : ""}`}>
           <div className="menu-item">
@@ -44,21 +44,21 @@ export const TopNavbar = () => {
               <div className="sub_icon_content">
                 <MenuMainHeading>Digital Marketing</MenuMainHeading>
 
-                <a href="#">
+                <a href="/offshore-seo-company-in-india/">
                   <MenuSubHeading>
                     SEO (Search Engine Optimisation)
                   </MenuSubHeading>
                 </a>
 
-                <a href="#">
+                <a href="/offshore-social-media-marketing-agency-in-india/">
                   <MenuSubHeading>Social Media Marketing</MenuSubHeading>
                 </a>
 
-                <a href="#">
+                <a href="/offshore-ppc-marketing-agency-in-india/">
                   <MenuSubHeading>Pay Per Click (PPC)</MenuSubHeading>
                 </a>
 
-                <a href="#">
+                <a href="/offshore-youtube-marketing-services-in-india/">
                   <MenuSubHeading>Youtube Marketing</MenuSubHeading>
                 </a>
               </div>
@@ -66,15 +66,18 @@ export const TopNavbar = () => {
               <div className="sub_icon_content">
                 <MenuMainHeading>Design & Development</MenuMainHeading>
 
-                <a href="#">
+                <a href="/offshore-website-development-services-in-india/">
                   <MenuSubHeading>Web Development</MenuSubHeading>
                 </a>
-                <a href="#">
+
+                <a href="/offshore-shopify-web-development-services-in-india/">
                   <MenuSubHeading>Shopify</MenuSubHeading>
                 </a>
-                <a href="#">
+
+                <a href="/offshore-java-software-development-company-in-india/">
                   <MenuSubHeading>Java</MenuSubHeading>
                 </a>
+
                 <a href="#">
                   <MenuSubHeading>Magento</MenuSubHeading>
                 </a>

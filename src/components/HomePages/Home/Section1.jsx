@@ -8,7 +8,7 @@ import {
   WhiteMainHeading,
 } from "../../../Global/GlobalText";
 
-import {PurpleBackground } from "../../../Global/GlobalButton";
+import { PurpleBackground } from "../../../Global/GlobalButton";
 
 import herobanner from "../../../assets/Images/herobanner.png";
 
@@ -28,15 +28,12 @@ export const Section1 = () => {
             </span>
 
             <BlackMainDescription>
-              Excellence refined, innovation ignited, the future  starts
-              here
+              Excellence refined, innovation ignited, the future starts here
             </BlackMainDescription>
-
 
             <div className="btn_div">
               <PurpleBackground>Book an Appointment</PurpleBackground>
             </div>
-            
           </div>
 
           <div className="sub_main_div">
@@ -53,7 +50,9 @@ export const Section1 = () => {
 
           <div className="sub_pointers">
             <WhiteMainHeading> 100+</WhiteMainHeading>
-            <SubNavbarLinks>Web Developed  <br/>& Application</SubNavbarLinks>
+            <SubNavbarLinks>
+              Web Developed <br />& Application
+            </SubNavbarLinks>
           </div>
           <div className="vertical_line"></div>
 
@@ -62,8 +61,6 @@ export const Section1 = () => {
             <SubNavbarLinks>Year Experience</SubNavbarLinks>
           </div>
         </div>
-
-
       </div>
     </Root>
   );
@@ -75,6 +72,7 @@ const Root = styled.section`
     background-image: url(${herobanner});
     background-size: 100% 100%;
     padding: 20px 0 20px 100px;
+    margin-bottom: 30px;
 
     .banner_content {
       display: flex;
@@ -106,8 +104,8 @@ const Root = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
-        br{
-            display: none;
+        br {
+          display: none;
         }
       }
       .vertical_line {
@@ -125,63 +123,55 @@ const Root = styled.section`
         flex-direction: column;
         gap: 60px;
         .sub_main_div {
-            gap: 30px;
-            p{
-                padding-right:5px;
-            }
-            br{
-                display: none;
-            }
+          gap: 30px;
+          p {
+            padding-right: 5px;
+          }
+          br {
+            display: none;
+          }
         }
-
-
-
-
       }
 
       .pointers {
-    gap:10px;
-    margin-right: 5px;
-    .sub_pointers{
-        text-align: center;
-        br{
+        gap: 10px;
+        margin-right: 5px;
+        .sub_pointers {
+          text-align: center;
+          br {
             display: block;
+          }
         }
-    }
-   .vertical_line {
-    height: 40px;
-}
-}
+        .vertical_line {
+          height: 40px;
+        }
+      }
     }
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
-   .main_div {
-    padding: 20px 0 20px 20px;
+    .main_div {
+      padding: 20px 0 20px 20px;
 
-  .banner_content .sub_main_div {
-    gap:20px;
-   br{
-    display: none;
-   }
-}
-
-.pointers {
-    gap:20px;
-    .sub_pointers{
-        text-align: center;
-        br{
-            display: block;
+      .banner_content .sub_main_div {
+        gap: 20px;
+        br {
+          display: none;
         }
+      }
+
+      .pointers {
+        gap: 20px;
+        .sub_pointers {
+          text-align: center;
+          br {
+            display: block;
+          }
+        }
+        .vertical_line {
+          height: 40px;
+        }
+      }
     }
-   .vertical_line {
-    height: 40px;
-}
-}
-
-
-}
-
-
   }
 `;

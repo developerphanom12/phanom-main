@@ -17,7 +17,16 @@ export const Section4 = () => {
       </span>
 
       <Blackdescription>
-                 Phanom Professionals offers world-class web development services that changes the way businesses perform on the internet. Our experts design beautiful, fully-functional, and high-performance websites with a focus on responsiveness. We offer speedy, safe, and multiplatform solutions with custom designs and integration of modern technology. Our sites are built to maximize speed, engagement, and ranking, giving your brand exposure in a crowded digital market. Be it a corporate website or an e-commerce shop, we are always willing to help. Get in touch with us and let’s get started on growing your business by building an amazing website!
+        Phanom Professionals offers world-class web development services that
+        changes the way businesses perform on the internet. Our experts design
+        beautiful, fully-functional, and high-performance websites with a focus
+        on responsiveness. We offer speedy, safe, and multiplatform solutions
+        with custom designs and integration of modern technology. Our sites are
+        built to maximize speed, engagement, and ranking, giving your brand
+        exposure in a crowded digital market. Be it a corporate website or an
+        e-commerce shop, we are always willing to help. Get in touch with us and
+        let’s get started on growing your business by building an amazing
+        website!
       </Blackdescription>
     </Root>
   );
@@ -41,5 +50,11 @@ const Root = styled.section`
 
   @media (min-width: 567px) and (max-width: 1024px) {
     padding: 30px 20px;
+
+    span {
+      br {
+        display: none;
+      }
+    }
   }
 `;

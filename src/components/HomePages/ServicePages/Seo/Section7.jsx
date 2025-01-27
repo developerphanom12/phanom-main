@@ -87,9 +87,9 @@ const Root = styled.section`
     {
       text-align: center;
       .heading{
-        br{
-          display: none;
-        }
+        // br{
+        //   display: none;
+        // }
       }
     .tech {
       gap: 7px;

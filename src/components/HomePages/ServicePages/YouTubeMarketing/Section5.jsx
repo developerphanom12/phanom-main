@@ -1,14 +1,9 @@
-import React  from "react";
+import React from "react";
 import styled from "styled-components";
-import {
-  Greydescription,
-  Textwithborder,
-
-} from "../../../../Global/GlobalText";
+import { Greydescription, Textwithborder } from "../../../../Global/GlobalText";
 import youtubemarketing from "../../../../assets/Images/youtubemarketing.png";
 
 export const Section5 = () => {
- 
   return (
     <Root>
       <div className="main_div">
@@ -18,47 +13,54 @@ export const Section5 = () => {
 
             <Textwithborder>Youtube Marketing Services – Get </Textwithborder>
 
-
             <Textwithborder>Results Now! </Textwithborder>
-
           </div>
 
           <Greydescription>
-          We at Phanom Professionals focus on turning traffic into measurable ROI with our marketing services. Our experts strategically design campaigns that feed off data to increase video views, engagement, and, most importantly, conversions while ensuring the maximization of ROI.
+            We at Phanom Professionals focus on turning traffic into measurable
+            ROI with our marketing services. Our experts strategically design
+            campaigns that feed off data to increase video views, engagement,
+            and, most importantly, conversions while ensuring the maximization
+            of ROI.
           </Greydescription>
 
           <div className="text_head">
-            <Greydescription>
-            These include:
-            </Greydescription>
+            <Greydescription>These include:</Greydescription>
             <div className="sub_text_head">
               <Greydescription>
-                1. Market Research: Finding the right keywords to target the desired audience.
+                1. Market Research: Finding the right keywords to target the
+                desired audience.
               </Greydescription>
               <Greydescription>
-                2. YouTube Advertisement: Designing and deploying strategic search video ads with the goal of appearing first in top results pages.
+                2. YouTube Advertisement: Designing and deploying strategic
+                search video ads with the goal of appearing first in top results
+                pages.
               </Greydescription>
               <Greydescription>
-                3. Social Media Advertising: Selling ad spaces on Facebook, Instagram, LinkedIn, etc. to increase visibility of the advertisements.
+                3. Social Media Advertising: Selling ad spaces on Facebook,
+                Instagram, LinkedIn, etc. to increase visibility of the
+                advertisements.
               </Greydescription>
               <Greydescription>
-                4.  Past Viewers Engagement Strategy: Targeting previous viewers and converting them into loyal customers.
+                4. Past Viewers Engagement Strategy: Targeting previous viewers
+                and converting them into loyal customers.
               </Greydescription>
               <Greydescription>
-                5. Conversion Rate Optimizatiion Page: Building and designing pages with a primary focus on achieving higher sale conversions than clicks.
+                5. Conversion Rate Optimizatiion Page: Building and designing
+                pages with a primary focus on achieving higher sale conversions
+                than clicks.
               </Greydescription>
               <Greydescription>
-                6. Performance Monitoring: Monitoring the results in real time and adjusting campaigns to lower costs
+                6. Performance Monitoring: Monitoring the results in real time
+                and adjusting campaigns to lower costs
               </Greydescription>
-             
             </div>
           </div>
 
           <Greydescription>
-          Contact us now to improve your business visibility and get better results with our Youtube marketing services!
+            Contact us now to improve your business visibility and get better
+            results with our Youtube marketing services!
           </Greydescription>
-
-         
         </div>
         <div className="sub_div_two">
           <img src={youtubemarketing} alt="process" />
@@ -189,6 +191,7 @@ const Root = styled.section`
         .text_border {
           flex-direction: row;
           justify-content: center;
+          flex-wrap: wrap;
         }
 
         .slider-container {

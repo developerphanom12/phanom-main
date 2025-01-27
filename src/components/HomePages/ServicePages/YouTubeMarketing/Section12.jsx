@@ -98,7 +98,12 @@ export const Section12 = () => {
       id: 5,
       text: "5. When Should I Expect Results with YouTube Marketing?",
       expanded: false,
-      subcontent: [{ id: 1, text: `Depending on the goals, it can differ, but most clients notice changes like increase in video views, subscribers, and engagements within a few weeks. We focus on providing growth that is stable and measurable.` }],
+      subcontent: [
+        {
+          id: 1,
+          text: `Depending on the goals, it can differ, but most clients notice changes like increase in video views, subscribers, and engagements within a few weeks. We focus on providing growth that is stable and measurable.`,
+        },
+      ],
     },
   ]);
 
@@ -158,24 +163,25 @@ export const Section12 = () => {
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <BlackHeading>Do you have more </BlackHeading>
-            <BlackHeading> questions?</BlackHeading>
+            <BlackHeading>Do you want to ask </BlackHeading>
+            <BlackHeading> any more questions?</BlackHeading>
           </div>
 
           <div style={{ textAlign: "center" }}>
             <Blackdescription>
-              End-to-end payments and financial.
+              All-in-one payments and financial
             </Blackdescription>
             <Blackdescription>
-              management in a single solution.{" "}
+              management in one solution. Find
             </Blackdescription>
-            <Blackdescription>Meet the right platform to help</Blackdescription>
-            <Blackdescription>realize</Blackdescription>
+            <Blackdescription>
+              the right platform to enable vision.
+            </Blackdescription>
           </div>
 
-          <div className="submit_btn">
+          <a href="#form" className="submit_btn">
             <PurpleBackground>Book an Appointment</PurpleBackground>
-          </div>
+          </a>
         </div>
       </div>
     </Root>
@@ -275,6 +281,10 @@ const Root = styled.section`
         }
       }
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 
   @media (max-width: 567px) {

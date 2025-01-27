@@ -44,9 +44,9 @@ export const Section6 = () => {
             website, working with trusted partners to build effective SEO
             focused websites.
           </Greydescription>
-          <div>
+          <a href="#form">
             <PurpleBackground>Book an Appointment</PurpleBackground>
-          </div>
+          </a>
         </div>
 
         <div className="sub_div_two">

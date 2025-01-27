@@ -1,7 +1,7 @@
 import React from 'react'
 import { Section1 } from './Section1';
 import { Section2 } from './Section2';
-import { SliderPage } from './SliderPage';
+
 import { Section4 } from './Section4';
 import { Section5 } from './Section5';
 import { Section6 } from './Section6';
@@ -11,11 +11,21 @@ import { SubNavbar } from './SubNavbar';
 import { Section9 } from './Section9';
 import { Section10 } from './Section10';
 import { Section12 } from './Section12';
-import { Testimonial } from '../Service/Testimonial';
+import { Helmet } from 'react-helmet'
+import { SliderPage } from '../Service/SliderPage';
+
 
 export const PayPerClick = () => {
   return (
     <div>
+       <Helmet>
+        <title>
+
+        Offshore Ppc Marketing Agency in India | Ppc Services
+          
+        </title>
+        <meta name="description" content="Looking for the Offshore Ppc Marketing Agency? Our expert team delivers custom campaigns that drive results. Let's elevate your business—contact us today!"/>
+      </Helmet>
         <SubNavbar/>
         <Section1/>
         <Section2/>

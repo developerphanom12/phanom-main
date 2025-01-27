@@ -126,9 +126,10 @@ export const Section12 = () => {
             <Blackdescription>the right platform to enable vision</Blackdescription>
           </div>
 
-          <div className="submit_btn">
+          <a href="#form" className="submit_btn">
             <PurpleBackground>Book an Appointment</PurpleBackground>
-          </div>
+          </a>
+
         </div>
       </div>
     </Root>
@@ -229,6 +230,10 @@ const Root = styled.section`
       }
     }
   }
+
+    a{
+  text-decoration: none;
+}
 
   @media (max-width: 567px) {
     padding: 30px 20px;

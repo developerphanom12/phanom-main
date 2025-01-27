@@ -13,7 +13,7 @@ export const Section7 = () => {
       <div className="main_div">
         <span className="heading">
           <Heading>Various Skills that</Heading>
-          <GradientHeading>Youtube Marketing eo</GradientHeading><br/>
+          <GradientHeading>Youtube Marketing </GradientHeading><br/>
 
 
           <GradientHeading>Specialists Possess </GradientHeading>

@@ -15,11 +15,11 @@ export const Section5 = () => {
       <div className="main_div">
         <div className="sub_div_one">
           <div className="text_border">
-            <Textwithborder>Website Development India -</Textwithborder>
+            <Textwithborder>Website Development India </Textwithborder>
 
             <Textwithborder> Smart Solutions for Your Digital Growth</Textwithborder>
 
-            <Textwithborder> Growth</Textwithborder>
+         
 
           </div>
 
@@ -178,6 +178,7 @@ const Root = styled.section`
         .text_border {
           flex-direction: row;
           justify-content: center;
+                  flex-wrap: wrap;
         }
 
         .slider-container {

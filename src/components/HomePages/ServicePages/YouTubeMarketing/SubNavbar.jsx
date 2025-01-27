@@ -6,7 +6,7 @@ export const SubNavbar = () => {
   return (
     <Root>
       <div className="main_div">
-        <WhiteHeading>Development</WhiteHeading>
+        <WhiteHeading>YouTube Marketing</WhiteHeading>
 
         <div className="icon">
 
@@ -35,6 +35,10 @@ export const SubNavbar = () => {
 };
 
 const Root = styled.section`
+  position: sticky;
+  top: 0px;
+  z-index: 111;
+  
   .main_div {
     position: relative;
 
@@ -46,6 +50,7 @@ const Root = styled.section`
     .icon {
       display: flex;
       gap: 30px;
+      display:none;
       a {
         text-decoration: none;
       }

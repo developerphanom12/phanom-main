@@ -159,6 +159,8 @@ const Root = styled.section`
         .text_border {
           flex-direction: row;
           justify-content: center;
+          flex-wrap:wrap;
+          
         }
 
         .slider-container {

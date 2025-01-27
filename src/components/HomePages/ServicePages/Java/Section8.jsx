@@ -46,7 +46,12 @@ export const Section8 = () => {
           <WhiteNumberHeading>01</WhiteNumberHeading>
           <WhitekHeading>Branding & Strategy</WhitekHeading>
           <WhiteDescription>
-          We create custom Java solutions with strategies for design and development that captures the attention of the intended audience. Our team implements a set of frameworks that emphasizes user experience, scalability, and integration neutrality as a means to improve engagement, retention, and overall performance of the Java-based platforms developed.
+            We create custom Java solutions with strategies for design and
+            development that captures the attention of the intended audience.
+            Our team implements a set of frameworks that emphasizes user
+            experience, scalability, and integration neutrality as a means to
+            improve engagement, retention, and overall performance of the
+            Java-based platforms developed.
           </WhiteDescription>
         </div>
 
@@ -54,7 +59,11 @@ export const Section8 = () => {
           <PurpleHeading>02</PurpleHeading>
           <BlackHeading>SEO-Focused Development</BlackHeading>
           <GreySecondDescription>
-          For specific Java applications, we target one primary objective for any application - high visibility ranking. Our research and many years of practice for SEO, keyword research, on-page Java application optimization, and content enhancement ensure that your applications serve the right audience with optimal visibility.
+            For specific Java applications, we target one primary objective for
+            any application - high visibility ranking. Our research and many
+            years of practice for SEO, keyword research, on-page Java
+            application optimization, and content enhancement ensure that your
+            applications serve the right audience with optimal visibility.
           </GreySecondDescription>
         </div>
 
@@ -62,7 +71,11 @@ export const Section8 = () => {
           <PurpleHeading>03</PurpleHeading>
           <BlackHeading>E-Commerce Solutions</BlackHeading>
           <GreySecondDescription>
-          We focus on modern, fast, and highly secure Java-based e-commerce solutions that permit the users to have seamless experiences with the services we provide. Our tailored solutions include user friendly smart check out, effective product management, and optimized payment gateway to drive conversion and sales.
+            We focus on modern, fast, and highly secure Java-based e-commerce
+            solutions that permit the users to have seamless experiences with
+            the services we provide. Our tailored solutions include user
+            friendly smart check out, effective product management, and
+            optimized payment gateway to drive conversion and sales.
           </GreySecondDescription>
         </div>
 
@@ -70,7 +83,12 @@ export const Section8 = () => {
           <PurpleHeading>04</PurpleHeading>
           <BlackHeading>Updates and Further Changes</BlackHeading>
           <GreySecondDescription>
-          You don’t need to stress on modernizing your Java applications as we guarantee ongoing optimization and performance enhancement. We are committed to being responsive and adopting incrementally better, more mobile friendly, and user engaging updates that effectively assist in steady growth of your business and implement agile changes as needed.
+            You don’t need to stress on modernizing your Java applications as we
+            guarantee ongoing optimization and performance enhancement. We are
+            committed to being responsive and adopting incrementally better,
+            more mobile friendly, and user engaging updates that effectively
+            assist in steady growth of your business and implement agile changes
+            as needed.
           </GreySecondDescription>
         </div>
 
@@ -78,7 +96,11 @@ export const Section8 = () => {
           <PurpleHeading>05</PurpleHeading>
           <BlackHeading>Performance Overview</BlackHeading>
           <GreySecondDescription>
-                   Our Java Development Services provide performance comprehensive reports along with monitoring as an integrated service that includes traffic, usability, and other relevant KPIs. We take care of all adjustments necessary in the Java based applications giving you the freedom to concentrate on growing your business.
+            Our Java Development Services provide performance comprehensive
+            reports along with monitoring as an integrated service that includes
+            traffic, usability, and other relevant KPIs. We take care of all
+            adjustments necessary in the Java based applications giving you the
+            freedom to concentrate on growing your business.
           </GreySecondDescription>
         </div>
       </div>
@@ -140,5 +162,15 @@ const Root = styled.section`
 
   @media (min-width: 567px) and (max-width: 1024px) {
     padding: 30px 20px;
+
+    .main_div {
+      .sub_main_div_one {
+        width: 48%;
+      }
+
+      .sub_main_div {
+        width: 48%;
+      }
+    }
   }
 `;

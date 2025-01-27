@@ -48,9 +48,10 @@ export const Section6 = () => {
             Contact us now and experience amazing growth for your business with
             our potent YouTube marketing strategies!
           </Greydescription>
-          <div>
+          
+          <a href="#form">
             <PurpleBackground>Book an Appointment</PurpleBackground>
-          </div>
+          </a>
         </div>
 
         <div className="sub_div_two">
@@ -188,6 +189,11 @@ const Root = styled.section`
       }
     }
   }
+
+
+    a{
+  text-decoration: none;
+}
 
   @media (max-width: 567px) {
     padding: 10px 20px;

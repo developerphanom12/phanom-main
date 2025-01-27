@@ -37,9 +37,9 @@ export const Section6 = () => {
           </Greydescription>
 
      
-          <div>
+          <a href="#form">
             <PurpleBackground>Book an Appointment</PurpleBackground>
-          </div>
+          </a>
         </div>
 
         <div className="sub_div_two">
@@ -192,6 +192,10 @@ const Root = styled.section`
     }
   }
 
+    a{
+  text-decoration: none;
+}
+
   @media (max-width: 567px) {
     padding: 10px 20px;
     .main_div {
@@ -223,6 +227,9 @@ const Root = styled.section`
       .sub_div {
         gap: 25px;
         text-align: center;
+         br {
+          display: none;
+        }
       }
     }
   }

@@ -11,63 +11,68 @@ import { PurpleBackground } from "../../../../Global/GlobalButton";
 import vectorani from "../../../../assets/Images/vectorani.png";
 
 export const Section12 = () => {
-    const [questions, setQuestions] = useState([
+  const [questions, setQuestions] = useState([
+    {
+      id: 1,
+      text: "1. How do you think our services can assist your business in having an upper hand when it comes to online competition?",
+      expanded: false,
+      subcontent: [
         {
           id: 1,
-          text: "1. How do you think our services can assist your business in having an upper hand when it comes to online competition?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "As we develop a customized SEO strategy for your business, understand how we are able to rank your website quickly and effectively so as to gain a higher number of clientele. " },
-            
-          ],
+          text: "As we develop a customized SEO strategy for your business, understand how we are able to rank your website quickly and effectively so as to gain a higher number of clientele. ",
         },
+      ],
+    },
+    {
+      id: 2,
+      text: "2. How would seo help with nurturing the growth of your company?",
+      expanded: false,
+      subcontent: [
         {
-          id: 2,
-          text: "2. How would seo help with nurturing the growth of your company?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: " Observe how seo can result in an influx in the number of visitors, improving the user experience and as a result, increasing the sales and revenue " },
-            
-          ],
+          id: 1,
+          text: " Observe how seo can result in an influx in the number of visitors, improving the user experience and as a result, increasing the sales and revenue ",
         },
+      ],
+    },
+    {
+      id: 3,
+      text: "3. Would the effect of SEO be instantly visible once it has been adopted?",
+      expanded: false,
+      subcontent: [
         {
-          id: 3,
-          text: "3. Would the effect of SEO be instantly visible once it has been adopted?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "Get acquainted with the time frame within which SEO succeeds and the services that continue being provided for extended periods." },
-           
-          ],
+          id: 1,
+          text: "Get acquainted with the time frame within which SEO succeeds and the services that continue being provided for extended periods.",
         },
+      ],
+    },
+    {
+      id: 4,
+      text: "4. In what ways do our seo strategies stand out when set beside other seo strategies?",
+      expanded: false,
+      subcontent: [
         {
-          id: 4,
-          text: "4. In what ways do our seo strategies stand out when set beside other seo strategies?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "Learn the difference between our SEO Services the marketing strategies other companies implement." },
-           
-          ],
+          id: 1,
+          text: "Learn the difference between our SEO Services the marketing strategies other companies implement.",
         },
-        {
-          id: 5,
-          text: "5. Does seo only cater to the needs of large corporations?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "Subcontent for question 5 - part 1" },
-          
-          ],
-        },
-      ]);
+      ],
+    },
+    {
+      id: 5,
+      text: "5. Does seo only cater to the needs of large corporations?",
+      expanded: false,
+      subcontent: [{ id: 1, text: "Subcontent for question 5 - part 1" }],
+    },
+  ]);
 
-      const handleExpand = (id) => {
-        setQuestions(
-          questions.map((question) =>
-            question.id === id
-              ? { ...question, expanded: !question.expanded }
-              : question
-          )
-        );
-      };
+  const handleExpand = (id) => {
+    setQuestions(
+      questions.map((question) =>
+        question.id === id
+          ? { ...question, expanded: !question.expanded }
+          : question
+      )
+    );
+  };
 
   return (
     <Root>
@@ -77,7 +82,6 @@ export const Section12 = () => {
             <Heading>Fequently Asked Questions</Heading>
           </span>
 
-
           {questions.map((question) => (
             <div key={question.id} className="question-container">
               <div
@@ -86,7 +90,9 @@ export const Section12 = () => {
               >
                 <FaqHeading>{question.text}</FaqHeading>
                 <span
-                  className={`plus-minus ${question.expanded ? "minus" : "plus"}`}
+                  className={`plus-minus ${
+                    question.expanded ? "minus" : "plus"
+                  }`}
                 >
                   {question.expanded ? "-" : "+"}
                 </span>
@@ -94,9 +100,7 @@ export const Section12 = () => {
               {question.expanded && (
                 <div className="question-content">
                   {question.subcontent.map((sub) => (
-                    <Faqdescription key={sub.id}>
-                      {sub.text}
-                    </Faqdescription>
+                    <Faqdescription key={sub.id}>{sub.text}</Faqdescription>
                   ))}
                 </div>
               )}
@@ -112,24 +116,25 @@ export const Section12 = () => {
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <BlackHeading>Do you have more </BlackHeading>
-            <BlackHeading> questions?</BlackHeading>
+            <BlackHeading>Do you want to ask </BlackHeading>
+            <BlackHeading> any more questions?</BlackHeading>
           </div>
 
           <div style={{ textAlign: "center" }}>
             <Blackdescription>
-              End-to-end payments and financial.
+              All-in-one payments and financial
             </Blackdescription>
             <Blackdescription>
-              management in a single solution.{" "}
+              management in one solution. Find
             </Blackdescription>
-            <Blackdescription>Meet the right platform to help</Blackdescription>
-            <Blackdescription>realize</Blackdescription>
+            <Blackdescription>
+              the right platform to enable vision.
+            </Blackdescription>
           </div>
 
-          <div className="submit_btn">
+          <a href="#form" className="submit_btn">
             <PurpleBackground>Book an Appointment</PurpleBackground>
-          </div>
+          </a>
         </div>
       </div>
     </Root>
@@ -182,10 +187,10 @@ const Root = styled.section`
       gap: 20px;
       align-items: center;
 
-       .submit_btn{
-      margin-top:40px;
+      .submit_btn {
+        margin-top: 40px;
       }
-      
+
       .bg_img {
         background-image: url(${vectorani});
         background-size: 100% 100%;
@@ -261,8 +266,8 @@ const Root = styled.section`
       flex-direction: column;
       .sub_div_one {
         width: 100%;
-        span{
-          text-align:center;
+        span {
+          text-align: center;
           margin-bottom: 20px;
         }
       }
@@ -274,8 +279,4 @@ const Root = styled.section`
       }
     }
   }
-
-
 `;
-
-

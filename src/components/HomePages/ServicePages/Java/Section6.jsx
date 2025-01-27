@@ -47,9 +47,9 @@ export const Section6 = () => {
             Java solutions. Contact us today and let’s get on it!
           </Greydescription>
 
-          <div>
+          <a href="#form">
             <PurpleBackground>Book an Appointment</PurpleBackground>
-          </div>
+          </a>
         </div>
 
         <div className="sub_div_two">
@@ -190,6 +190,10 @@ const Root = styled.section`
     }
   }
 
+  a {
+    text-decoration: none;
+  }
+
   @media (max-width: 567px) {
     padding: 10px 20px;
     .main_div {
@@ -221,6 +225,10 @@ const Root = styled.section`
       .sub_div {
         gap: 25px;
         text-align: center;
+        span{
+        br{
+          display:none;
+        }}
       }
     }
   }

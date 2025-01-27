@@ -41,7 +41,7 @@ export const Section10 = () => {
   };
   return (
     <Root>
-      <div className="main_div">
+      <div className="main_div" id="form">
         <div className="sub_div_one">
           <Greydescription>
             Explore a rewarding career in the Phenom Professional Industry. Fill
@@ -74,29 +74,38 @@ export const Section10 = () => {
           </Greydescription>
 
           <div>
+            <Greydescription>What You’ll Get:</Greydescription>
 
-          <Greydescription>
-            What You’ll Get:
-          </Greydescription>
-
-          <ui>
-            <li>Tailored java development services with advanced SEO for improved retention rates and visibility for your brand.</li>
-            <li>Maximized ROI with custom made java development services.</li>
-            <li>Increased rankings through SEO-friendly java applications.</li>
-          </ui>
-
+            <ui>
+              <li>
+                Tailored java development services with advanced SEO for
+                improved retention rates and visibility for your brand.
+              </li>
+              <li>Maximized ROI with custom made java development services.</li>
+              <li>
+                Increased rankings through SEO-friendly java applications.
+              </li>
+            </ui>
           </div>
 
           <div>
-          <Greydescription style={{color:"#6C5FD4"}}>Do You Want to Increase Your Business's Online Visibility?  </Greydescription>
+            <Greydescription style={{ color: "#6C5FD4" }}>
+              Do You Want to Increase Your Business's Online Visibility?{" "}
+            </Greydescription>
 
-          <Greydescription> Wondering how to enhance your online visibility? Look no further than Phanom Professionals. Our powerful Java Blaster Solutions helps change your application into a valuable business tool. So why wait? Contact us today and take the first step towards tremendous digital growth.  </Greydescription>
-
+            <Greydescription>
+              {" "}
+              Wondering how to enhance your online visibility? Look no further
+              than Phanom Professionals. Our powerful Java Blaster Solutions
+              helps change your application into a valuable business tool. So
+              why wait? Contact us today and take the first step towards
+              tremendous digital growth.{" "}
+            </Greydescription>
           </div>
 
           <div>
             <PurpleBackground className="connect_btn">
-              Get Started with SEO Today <FaArrowRightLong />
+              Connect with us <FaArrowRightLong />
             </PurpleBackground>
           </div>
         </div>

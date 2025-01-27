@@ -11,11 +11,11 @@ export const Section1 = () => {
         <a href="/home"><Subdescription>Home</Subdescription></a>
         <IoIosArrowForward style={{color:"667085"}}/>
 
-        <a href="#"><Subdescription>Service</Subdescription></a>
+       <Subdescription>Service</Subdescription>
 
         <IoIosArrowForward   style={{color:"6C5FD4"}}/>
 
-        <a href="/"><Subpurpledescription>SEO(Search Engine Optimization)</Subpurpledescription></a>
+        <a href="/offshore-ppc-marketing-agency-in-india/"><Subpurpledescription>Pay Per Click</Subpurpledescription></a>
 
         
       </div>

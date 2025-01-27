@@ -39,11 +39,11 @@ export const Section2 = () => {
             with offshore Shopify web development services in India.
           </Blackdescription>
 
-          <div>
+          <a href="#form">
             <PurpleBackground className="connect_btn">
               Connect with us <FaArrowRightLong />
             </PurpleBackground>
-          </div>
+          </a>
         </div>
 
         <div className="sub_main_div_two">
@@ -69,6 +69,8 @@ const Root = styled.section`
       flex-direction: column;
       gap: 30px;
       flex: 1;
+    
+
 
       .connect_btn {
         display: flex;
@@ -89,6 +91,10 @@ const Root = styled.section`
     }
   }
 
+    a{
+  text-decoration: none;
+}
+
   @media (max-width: 567px) {
     padding: 30px 20px;
 
@@ -99,9 +105,7 @@ const Root = styled.section`
         flex-direction: column;
         gap: 15px;
         flex: 1;
-        br {
-          display: none;
-        }
+      
 
         .connect_btn {
           margin-top: 20px;

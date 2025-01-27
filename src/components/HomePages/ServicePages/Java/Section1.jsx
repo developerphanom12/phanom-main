@@ -14,10 +14,13 @@ export const Section1 = () => {
           <Subdescription>Home</Subdescription>
         </a>
         <IoIosArrowForward style={{ color: "667085" }} />
+
         <Subdescription>Service</Subdescription>
+
         <IoIosArrowForward style={{ color: "6C5FD4" }} />
-        <a href="/offshore-website-development-services-in-india/">
-          <Subpurpledescription>Web Development</Subpurpledescription>
+
+        <a href="/offshore-java-software-development-company-in-india/">
+          <Subpurpledescription>Java</Subpurpledescription>
         </a>
       </div>
     </Root>

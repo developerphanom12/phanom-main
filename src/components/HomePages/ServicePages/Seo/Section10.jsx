@@ -41,7 +41,7 @@ export const Section10 = () => {
   };
   return (
     <Root>
-      <div className="main_div">
+      <div className="main_div" id="form">
         <div className="sub_div_one">
           <Greydescription>
             Explore a rewarding career in the Phenom Professional Industry. Fill

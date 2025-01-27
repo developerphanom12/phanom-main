@@ -9,8 +9,6 @@ import { PurpleBackground } from "../../../../Global/GlobalButton";
 import { FaArrowRightLong } from "react-icons/fa6";
 import frame from "../../../../assets/Images/frame.png";
 
-
-
 export const Section2 = () => {
   return (
     <Root>
@@ -18,24 +16,39 @@ export const Section2 = () => {
         <div className="sub_main_div">
           <span>
             <Heading>Partnering With the Right</Heading>
-            <br/>
+            <br />
             <Heading>Offshore</Heading>
 
             <GradientHeading>Java Software </GradientHeading>
-          
 
             <Heading> Development Company in India</Heading>
           </span>
 
           <Blackdescription>
-          As a leader in technology, you have made a great choice in picking an offshore Java software development company India. You can depend on India for cost effective, high quality solutions. Your Java applications will be developed with scalability, performance, and functionality in mind. Our developers are experienced in the most current Java technologies and will develop custom software solutions for your business. From high-end enterprise applications and web solutions to complex integrations, our offshore developers have the skills to implement all your requirements efficiently and flawlessly on all platforms. Unlock the full potential of your Java software and improve your business processes with us. Our rapid response, cost-effective business models and expert Java development services ensures that your business gets the best tailored results. Let us know if we can help by improving your business with our qualitative Java solutions. Get in touch with us today so we can start discussing your project and commence offshore Java software development services India.
+            As a leader in technology, you have made a great choice in picking
+            an offshore Java software development company India. You can depend
+            on India for cost effective, high quality solutions. Your Java
+            applications will be developed with scalability, performance, and
+            functionality in mind. Our developers are experienced in the most
+            current Java technologies and will develop custom software solutions
+            for your business. From high-end enterprise applications and web
+            solutions to complex integrations, our offshore developers have the
+            skills to implement all your requirements efficiently and flawlessly
+            on all platforms. Unlock the full potential of your Java software
+            and improve your business processes with us. Our rapid response,
+            cost-effective business models and expert Java development services
+            ensures that your business gets the best tailored results. Let us
+            know if we can help by improving your business with our qualitative
+            Java solutions. Get in touch with us today so we can start
+            discussing your project and commence offshore Java software
+            development services India.
           </Blackdescription>
 
-          <div>
+          <a href="#form">
             <PurpleBackground className="connect_btn">
               Connect with us <FaArrowRightLong />
             </PurpleBackground>
-          </div>
+          </a>
         </div>
 
         <div className="sub_main_div_two">
@@ -79,6 +92,10 @@ const Root = styled.section`
       img {
       }
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 
   @media (max-width: 567px) {

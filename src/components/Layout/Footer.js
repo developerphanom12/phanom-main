@@ -18,65 +18,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Footer = () => {
   return (
     <Root>
-      {/* <div className="footer_base">
-          <div className="logo">
-            <h4>
-              <img src={newLogo} alt="Img of phanom" />
-            </h4>{" "}
-            <p>Phanom Techno Private Ltd.2024</p>
-          </div>
-          <div className="social_media">
-            <ul>
-              <li>
-                {" "}
-                <a
-                  href="https://www.facebook.com/phanom.professionals/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebook />
-                </a>
-                <a
-                  href="https://www.instagram.com/phanomprofessionalsofficial/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaInstagram />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/phanom-professionals/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IoLogoLinkedin />
-                </a>
-                <a
-                  href="https://in.pinterest.com/phanom_professionals/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaPinterest />
-                </a>
-                <a
-                  href="https://mobile.twitter.com/phanompro"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaXTwitter />
-                </a>
-              </li>
-            </ul>
-            <div className="foot">
-            <a href="/blogs">Our Blogs</a>
-            <a href="/case-study">Case Study</a>
-              <a href="/privacy-policy">Privacy Policy</a>
-              <a href="/refund-policy">Refund Policy</a>
-              <a href="/term-condition">Terms and Conditions
-              </a>
-            </div>
-          </div>
-        </div> */}
-
       <div className="main_div">
         <div className="head_div">
           <WhiteNumberHeading>
@@ -95,9 +36,9 @@ const Footer = () => {
           </div>
 
           <div className="menu_main_div">
-            <div class="sub_menu_div img_order">
+            <a href="/home" class="sub_menu_div img_order">
               <img src={phanomsLogo} alt="" />
-            </div>
+            </a>
 
             <div class="sub_menu_div">
               <a href="/home">

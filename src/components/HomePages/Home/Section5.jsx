@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BlacvkHeading, BlacvkDescription } from "../../../Global/GlobalText";
+import { BlacvkHeading, BlacvkDescription, Textwithborder } from "../../../Global/GlobalText";
 import rangenew from "../../../assets/Images/rangenew.png";
 import verifiednew from "../../../assets/Images/verifiednew.png";
 import pricingnew from "../../../assets/Images/pricingnew.png";
@@ -15,23 +15,18 @@ export const Section5 = () => {
     <Root>
       <div className="main_div">
         <div className="sub_main_div">
-          {/* <div className="ist_border">
-            <div className="sec_border">
-              <div className="three_border"></div>
-            </div>
-          </div> */}
-
           <div className="ist_border">
             <div className="sec_border">
               <div className="three_border"></div>
             </div>
           </div>
         </div>
+
         <div className="sub_main_div_two">
-          <div class="text-with-border-shadow">
-            Why
-            <br />
-            Choose <br /> Us?
+          <div className="text_border">
+            <Textwithborder> Why</Textwithborder>
+            <Textwithborder> Choose </Textwithborder>
+            <Textwithborder>Us?</Textwithborder>
           </div>
 
           <div className="slide_div">
@@ -258,16 +253,10 @@ const Root = styled.section`
       display: flex;
       align-items: center;
 
-      .text-with-border-shadow {
-        font-family: "Poppins", sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        color: white;
-        line-height: 1.2;
-        -webkit-text-stroke: 1px #6c5fd4;
-        -webkit-text-fill-color: white;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        width: 30%;
+      .text_border {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
       }
 
       .slide_div {
@@ -285,7 +274,7 @@ const Root = styled.section`
           flex-direction: column;
           box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.3);
           border-radius: 20px;
-          opacity: 0; /* Initial state */
+
           transform: translateY(20px); /* Initial position */
           animation: slideUp 0.5s forwards; /* Animation applied */
           .image_content {
@@ -306,11 +295,8 @@ const Root = styled.section`
             }
           }
         }
-
-      
       }
     }
-
   }
 
   @media (max-width: 567px) {
@@ -327,14 +313,10 @@ const Root = styled.section`
         width: 100%;
         gap: 20px;
         flex-direction: column;
-
-        .text-with-border-shadow {
-          width: 100%;
-          text-align: center;
-
-          br {
-            display: none;
-          }
+        .text_border {
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
         }
       }
     }
@@ -355,13 +337,13 @@ const Root = styled.section`
         gap: 40px;
         flex-direction: column;
 
-        .text-with-border-shadow {
-          width: 100%;
-          text-align: center;
-          br {
-            display: none;
-          }
+         .text_border {
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap:wrap;
         }
+
+
       }
     }
   }

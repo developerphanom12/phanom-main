@@ -49,5 +49,10 @@ const Root = styled.section`
 
   @media (min-width: 567px) and (max-width: 1024px) {
     padding: 30px 20px;
+      span {
+      br {
+        display: none;
+      }
+    }
   }
 `;

@@ -11,63 +11,73 @@ import { PurpleBackground } from "../../../../Global/GlobalButton";
 import vectorani from "../../../../assets/Images/vectorani.png";
 
 export const Section12 = () => {
-    const [questions, setQuestions] = useState([
+  const [questions, setQuestions] = useState([
+    {
+      id: 1,
+      text: "1. What exactly is Shopify Website Development and how Will it Help my Business?",
+      expanded: false,
+      subcontent: [
         {
           id: 1,
-          text: "1. What exactly is Shopify Website Development and how Will it Help my Business?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "The first step in developing the Shopify website is to prepare a store that caters to the specific requirements of the client. This consists of establishing the store, installing the necessary functionalities like payment gateways, and putting the store for launch. A Shopify development agency does all this while managing the website’s speed, security concerns, and veracity ensuring that your online business thrives. " },
-            
-          ],
+          text: "The first step in developing the Shopify website is to prepare a store that caters to the specific requirements of the client. This consists of establishing the store, installing the necessary functionalities like payment gateways, and putting the store for launch. A Shopify development agency does all this while managing the website’s speed, security concerns, and veracity ensuring that your online business thrives. ",
         },
+      ],
+    },
+    {
+      id: 2,
+      text: "2. Why hire a Shopify website design agency over others?",
+      expanded: false,
+      subcontent: [
         {
-          id: 2,
-          text: "2. Why hire a Shopify website design agency over others?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "The primary purpose of a Shopify design agency is the creation of impressionable, responsive, and engaging Shopify stores that ensure better brand identity and user experience. They achieve this by applying progressive designs on the site which ensures that the site gets maximum attention and provides a serviceable purpose. This leads to increase in sales and conversion rates thus attaining business goals. " },
-            
-          ],
+          id: 1,
+          text: "The primary purpose of a Shopify design agency is the creation of impressionable, responsive, and engaging Shopify stores that ensure better brand identity and user experience. They achieve this by applying progressive designs on the site which ensures that the site gets maximum attention and provides a serviceable purpose. This leads to increase in sales and conversion rates thus attaining business goals. ",
         },
+      ],
+    },
+    {
+      id: 3,
+      text: "3. What are the advantages of using Shopify website design services?",
+      expanded: false,
+      subcontent: [
         {
-          id: 3,
-          text: "3. What are the advantages of using Shopify website design services?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "Shopify website design services are specialized in custom design and development of solutions to ensure that your brand is highly developed and is competitive in the market. They include layout identification, branding of the site, and even optimization of its mobile version to ensure that shoppers always enjoy using the site as well as help the store get more clients." },
-           
-          ],
+          id: 1,
+          text: "Shopify website design services are specialized in custom design and development of solutions to ensure that your brand is highly developed and is competitive in the market. They include layout identification, branding of the site, and even optimization of its mobile version to ensure that shoppers always enjoy using the site as well as help the store get more clients.",
         },
+      ],
+    },
+    {
+      id: 4,
+      text: "4. In what ways do services for Shopify development improve my shop online?",
+      expanded: false,
+      subcontent: [
         {
-          id: 4,
-          text: "4. In what ways do services for Shopify development improve my shop online?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "Shopify development services entail anything from custom programming as well as application integration and advanced features to increase the efficacy of your online Shopify store. They make sure that your site is protected, has room for expansion, and works well, which allows your clients to shop without any problems while helping your shop perform better." },
-           
-          ],
+          id: 1,
+          text: "Shopify development services entail anything from custom programming as well as application integration and advanced features to increase the efficacy of your online Shopify store. They make sure that your site is protected, has room for expansion, and works well, which allows your clients to shop without any problems while helping your shop perform better.",
         },
+      ],
+    },
+    {
+      id: 5,
+      text: "5. What is the benefit of working with a Shopify development firm for my online shop?",
+      expanded: false,
+      subcontent: [
         {
-          id: 5,
-          text: "5. What is the benefit of working with a Shopify development firm for my online shop?",
-          expanded: false,
-          subcontent: [
-            { id: 1, text: "Working with a Shopify development firm gives you an advantage while building and optimizing your Shopify store because of their expertise and skills. From design creation to theme customization to integration, they can provide everything that your shop needs to succeed and outperform the competition." },
-          
-          ],
+          id: 1,
+          text: "Working with a Shopify development firm gives you an advantage while building and optimizing your Shopify store because of their expertise and skills. From design creation to theme customization to integration, they can provide everything that your shop needs to succeed and outperform the competition.",
         },
-      ]);
+      ],
+    },
+  ]);
 
-      const handleExpand = (id) => {
-        setQuestions(
-          questions.map((question) =>
-            question.id === id
-              ? { ...question, expanded: !question.expanded }
-              : question
-          )
-        );
-      };
+  const handleExpand = (id) => {
+    setQuestions(
+      questions.map((question) =>
+        question.id === id
+          ? { ...question, expanded: !question.expanded }
+          : question
+      )
+    );
+  };
 
   return (
     <Root>
@@ -77,7 +87,6 @@ export const Section12 = () => {
             <Heading>Fequently Asked Questions</Heading>
           </span>
 
-
           {questions.map((question) => (
             <div key={question.id} className="question-container">
               <div
@@ -86,7 +95,9 @@ export const Section12 = () => {
               >
                 <FaqHeading>{question.text}</FaqHeading>
                 <span
-                  className={`plus-minus ${question.expanded ? "minus" : "plus"}`}
+                  className={`plus-minus ${
+                    question.expanded ? "minus" : "plus"
+                  }`}
                 >
                   {question.expanded ? "-" : "+"}
                 </span>
@@ -94,9 +105,7 @@ export const Section12 = () => {
               {question.expanded && (
                 <div className="question-content">
                   {question.subcontent.map((sub) => (
-                    <Faqdescription key={sub.id}>
-                      {sub.text}
-                    </Faqdescription>
+                    <Faqdescription key={sub.id}>{sub.text}</Faqdescription>
                   ))}
                 </div>
               )}
@@ -112,24 +121,24 @@ export const Section12 = () => {
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <BlackHeading>Do you have more </BlackHeading>
-            <BlackHeading> questions?</BlackHeading>
+            <BlackHeading>Do you want to ask  </BlackHeading>
+            <BlackHeading> any more questions? </BlackHeading>
           </div>
 
           <div style={{ textAlign: "center" }}>
             <Blackdescription>
-              End-to-end payments and financial.
+            All-in-one payments and financial 
             </Blackdescription>
             <Blackdescription>
-              management in a single solution.{" "}
+            management in one solution. Find 
             </Blackdescription>
-            <Blackdescription>Meet the right platform to help</Blackdescription>
-            <Blackdescription>realize</Blackdescription>
+            <Blackdescription>the right platform to enable vision.</Blackdescription>
+            
           </div>
 
-          <div className="submit_btn">
+          <a href="#form" className="submit_btn">
             <PurpleBackground>Book an Appointment</PurpleBackground>
-          </div>
+          </a>
         </div>
       </div>
     </Root>
@@ -182,10 +191,10 @@ const Root = styled.section`
       gap: 20px;
       align-items: center;
 
-       .submit_btn{
-      margin-top:40px;
+      .submit_btn {
+        margin-top: 40px;
       }
-      
+
       .bg_img {
         background-image: url(${vectorani});
         background-size: 100% 100%;
@@ -231,6 +240,10 @@ const Root = styled.section`
     }
   }
 
+  a {
+    text-decoration: none;
+  }
+
   @media (max-width: 567px) {
     padding: 30px 20px;
     .main_div {
@@ -261,8 +274,8 @@ const Root = styled.section`
       flex-direction: column;
       .sub_div_one {
         width: 100%;
-        span{
-          text-align:center;
+        span {
+          text-align: center;
           margin-bottom: 20px;
         }
       }
@@ -274,8 +287,4 @@ const Root = styled.section`
       }
     }
   }
-
-
 `;
-
-

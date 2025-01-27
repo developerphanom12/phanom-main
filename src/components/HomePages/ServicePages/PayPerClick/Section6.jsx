@@ -7,7 +7,6 @@ import {
   Heading,
 } from "../../../../Global/GlobalText";
 
-
 import { PurpleBackground } from "../../../../Global/GlobalButton";
 import targetreach from "../../../../assets/Images/targetreach.png";
 
@@ -15,7 +14,6 @@ import enginevisibilty from "../../../../assets/Images/enginevisibilty.png";
 import ppcstrategy from "../../../../assets/Images/ppcstrategy.png";
 
 import budgetfreiendly from "../../../../assets/Images/budgetfreiendly.png";
-
 
 import toppriorities from "../../../../assets/Images/toppriorities.png";
 
@@ -50,15 +48,13 @@ export const Section6 = () => {
             the top with the best PPC managers in India.
           </Greydescription>
 
-          <div>
+          <a href="#form">
             <PurpleBackground>Book an Appointment</PurpleBackground>
-          </div>
+          </a>
         </div>
 
         <div className="sub_div_two">
-
           <div className="slide_div">
-
             <div className="sub_slide_div">
               <div className="img_div">
                 <img src={targetreach} alt="TARGETED REACH & ROI" />
@@ -67,19 +63,29 @@ export const Section6 = () => {
                 <BlackHeading>TARGETED REACH & ROI</BlackHeading>
 
                 <Greydescription>
-                When you use PPC, you can target your market by age, location, interest, and what they search for online. We help you attract users with high intentions to click on ads with the goal of growing your business through every click earned.
+                  When you use PPC, you can target your market by age, location,
+                  interest, and what they search for online. We help you attract
+                  users with high intentions to click on ads with the goal of
+                  growing your business through every click earned.
                 </Greydescription>
               </div>
             </div>
 
             <div className="sub_slide_div">
               <div className="img_div">
-                <img src={enginevisibilty} alt="INSTANT SEARCH ENGINES VISIBILITY" />
+                <img
+                  src={enginevisibilty}
+                  alt="INSTANT SEARCH ENGINES VISIBILITY"
+                />
               </div>
               <div className="content_div">
                 <BlackHeading>INSTANT SEARCH ENGINES VISIBILITY</BlackHeading>
                 <Greydescription>
-                     PPC allows your brand to appear at the top of search engine result pages (SERPs) for the products or services you brans offers, when the potential clientele are actively searching for it. With the help of optimized ads, we put your brand on the top of the relevant searches increasing brand visibility.
+                  PPC allows your brand to appear at the top of search engine
+                  result pages (SERPs) for the products or services you brans
+                  offers, when the potential clientele are actively searching
+                  for it. With the help of optimized ads, we put your brand on
+                  the top of the relevant searches increasing brand visibility.
                 </Greydescription>
               </div>
             </div>
@@ -91,7 +97,11 @@ export const Section6 = () => {
               <div className="content_div">
                 <BlackHeading>CUSTOMIZED PPC STRATEGY</BlackHeading>
                 <Greydescription>
-                We take a unique approach to PPC through keyword research, ad copy writing, and bid management. Our focus enables us to tailor campaigns that will increase the conversion of valuable clicks into leads. With superb strategies in place rest assured, every dollar spent will guarantee maximum returns.
+                  We take a unique approach to PPC through keyword research, ad
+                  copy writing, and bid management. Our focus enables us to
+                  tailor campaigns that will increase the conversion of valuable
+                  clicks into leads. With superb strategies in place rest
+                  assured, every dollar spent will guarantee maximum returns.
                 </Greydescription>
               </div>
             </div>
@@ -103,7 +113,11 @@ export const Section6 = () => {
               <div className="content_div">
                 <BlackHeading>BUDGET-FRIENDLY IMPACT</BlackHeading>
                 <Greydescription>
-                With our PPC management services, you can expect to get the most bang for your buck. Your campaigns are optimized to meet relevant audience with the goal of visibility generation. Your campaigns are continuously monitored and budget adjusted to constantly provide desired outcomes.
+                  With our PPC management services, you can expect to get the
+                  most bang for your buck. Your campaigns are optimized to meet
+                  relevant audience with the goal of visibility generation. Your
+                  campaigns are continuously monitored and budget adjusted to
+                  constantly provide desired outcomes.
                 </Greydescription>
               </div>
             </div>
@@ -116,9 +130,15 @@ export const Section6 = () => {
                 />
               </div>
               <div className="content_div">
-                <BlackHeading>YOUR CLICKS ARE ONE OF OUR TOP PRIORITIES</BlackHeading>
+                <BlackHeading>
+                  YOUR CLICKS ARE ONE OF OUR TOP PRIORITIES
+                </BlackHeading>
                 <Greydescription>
-                We understand the importance of powerful ad copy for your campaign. That is why our content writers write advertising copy that is persuasive and target driven. We write your ads in such a manner that it is hard for users to ignore them and will be compelled to act immediately.
+                  We understand the importance of powerful ad copy for your
+                  campaign. That is why our content writers write advertising
+                  copy that is persuasive and target driven. We write your ads
+                  in such a manner that it is hard for users to ignore them and
+                  will be compelled to act immediately.
                 </Greydescription>
               </div>
             </div>
@@ -130,7 +150,12 @@ export const Section6 = () => {
               <div className="content_div">
                 <BlackHeading>ROI FOCUSED</BlackHeading>
                 <Greydescription>
-                The beauty of PPC is that it gives you the ability to see every aspect of your campaign in detail. Every click, conversion, and cost is monitored so that we can use the data collected to improve campaigns. Your business goals will always be achieved with our constant help by in setting and adjusting PPC parameters continuously.
+                  The beauty of PPC is that it gives you the ability to see
+                  every aspect of your campaign in detail. Every click,
+                  conversion, and cost is monitored so that we can use the data
+                  collected to improve campaigns. Your business goals will
+                  always be achieved with our constant help by in setting and
+                  adjusting PPC parameters continuously.
                 </Greydescription>
               </div>
             </div>
@@ -142,13 +167,15 @@ export const Section6 = () => {
               <div className="content_div">
                 <BlackHeading>LOCAL & GLOBAL REACH</BlackHeading>
                 <Greydescription>
-                There are no limits to where PPC advertising can take your business. Whether it is local customers or a global audience, we have the capacity to reach anyone and everyone. The campaigns are customized to ensure the correct audience is being targeted regardless of their location.
+                  There are no limits to where PPC advertising can take your
+                  business. Whether it is local customers or a global audience,
+                  we have the capacity to reach anyone and everyone. The
+                  campaigns are customized to ensure the correct audience is
+                  being targeted regardless of their location.
                 </Greydescription>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </Root>
@@ -199,6 +226,9 @@ const Root = styled.section`
     }
   }
 
+  a {
+    text-decoration: none;
+  }
   @media (max-width: 567px) {
     padding: 10px 20px;
     .main_div {

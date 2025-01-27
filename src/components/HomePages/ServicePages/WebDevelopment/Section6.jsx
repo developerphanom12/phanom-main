@@ -33,11 +33,13 @@ export const Section6 = () => {
           </Greydescription>
 
           <Greydescription>
-          Work with India’s finest web development agency and ensure that your business achieves its goals for success in your niche market.
+                 Work with India’s finest web development agency and ensure that your business achieves its goals for success in your niche market.
           </Greydescription>
-          <div>
+
+          <a href="#form">
             <PurpleBackground>Book an Appointment</PurpleBackground>
-          </div>
+          </a>
+
         </div>
 
         <div className="sub_div_two">
@@ -168,6 +170,11 @@ const Root = styled.section`
     }
   }
 
+
+    a{
+  text-decoration: none;
+}
+  
   @media (max-width: 567px) {
     padding: 10px 20px;
     .main_div {

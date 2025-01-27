@@ -9,8 +9,6 @@ import { PurpleBackground } from "../../../../Global/GlobalButton";
 import { FaArrowRightLong } from "react-icons/fa6";
 import frame from "../../../../assets/Images/frame.png";
 
-
-
 export const Section2 = () => {
   return (
     <Root>
@@ -19,7 +17,7 @@ export const Section2 = () => {
           <span>
             <Heading>Professional Offshore</Heading>
             <GradientHeading>Seo</GradientHeading>
-            <br/>
+            <br />
 
             <GradientHeading>Company</GradientHeading>
             <Heading> in India – of The Market</Heading>
@@ -38,11 +36,11 @@ export const Section2 = () => {
             in business!
           </Blackdescription>
 
-          <div>
+          <a href="#form">
             <PurpleBackground className="connect_btn">
               Connect with us <FaArrowRightLong />
             </PurpleBackground>
-          </div>
+          </a>
         </div>
 
         <div className="sub_main_div_two">
@@ -59,6 +57,7 @@ export const Section2 = () => {
 
 const Root = styled.section`
   padding: 30px 100px;
+
   .main_div {
     display: flex;
     gap: 20px;
@@ -88,6 +87,9 @@ const Root = styled.section`
     }
   }
 
+  a {
+    text-decoration: none;
+  }
   @media (max-width: 567px) {
     padding: 30px 20px;
 

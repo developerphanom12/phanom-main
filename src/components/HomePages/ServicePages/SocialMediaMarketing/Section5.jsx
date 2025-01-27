@@ -182,13 +182,13 @@ const Root = styled.section`
     .main_div {
       flex-direction: column;
       text-align: center;
-
       .sub_div_one {
         width: 100%;
         gap: 20px;
         .text_border {
           flex-direction: row;
           justify-content: center;
+          flex-wrap: wrap;
         }
 
         .slider-container {

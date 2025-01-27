@@ -6,11 +6,9 @@ export const SubNavbar = () => {
   return (
     <Root>
       <div className="main_div">
-        <WhiteHeading>Development</WhiteHeading>
+        <WhiteHeading>SEO</WhiteHeading>
 
         <div className="icon">
-
-          
           <a href="#form">
             <SubNavbarLinks>Service</SubNavbarLinks>
           </a>
@@ -26,8 +24,6 @@ export const SubNavbar = () => {
           <a href="#form">
             <SubNavbarLinks>Contact us</SubNavbarLinks>
           </a>
-
-
         </div>
       </div>
     </Root>
@@ -35,6 +31,10 @@ export const SubNavbar = () => {
 };
 
 const Root = styled.section`
+  position: sticky;
+  top: 0px;
+  z-index: 111;
+
   .main_div {
     position: relative;
 
@@ -46,6 +46,7 @@ const Root = styled.section`
     .icon {
       display: flex;
       gap: 30px;
+      display: none;
       a {
         text-decoration: none;
       }
@@ -64,19 +65,16 @@ const Root = styled.section`
   }
 
   @media (max-width: 567px) {
-
     .main_div {
-      background:linear-gradient(40deg, #4c96e3, #ca1de5, #bc2be5);
+      background: linear-gradient(40deg, #4c96e3, #ca1de5, #bc2be5);
       padding: 8px 20px;
       .icon {
         display: none;
       }
     }
-
   }
 
   @media (min-width: 567px) and (max-width: 1024px) {
-
     .main_div {
       background: linear-gradient(40deg, #4c96e3, #ca1de5, #bc2be5);
       padding: 10px 30px;
@@ -84,6 +82,5 @@ const Root = styled.section`
         gap: 15px;
       }
     }
-    
   }
 `;

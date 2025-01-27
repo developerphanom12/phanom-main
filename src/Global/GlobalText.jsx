@@ -52,7 +52,7 @@ export const Textwithborder = styled.h2`
         margin:0;
 
           @media (max-width: 567px) {
-             font-size: 28px;
+             font-size: 22px;
         font-weight: 600;
         line-height: 36px;
           }

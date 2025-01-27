@@ -145,5 +145,20 @@ const Root = styled.section`
 
   @media (min-width: 567px) and (max-width: 1024px) {
     padding: 30px 20px;
+
+ .main_div{
+ 
+ .sub_main_div_one {
+    width: 48%;
+   
+}
+    .sub_main_div{
+       width: 48%;
+
+    }
+
+}
+
+
   }
 `;

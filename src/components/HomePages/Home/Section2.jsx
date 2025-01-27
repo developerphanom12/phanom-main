@@ -4,6 +4,7 @@ import {
   Blackdescription,
   Greydescription,
   PurpleSubHeading,
+  Textwithborder,
 } from "../../../Global/GlobalText";
 import { PurpleSecondBackground } from "../../../Global/GlobalButton";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -18,11 +19,20 @@ export const Section2 = () => {
     <Root>
       <div className="main_div">
         <div className="sub_main_div_one">
-          <div class="text-with-border-shadow">
-            Explore
-            <br />
-            our <br /> Service
-          </div>
+
+                    <div className="text_border">
+          
+                      <Textwithborder> Explore</Textwithborder>
+                      <Textwithborder>our</Textwithborder>
+                      <Textwithborder>Service</Textwithborder>
+
+          
+                    </div>
+
+                    
+          
+
+
           <Blackdescription>
             Explore our service and discover solutions designed to meet your
             unique needs. With a focus on quality and innovation, we turn your
@@ -125,15 +135,10 @@ const Root = styled.section`
       gap: 20px;
       flex-direction: column;
 
-      .text-with-border-shadow {
-        font-family: "Poppins", sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        color: white;
-        line-height: 1.2;
-        -webkit-text-stroke: 1px #6c5fd4;
-        -webkit-text-fill-color: white;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    .text_border {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
       }
 
       .connect_btn {
@@ -178,9 +183,14 @@ const Root = styled.section`
         width: 100%;
         align-items: center;
         text-align: center;
-        br{
-          display: none;
+     
+
+        .text_border {
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
         }
+
 }
 
  .sub_main_div_two {
@@ -204,9 +214,12 @@ const Root = styled.section`
         width: 100%;
         align-items: center;
         text-align: center;
-        br{
-          display: none;
+         .text_border {
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap:wrap;
         }
+
 }
 
  .sub_main_div_two {

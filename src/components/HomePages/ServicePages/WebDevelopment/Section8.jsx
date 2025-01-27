@@ -93,9 +93,6 @@ export const Section8 = () => {
             real time to track the business analytics. Other reports provide an
             overview of the traffic and interactions on the website.
           </GreySecondDescription>
-
-
-          
         </div>
       </div>
     </Root>
@@ -156,5 +153,15 @@ const Root = styled.section`
 
   @media (min-width: 567px) and (max-width: 1024px) {
     padding: 30px 20px;
+
+    .main_div {
+      .sub_main_div_one {
+        width: 48%;
+      }
+
+      .sub_main_div {
+        width: 48%;
+      }
+    }
   }
 `;

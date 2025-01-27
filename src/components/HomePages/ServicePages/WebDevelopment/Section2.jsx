@@ -12,6 +12,7 @@ import frame from "../../../../assets/Images/frame.png";
 export const Section2 = () => {
   return (
     <Root>
+
       <div className="main_div">
         <div className="sub_main_div">
           <span>
@@ -40,11 +41,11 @@ export const Section2 = () => {
             Contact us now and we will discuss your project and get you started
             with offshore development.
           </Blackdescription>
-          <div>
+          <a href="#form">
             <PurpleBackground className="connect_btn">
               Connect with us <FaArrowRightLong />
             </PurpleBackground>
-          </div>
+          </a>
         </div>
 
         <div className="sub_main_div_two">
@@ -55,6 +56,7 @@ export const Section2 = () => {
           />
         </div>
       </div>
+
     </Root>
   );
 };
@@ -90,6 +92,10 @@ const Root = styled.section`
     }
   }
 
+    a{
+  text-decoration: none;
+}
+
   @media (max-width: 567px) {
     padding: 30px 20px;
 
@@ -120,6 +126,12 @@ const Root = styled.section`
   @media (min-width: 567px) and (max-width: 1024px) {
     padding: 30px 20px;
     .main_div {
+    .sub_main_div{
+        span{
+        br{
+        display:none;
+        }}
+    }
       .sub_main_div_two {
         img {
           width: 100%;

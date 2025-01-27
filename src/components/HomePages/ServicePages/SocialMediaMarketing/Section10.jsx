@@ -41,7 +41,7 @@ export const Section10 = () => {
   };
   return (
     <Root>
-      <div className="main_div">
+      <div className="main_div" id="form">
         <div className="sub_div_one">
           <Greydescription>
             Explore a rewarding career in the Phenom Professional Industry. Fill
@@ -59,10 +59,9 @@ export const Section10 = () => {
 
           <Greydescription>
             <span style={{ color: "#6C5FD4" }}>
-              Can't get enough online attention? 
+              Can't get enough online attention?
             </span>
-
-             The experts at social media marketing have social media marketing
+            The experts at social media marketing have social media marketing
             tactics in place to help elevate the prominence of your business. We
             assist in increasing your interaction as well as enhancing your
             organic reach which will help convert social media interaction into
@@ -81,7 +80,7 @@ export const Section10 = () => {
 
           <div>
             <PurpleBackground className="connect_btn">
-              Get Started with SEO Today <FaArrowRightLong />
+              Connect with us <FaArrowRightLong />
             </PurpleBackground>
           </div>
         </div>

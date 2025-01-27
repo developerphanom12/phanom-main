@@ -19,31 +19,43 @@ export const Section9 = () => {
         <span style={{ textAlign: "center" }}>
           <Heading>Dedicated to Growing Your Business with Effective</Heading>
           <GradientSecondHeading>Website</GradientSecondHeading>
-          <br/>
+          <br />
           <GradientSecondHeading>Development Strategies</GradientSecondHeading>
         </span>
         <div className="bg_img">
           <div className="sub_bg_img">
-            <img src={groupone} alt="Design"/>
+            <img src={groupone} alt="Design" />
             <PurpleSubHeading>Design</PurpleSubHeading>
             <GreySecondDescription>
-            We make sure as much as possible that the sophisticated aesthetics of the web pages capture our customers’ attention. Our designers ensure that your website is at par with modern concepts and it reflects your brand's persona, allowing your site to gain more traffic.
+              We make sure as much as possible that the sophisticated aesthetics
+              of the web pages capture our customers’ attention. Our designers
+              ensure that your website is at par with modern concepts and it
+              reflects your brand's persona, allowing your site to gain more
+              traffic.
             </GreySecondDescription>
           </div>
 
           <div className="sub_bg_img">
-            <img src={deve} alt="Development"/>
+            <img src={deve} alt="Development" />
             <PurpleSubHeading>Development</PurpleSubHeading>
             <GreySecondDescription>
-            Your concern will be a great advantage to the rest of us. Upgrading is the essence of our development approach. We employ state of the art technologies and smart formats for building user friendly and highly responsive websites that ensure unparalleled user experience, thus strengthening your position as a market leader.
+              Your concern will be a great advantage to the rest of us.
+              Upgrading is the essence of our development approach. We employ
+              state of the art technologies and smart formats for building user
+              friendly and highly responsive websites that ensure unparalleled
+              user experience, thus strengthening your position as a market
+              leader.
             </GreySecondDescription>
           </div>
 
           <div className="sub_bg_img">
-            <img src={groupthree} alt="Familiarization"/>
+            <img src={groupthree} alt="Familiarization" />
             <PurpleSubHeading>Testing</PurpleSubHeading>
             <GreySecondDescription>
-            Testing is an indispensable aspect of our work. Prior to going live there is a considerable amount of activities with respect to your site or application e.g. debugging functions and streamlining flow which need to be perfected for the greatest outcome.
+              Testing is an indispensable aspect of our work. Prior to going
+              live there is a considerable amount of activities with respect to
+              your site or application e.g. debugging functions and streamlining
+              flow which need to be perfected for the greatest outcome.
             </GreySecondDescription>
           </div>
 
@@ -51,7 +63,11 @@ export const Section9 = () => {
             <img src={groupfour} alt="Strategy" />
             <PurpleSubHeading>Launch & Maintenance</PurpleSubHeading>
             <GreySecondDescription>
-            Our work does not stop after the initial launch of your site. We actively monitor all metrics concerning the site’s performance. Our personnel handles updating and regularly checking graphs and other data to ensure your site continues to meet its goals long into the future.
+              Our work does not stop after the initial launch of your site. We
+              actively monitor all metrics concerning the site’s performance.
+              Our personnel handles updating and regularly checking graphs and
+              other data to ensure your site continues to meet its goals long
+              into the future.
             </GreySecondDescription>
           </div>
         </div>
@@ -87,9 +103,7 @@ const Root = styled.section`
   @media (max-width: 567px) {
     padding: 30px 20px;
     .main_div {
-      br {
-        display: none;
-      }
+     
 
       .bg_img {
         background-image: unset;

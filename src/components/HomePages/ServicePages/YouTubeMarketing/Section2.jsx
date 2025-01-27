@@ -28,9 +28,9 @@ export const Section2 = () => {
 
             <GradientHeading>YouTube Marketing Services</GradientHeading>
 
-            <br />
+            <br/>
 
-        
+            
             <Heading> in India</Heading>
           </span>
 
@@ -38,11 +38,12 @@ export const Section2 = () => {
                Harness the power of Youtube using Phanom Professionals’ YouTube marketing services. We will help you create engaging video content as we are an SEO agency in India with extensive experience. Our industry relevant knowledge helps us craft powerful videos that boost traffic to your channel, increase viewer retention, and drive organic traffic to your channel. We develop custom strategies to ensure that your videos rank high, connect with the audience, and increase brand visibility and conversions. Now is your chance to grow on Youtube with chill but effective strategies. Start your journey towards digital success and make the first step today!
           </Blackdescription>
 
-          <div>
+          <a href="#form">
             <PurpleBackground className="connect_btn">
               Connect with us <FaArrowRightLong />
             </PurpleBackground>
-          </div>
+          </a>
+
         </div>
 
         <div className="sub_main_div_two">
@@ -87,6 +88,10 @@ const Root = styled.section`
       }
     }
   }
+
+a{
+  text-decoration: none;
+}
 
   @media (max-width: 567px) {
     padding: 30px 20px;

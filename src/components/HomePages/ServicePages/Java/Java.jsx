@@ -13,15 +13,14 @@ import { Section12 } from "./Section12";
 import { Helmet } from "react-helmet";
 import { SliderPage } from "../Service/SliderPage";
 
-export const WebDevelopment = () => {
+export const Java = () => {
   return (
     <div>
       <Helmet>
-        <title>Offshore Website Development Services in India</title>
-
+        <title>Offshore Java Software Development Company In India</title>
         <meta
           name="description"
-          content="We are a Leading Offshore Website Development Service in India, specializing in responsive, user-friendly, and 100% mobile-friendly websites. Reach out for top-notch designs!"
+          content="Leading Offshore Java Software Development Company in India. We offer custom solutions, robust applications, and innovative tech to drive your business forward."
         />
       </Helmet>
 

@@ -25,7 +25,7 @@ export const Section2 = () => {
             <Heading>Now Grow Your Brand in New</Heading> <br />
             <Heading>Ways with an Offshore</Heading>
             <GradientHeading>Social</GradientHeading>
-            <br />
+            <br/>
             <GradientHeading>Media Marketing Agency</GradientHeading>
             <Heading>in India</Heading>
           </span>
@@ -42,11 +42,11 @@ export const Section2 = () => {
             and Take Your Brand to Greater Heights!
           </Blackdescription>
 
-          <div>
+          <a href="#form">
             <PurpleBackground className="connect_btn">
               Connect with us <FaArrowRightLong />
             </PurpleBackground>
-          </div>
+          </a>
 
           
         </div>
@@ -94,6 +94,10 @@ const Root = styled.section`
     }
   }
 
+    a{
+  text-decoration: none;
+}
+  
   @media (max-width: 567px) {
     padding: 30px 20px;
 

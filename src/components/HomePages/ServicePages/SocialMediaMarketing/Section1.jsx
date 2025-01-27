@@ -11,10 +11,10 @@ export const Section1 = () => {
         <a href="/home"><Subdescription>Home</Subdescription></a>
         <IoIosArrowForward style={{color:"667085"}}/>
 
-        <a href="#"><Subdescription>Service</Subdescription></a>
+       <Subdescription>Service</Subdescription>
 
         <IoIosArrowForward   style={{color:"6C5FD4"}}/>
-        <a href="/"><Subpurpledescription>Social Media Marketing</Subpurpledescription></a>
+        <a href="/offshore-social-media-marketing-agency-in-india/"><Subpurpledescription>Social Media Marketing</Subpurpledescription></a>
 
         
       </div>

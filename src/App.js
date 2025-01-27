@@ -17,9 +17,7 @@ import { PayPerClick } from "./components/HomePages/ServicePages/PayPerClick/Pay
 import { YouTubeMarketing } from "./components/HomePages/ServicePages/YouTubeMarketing/YouTubeMarketing";
 import { WebDevelopment } from "./components/HomePages/ServicePages/WebDevelopment/WebDevelopment";
 import { Shopify } from "./components/HomePages/ServicePages/Shopify/Shopify";
-import { Java } from "./components/HomePages/ServicePages/Seo copy/Java";
-
-// import { Seo } from "./components/HomePages/ServicePages/Seo/Seo";
+import { Java } from "./components/HomePages/ServicePages/Java/Java";
 
 function App() {
   const userDetails = useSelector((state) => state.userDetails);
@@ -29,29 +27,46 @@ function App() {
       <Toaster position="top-center" />
       <Layout>
         <Routes>
-          <Route path="/" element={<Hosting />} />
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/hosting" element={<Hosting />} />
           <Route path="/login" element={<Login />} />
-
+          
           <Route path="/hiring" element={<Hiring />} />
           <Route path="/test" element={<Test />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/service" element={<Service />} />
-          <Route path="/seo" element={<Seo />} />
+          <Route path="/offshore-seo-company-in-india/" element={<Seo />} />
+
           <Route
-            path="/social-media-marketing"
-            element={<SocialMediaMarketing/>}
+            path="/offshore-social-media-marketing-agency-in-india/"
+            element={<SocialMediaMarketing />}
           />
-          <Route path="/pay-per-click" element={<PayPerClick />} />
 
-          <Route path="/youtube-marketing" element={<YouTubeMarketing />} />
+          <Route
+            path="/offshore-ppc-marketing-agency-in-india/"
+            element={<PayPerClick />}
+          />
 
-          <Route path="/web-developement" element={<WebDevelopment />} />
+          <Route
+            path="/offshore-youtube-marketing-services-in-india/"
+            element={<YouTubeMarketing />}
+          />
 
-          <Route path="/shopify" element={<Shopify/>} />
+          <Route
+            path="/offshore-website-development-services-in-india/"
+            element={<WebDevelopment />}
+          />
 
-          <Route path="/java" element={<Java/>} />
+          <Route
+            path="/offshore-shopify-web-development-services-in-india/"
+            element={<Shopify />}
+          />
+
+          <Route
+            path="/offshore-java-software-development-company-in-india/"
+            element={<Java />}
+          />
         </Routes>
       </Layout>
     </Root>

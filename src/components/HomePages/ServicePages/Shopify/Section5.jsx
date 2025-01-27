@@ -12,9 +12,9 @@ export const Section5 = () => {
 
             <Textwithborder>Shopify Website Design Services –</Textwithborder>
 
-            <Textwithborder>Smart Solutions for Your Digital </Textwithborder>
+            <Textwithborder>Smart Solutions for Your Digital Growth </Textwithborder>
 
-            <Textwithborder>Growth</Textwithborder>
+      
 
 
           </div>
@@ -164,6 +164,7 @@ const Root = styled.section`
         .text_border {
           flex-direction: row;
           justify-content: center;
+          flex-wrap:wrap;
         }
 
         .slider-container {
