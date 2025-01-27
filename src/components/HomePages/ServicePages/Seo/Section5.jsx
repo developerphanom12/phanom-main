@@ -11,7 +11,8 @@ export const Section5 = () => {
           <div className="text_border">
 
             <Textwithborder>Boost Your Business with Our Seo</Textwithborder>
-            <Textwithborder>Services</Textwithborder>
+            <Textwithborder>Services   </Textwithborder>
+
 
           </div>
           <Greydescription>
