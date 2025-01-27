@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {
   Blackdescription,
   BlackHeading,
-  Faqdescription,
+
   FaqHeading,
   Heading,
 } from "../../../../Global/GlobalText";

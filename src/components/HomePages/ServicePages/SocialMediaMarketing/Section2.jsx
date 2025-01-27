@@ -4,17 +4,13 @@ import {
   Blackdescription,
   GradientHeading,
   Heading,
-  Subblackdescription,
+
 } from "../../../../Global/GlobalText";
 import { PurpleBackground } from "../../../../Global/GlobalButton";
 import { FaArrowRightLong } from "react-icons/fa6";
-import partner from "../../../../assets/Images/partnernew.png";
-import mobile from "../../../../assets/Images/mobilenew.png";
-import iconpark from "../../../../assets/Images/iconpark.png";
+
 import frame from "../../../../assets/Images/frame.png";
-import seonew from "../../../../assets/Images/seonew.png";
-import seothree from "../../../../assets/Images/seothree.png";
-import seotwo from "../../../../assets/Images/seotwo.png";
+
 
 export const Section2 = () => {
   return (

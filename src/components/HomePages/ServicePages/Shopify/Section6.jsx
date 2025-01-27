@@ -16,7 +16,7 @@ import shopifymigration from "../../../../assets/Images/shopifymigration.png";
 import shopifytheme from "../../../../assets/Images/shopifytheme.png";
 
 import shopapp from "../../../../assets/Images/shopapp.png";
-import appnew from "../../../../assets/Images/appnew.png";
+
 
 
 export const Section6 = () => {
