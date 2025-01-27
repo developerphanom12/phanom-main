@@ -8,9 +8,10 @@ import { Section5 } from "./Section5";
 import { Section6 } from "./Section6";
 import { Section7 } from "./Section7";
 import { Section8 } from "./Section8";
-import { Section9 } from "./Section9";
+
 import { Helmet } from "react-helmet";
 import { SliderPage } from "../ServicePages/Service/SliderPage";
+import { Section9 } from "./Section9";
 
 export const Home = () => {
   return (
